@@ -4,7 +4,7 @@
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
-        style="margin: auto; background: transparent; display: flex"
+        style="margin: auto; display: flex"
         width="200px"
         height="200px"
         viewBox="0 0 100 100"
@@ -246,16 +246,19 @@
     <div v-else>
       <app-header></app-header>
       <Nuxt />
+      <app-footer></app-footer>
     </div>
   </div>
 </template>
 
 <script>
 import AppHeader from './../components/Header'
+import AppFooter from './../components/Footer'
 
 export default {
   components: {
     'app-header': AppHeader,
+    'app-footer': AppFooter,
   },
   data() {
     return {
@@ -278,8 +281,10 @@ body {
 
 .loader {
   position: absolute;
+  background: transparent;
   top: 50%;
   left: 50%;
   transform: translate(-50%, 100%);
+  z-index: 9999999;
 }
 </style>

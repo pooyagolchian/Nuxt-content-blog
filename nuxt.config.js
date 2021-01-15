@@ -12,11 +12,16 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'pooya-golchian-blog',
+    title: 'Pooya Golchian | Software Engineer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'fontend developer, Web Developer, Javascript, Vue.js, Nuxt.js',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -49,7 +54,7 @@ export default {
   },
 
   feed() {
-    const baseUrlArticles = 'https://localhost:3000'
+    const baseUrlArticles = ''
     const baseLinkFeedArticles = '/blog'
     const feedFormats = {
       rss: { type: 'rss2', file: 'rss.xml' },

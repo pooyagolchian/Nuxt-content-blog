@@ -1,20 +1,41 @@
 <template>
-  <div>
-    <h1>Author: {{ articles[0].author.name }}</h1>
-    <p>Bio: {{ articles[0].author.bio }}</p>
-    <h3>Here are a list of articles by {{ articles[0].author.name }}:</h3>
-    <ul>
-      <li v-for="article in articles" :key="article.slug">
-        <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-          <img :src="article.img" :alt="article.alt" />
+  <div class="container">
+    <h1 class="app-title">Author: {{ articles[0].author.name }}</h1>
+    <p class="app-subtitle">Bio: {{ articles[0].author.bio }}</p>
+    <h3 class="app-subtitle">
+      Here are a list of articles by {{ articles[0].author.name }}:
+    </h3>
+    <div class="row pb-40 pt-40">
+      <div
+        class="col-12 col-sm-12 col-md-4"
+        v-for="article of articles"
+        :key="article.slug"
+      >
+        <NuxtLink
+          tag="div"
+          :to="{ name: 'blog-slug', params: { slug: article.slug } }"
+        >
           <div>
-            <h2>{{ article.title }}</h2>
-            <p>{{ article.description }}</p>
-            <p>{{ formatDate(article.updatedAt) }}</p>
+            <div
+              :style="`
+                background: url('${article.img}') center center no-repeat;
+                height: 200px;
+                background-size: cover;
+                width: 100%;
+                position:relative;
+                `"
+            ></div>
+            <h2 class="app-title fs-19 font-weight-bold pt-10">
+              {{ article.title }}
+            </h2>
+            <div class="app-subtitle">{{ formatDate(article.date) }}</div>
+            <div class="app-subtitle fa-15 pt-10">
+              {{ article.description }}
+            </div>
           </div>
         </NuxtLink>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -27,7 +48,7 @@ export default {
         },
       })
       .without('body')
-      .sortBy('createdAt', 'asc')
+      .sortBy('date', 'desc')
       .fetch()
 
     return {

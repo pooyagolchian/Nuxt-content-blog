@@ -4,7 +4,9 @@
       <div class="row">
         <div class="col-12 p-0">
           <article class="container">
-            <h1 class="app-title p-0 m-0">{{ article.title }}</h1>
+            <h1 class="app-title p-0 m-0 font-weight-bolder">
+              {{ article.title }}
+            </h1>
             <p class="app-subtitle">{{ article.description }}</p>
             <p class="app-subtitle">
               Article last updated: {{ formatDate(article.updatedAt) }}

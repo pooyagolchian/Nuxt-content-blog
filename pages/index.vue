@@ -1,6 +1,9 @@
 <template>
   <div>
     <div class="container">
+      <div class="col-12 p-0">
+        <AppSearchInput />
+      </div>
       <div
         class="row pt-40"
         v-for="article of firstArticles"
@@ -36,6 +39,7 @@
           <NuxtLink
             tag="div"
             :to="{ name: 'blog-slug', params: { slug: article.slug } }"
+            class="cp mb-20"
           >
             <div>
               <div

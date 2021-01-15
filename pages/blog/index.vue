@@ -1,20 +1,41 @@
 <template>
-  <div>
+  <div class="container">
     <div>
-      <AppSearchInput />
-      <h1>Blog Posts</h1>
-      <ul>
-        <li v-for="article of articles" :key="article.slug">
-          <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-            <img class="w-25" :src="article.img" />
+      <div class="col-12 p-0">
+        <AppSearchInput />
+      </div>
+      <div class="row pb-40 pt-40">
+        <div
+          class="col-12 col-sm-12 col-md-4 mb-10 mt-10"
+          v-for="article of articles"
+          :key="article.slug"
+        >
+          <NuxtLink
+            tag="div"
+            :to="{ name: 'blog-slug', params: { slug: article.slug } }"
+            class="cp"
+          >
             <div>
-              <h2>{{ article.title }}</h2>
-              <p>by {{ article.author.name }}</p>
-              <p>{{ article.description }}</p>
+              <div
+                :style="`
+                background: url('${article.img}') center center no-repeat;
+                height: 200px;
+                background-size: cover;
+                width: 100%;
+                position:relative;
+                `"
+              ></div>
+              <h2 class="app-title fs-19 font-weight-bold pt-10">
+                {{ article.title }}
+              </h2>
+              <div class="app-subtitle">{{ formatDate(article.date) }}</div>
+              <div class="app-subtitle fa-15 pt-10">
+                {{ article.description }}
+              </div>
             </div>
           </NuxtLink>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -29,6 +50,12 @@ export default {
     return {
       articles,
     }
+  },
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
+    },
   },
 }
 </script>

@@ -3,7 +3,7 @@
     <NuxtLink
       tag="div"
       :to="`/blog/author/${author.name}`"
-      class="row align-item-center mt-50 mb-50"
+      class="row align-item-center mt-50 mb-50 cp"
     >
       <div class="col-auto align-item-center justify-content-center">
         <img class="author-img" :src="author.img" />

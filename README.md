@@ -1,4 +1,15 @@
-# pooya-blog-en
+# Nuxt content static generator website
+
+I use Nuxt content and Nuxt module to develop static blog!
+
+- Bootstrap 4 scss
+- Custome grid
+- Multiple theme
+- Fully responsive
+- PWA
+- Google analytics configuration
+- Blazing fast
+- SVG loader
 
 ## Build Setup
 
