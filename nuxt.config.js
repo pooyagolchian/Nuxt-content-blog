@@ -9,9 +9,6 @@ export default {
   },
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
-  router: {
-    base: '/pooyagolchian.github.io/',
-  },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
