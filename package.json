@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.11.1",
-    "@nuxtjs/axios": "^5.12.2",
+    "@nuxtjs/axios": "^5.12.5",
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/pwa": "^3.3.4",
     "bootstrap": "^4.5.3",
