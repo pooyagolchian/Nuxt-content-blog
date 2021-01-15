@@ -1,8 +1,15 @@
 <template>
-  <div class="header col-12">
+  <div class="header col-12 pt-50 pb-50">
     <div class="container">
-      <div class="row">
-        <div>
+      <div class="row justify-content-between pt-30">
+        <router-link
+          class="col-auto app-title font-weight-bolder fs-17"
+          tag="div"
+          to="/"
+        >
+          Pooya Golchian</router-link
+        >
+        <div class="col-auto fs-14 font-weight-light">
           <change-theme
             :defaultTheme="'light'"
             :themeColorList="[
@@ -22,10 +29,5 @@
 </template>
 
 <script>
-import ChangeTheme from '../components/Theme'
-export default {
-  components: {
-    'change-theme': ChangeTheme,
-  },
-}
+export default {}
 </script>

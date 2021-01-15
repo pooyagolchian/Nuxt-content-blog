@@ -1,1 +1,108 @@
 @import './../../node_modules/bootstrap/scss/bootstrap';
+
+:root {
+  --app-background-color: #ffffff;
+  --app-title-color: #333333;
+  --app-subtitle-color: #555555;
+}
+[theme='dark'] {
+  --app-background-color: #333333;
+  --app-title-color: #ffffff;
+  --app-subtitle-color: #dddddd;
+}
+[theme='sepia'] {
+  --app-background-color: #d0bc91;
+  --app-title-color: #8a6c44;
+  --app-subtitle-color: #5f4938;
+}
+[theme='black'] {
+  --app-background-color: #000000;
+  --app-title-color: #ffffff;
+  --app-subtitle-color: #dddddd;
+}
+[theme='coffee'] {
+  --app-background-color: #394545;
+  --app-title-color: #aab1b3;
+  --app-subtitle-color: #e9e5e3;
+}
+[theme='rose'] {
+  --app-background-color: #2e1a1e;
+  --app-title-color: #bcb8ce;
+  --app-subtitle-color: #d5ddef;
+}
+.app-background {
+  background-color: var(--app-background-color);
+}
+.app-title {
+  color: var(--app-title-color);
+}
+.app-subtitle {
+  color: var(--app-subtitle-color);
+  padding-top: 10px;
+}
+.change-theme-box {
+  cursor: pointer;
+  color: var(--app-subtitle-color);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  ::selection {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+@for $i from 1 through 100 {
+  .fs-#{$i} {
+    font-size: $i + px !important;
+  }
+}
+
+@for $i from 1 through 150 {
+  .pt-#{$i} {
+    padding-top: $i + px !important;
+  }
+}
+
+@for $i from 1 through 150 {
+  .pb-#{$i} {
+    padding-bottom: $i + px !important;
+  }
+}
+
+@for $i from 1 through 150 {
+  .pl-#{$i} {
+    padding-left: $i + px !important;
+  }
+}
+
+@for $i from 1 through 150 {
+  .pr-#{$i} {
+    padding-right: $i + px !important;
+  }
+}
+
+@for $i from 1 through 150 {
+  .mt-#{$i} {
+    margin-top: $i + px !important;
+  }
+}
+
+@for $i from 1 through 150 {
+  .mb-#{$i} {
+    margin-bottom: $i + px !important;
+  }
+}
+
+@for $i from 1 through 150 {
+  .ml-#{$i} {
+    margin-left: $i + px !important;
+  }
+}
+
+@for $i from 1 through 150 {
+  .mr-#{$i} {
+    margin-right: $i + px !important;
+  }
+}
