@@ -1,4 +1,5 @@
 @import './../../node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
 
 :root {
   --app-background-color: #ffffff;
@@ -8,7 +9,7 @@
 [theme='dark'] {
   --app-background-color: #333333;
   --app-title-color: #ffffff;
-  --app-subtitle-color: #dddddd;
+  --app-subtitle-color: #f1f1f1;
 }
 [theme='sepia'] {
   --app-background-color: #d0bc91;
@@ -30,6 +31,27 @@
   --app-title-color: #bcb8ce;
   --app-subtitle-color: #d5ddef;
 }
+
+.container {
+  @include make-container();
+  max-width: 760px;
+}
+
+* {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.ff-header {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+a {
+  color: var(--app-title-color) !important;
+  &:hover {
+    color: var(--app-subtitle-color) !important;
+  }
+}
+
 .app-background {
   background-color: var(--app-background-color);
 }
@@ -105,4 +127,8 @@
   .mr-#{$i} {
     margin-right: $i + px !important;
   }
+}
+
+.cp {
+  cursor: pointer;
 }

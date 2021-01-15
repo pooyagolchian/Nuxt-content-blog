@@ -1,0 +1,35 @@
+---
+title: 'Host Your Jekyll Theme on GitHub With CloudFlare'
+date: '2016-07-01'
+slug: 'host-jekyll-theme-on-github'
+description: 'In this article, you learn about how to deploy the Jekyll theme on the custom domain with Cloudflare'
+img: '/img/content/cloud-flare/header.png'
+alt: 'host-jekyll-with-cloud-flare'
+author:
+  name: 'Pooya Golchian'
+  bio: 'Frontend developer and DevOps engineer.'
+  img: '/img/avatar/pooya-golchian.jpg'
+---
+
+## How to deploy jekyll theme on custom domain
+
+1. Create a CNAME file and upload it to your gh-pages repository.
+2. To do this, open your favourite text editor and type yout custom domain.
+
+```
+www.pooyagolchian.ir
+```
+
+3. Go to your [CloudFlare account](https://www.cloudflare.com/)
+4. Follow like this image with your repo link, For example: pooya-golchian.github.io
+
+![Cloudflare](./img/content/cloud-flare/cloud-flare.png)
+
+Github IP adress:
+
+```
+192.30.252.153
+192.30.252.154
+```
+
+_CHEERS, your website hosted on GitHub :)_

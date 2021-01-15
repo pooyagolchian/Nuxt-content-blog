@@ -1,4 +1,12 @@
 export default {
+  googleAnalytics: {
+    id: 'UA-114457345-1', // Use as fallback if no runtime config is provided
+  },
+  publicRuntimeConfig: {
+    googleAnalytics: {
+      id: 'UA-114457345-1',
+    },
+  },
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
@@ -23,7 +31,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: [],
+  buildModules: ['@nuxtjs/google-analytics'],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
@@ -34,7 +42,48 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '@nuxtjs/style-resources',
+    '@nuxtjs/feed',
   ],
+  pwa: {
+    icon: false, // disables the icon module
+  },
+
+  feed() {
+    const baseUrlArticles = 'https://localhost:3000'
+    const baseLinkFeedArticles = '/blog'
+    const feedFormats = {
+      rss: { type: 'rss2', file: 'rss.xml' },
+      json: { type: 'json1', file: 'feed.json' },
+    }
+    const { $content } = require('@nuxt/content')
+
+    const createFeedArticles = async function (feed) {
+      feed.options = {
+        title: 'Pooya Golchian | Software Engineer',
+        description: "I'm Frontend developer and DevOps engineer",
+        link: baseUrlArticles,
+      }
+      const articles = await $content('articles').fetch()
+      articles.forEach((article) => {
+        const url = `${baseUrlArticles}/${article.slug}`
+        feed.addItem({
+          title: article.title,
+          id: url,
+          link: url,
+          date: article.published,
+          description: article.description,
+          content: article.description,
+          author: article.author.name,
+        })
+      })
+    }
+
+    return Object.values(feedFormats).map(({ file, type }) => ({
+      path: `${baseLinkFeedArticles}/${file}`,
+      type: type,
+      create: createFeedArticles,
+    }))
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},

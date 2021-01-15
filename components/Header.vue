@@ -1,14 +1,14 @@
 <template>
-  <div class="header col-12 pt-50 pb-50">
+  <div class="header col-12 pt-20 pb-20">
     <div class="container">
       <div class="row justify-content-between pt-30">
         <router-link
-          class="col-auto app-title font-weight-bolder fs-17"
+          class="col-auto app-title font-weight-bolder fs-30"
           tag="div"
           to="/"
         >
-          Pooya Golchian</router-link
-        >
+          Pooya Golchian
+        </router-link>
         <div class="col-auto fs-14 font-weight-light">
           <change-theme
             :defaultTheme="'light'"
@@ -27,7 +27,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {}
-</script>
