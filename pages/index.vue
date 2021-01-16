@@ -97,7 +97,9 @@
                 :alt="article.alt"
               />
             </div>
-            <div class="col-12 col-sm-12 col-md-8">
+            <div
+              class="col-12 col-sm-12 col-md-8 d-flex justify-content-center align-items-start flex-column"
+            >
               <h2 class="app-title fs-19 font-weight-bold pt-10">
                 {{ article.title }}
               </h2>
