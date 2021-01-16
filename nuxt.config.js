@@ -1,10 +1,7 @@
 export default {
   googleAnalytics: {
-    id: 'UA-114457345-1', // Use as fallback if no runtime config is provided
-  },
-  publicRuntimeConfig: {
-    googleAnalytics: {
-      id: 'UA-114457345-1',
+    asyncID: async () => {
+      return 'UA-114457345-1'
     },
   },
   // Target (https://go.nuxtjs.dev/config-target)
