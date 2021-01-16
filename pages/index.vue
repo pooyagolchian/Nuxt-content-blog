@@ -1,6 +1,29 @@
 <template>
   <div>
     <div class="container">
+      <div class="row pb-30">
+        <div class="col-12 col-sm-12 col-md-6">
+          <img class="h1-00 w-100" src="/img/home-img/header.svg" alt="" />
+        </div>
+        <div
+          class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column"
+        >
+          <h1
+            class="fs-18 app-title text-left d-flex flex-1 w-100 font-weight-bold"
+          >
+            I'm Pooya Golchian
+          </h1>
+          <ul
+            class="p-0 m-0 d-flex justify-content-center align-items-start flex-column flex-1 w-100 app-subtitle"
+          >
+            <li>who hack everything new</li>
+            <li>Full-Stack javascript developer</li>
+            <li>DevOps</li>
+            <li>Code, Coffee, Crypto</li>
+          </ul>
+        </div>
+      </div>
+
       <div class="col-12 p-0">
         <AppSearchInput />
       </div>
@@ -60,6 +83,29 @@
               </div>
             </div>
           </NuxtLink>
+        </div>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column"
+        >
+          <h1
+            class="fs-18 app-title text-left d-flex flex-1 w-100 font-weight-bold"
+          >
+            Web Development
+          </h1>
+          <ul
+            class="p-0 m-0 d-flex justify-content-center align-items-start flex-column flex-1 w-100 app-subtitle"
+          >
+            <li>API design (Microservice architecture)</li>
+            <li>JAM-Stack and SSR</li>
+            <li>Nosql database</li>
+            <li>DevOps and Server adminstration</li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6">
+          <img class="h1-00 w-100" src="/img/home-img/1.svg" alt="" />
         </div>
       </div>
     </div>

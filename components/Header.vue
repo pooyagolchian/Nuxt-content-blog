@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row justify-content-between">
         <router-link
-          class="col-auto app-title font-weight-bolder fs-30 cp"
+          class="col-auto app-title font-weight-bolder fs-20 cp"
           tag="div"
           to="/"
         >
