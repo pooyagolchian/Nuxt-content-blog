@@ -1,11 +1,12 @@
 export default {
-  googleAnalytics: {
-    id: 'UA-114457345-1',
-  },
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
   router: {
     base: '/',
+  },
+
+  googleAnalytics: {
+    id: 'UA-114457345-1',
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -41,7 +42,7 @@ export default {
   css: ['~/assets/css/main'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: [{ src: '~plugins/ga.js', mode: 'client' }],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
