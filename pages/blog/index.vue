@@ -20,8 +20,8 @@
                 :style="`
                 background: url('${article.img}') center center no-repeat;
                 height: 200px;
-                background-size: cover;
-                width: 100%;
+                background-size: contain;
+                width: 70%;
                 position:relative;
                 `"
               ></div>
