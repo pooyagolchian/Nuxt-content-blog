@@ -74,6 +74,7 @@ export default {
       name: 'Pooya Golchian Technical Blog',
       short_name: 'Pooya Golchian Blog',
       lang: 'en',
+      description: 'Pooya Golchian Personal Blog',
     },
   },
   feed() {
