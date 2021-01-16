@@ -48,6 +48,8 @@ export default {
   padding: 10px;
   width: 100%;
   border: 1px solid var(--app-subtitle-color);
+  background-color: var(--app-background-color);
+  color: var(--app-title-color);
   &:focus {
     outline: none;
   }
