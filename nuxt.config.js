@@ -76,6 +76,10 @@ export default {
       lang: 'en',
       description: 'Pooya Golchian Personal Blog',
     },
+    icon: {
+      fileName: 'icon.png',
+      source: '/static/icon.png',
+    },
   },
   feed() {
     const baseUrlArticles = ''
