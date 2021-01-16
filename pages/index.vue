@@ -91,13 +91,19 @@
         >
           <div class="w-100 d-flex flex-column flex-sm-column flex-md-row">
             <div class="col-12 col-sm-12 col-md-4">
-              <img class="img-fluid" :src="article.img" :alt="article.alt" />
+              <img
+                class="img-fluid w-75"
+                :src="article.img"
+                :alt="article.alt"
+              />
             </div>
             <div class="col-12 col-sm-12 col-md-8">
               <h2 class="app-title fs-19 font-weight-bold pt-10">
                 {{ article.title }}
               </h2>
-              <div class="app-subtitle">{{ formatDate(article.date) }}</div>
+              <div class="app-subtitle fs-13">
+                {{ formatDate(article.date) }}
+              </div>
               <div class="app-subtitle fa-15 pt-10">
                 {{ article.description }}
               </div>
@@ -121,15 +127,17 @@
                 :style="`
                 background: url('${article.img}') center center no-repeat;
                 height: 200px;
-                background-size: cover;
-                width: 100%;
+                background-size: contain;
+                width: 70%;
                 position:relative;
                 `"
               ></div>
               <h2 class="app-title fs-19 font-weight-bold pt-10">
                 {{ article.title }}
               </h2>
-              <div class="app-subtitle">{{ formatDate(article.date) }}</div>
+              <div class="app-subtitle fs-13">
+                {{ formatDate(article.date) }}
+              </div>
               <div class="app-subtitle fa-15 pt-10">
                 {{ article.description }}
               </div>

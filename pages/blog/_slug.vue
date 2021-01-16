@@ -28,7 +28,7 @@
               </nav>
             </div>
             <img
-              class="article-slug img-fluid"
+              class="article-slug img-fluid pt-20 pb-20"
               :src="article.img"
               :alt="article.alt"
             />

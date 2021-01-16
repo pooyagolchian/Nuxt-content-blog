@@ -3,7 +3,7 @@ title: 'Arangodb install last version and configuration and backup and restore f
 date: '2020-07-22'
 slug: 'arangodb-devops'
 description: 'I use Shell script for all steps to automate Arangodb backup and update from a to z!'
-img: '/img/content/arango-backup/header.png'
+img: '/img/content/arango-backup/header.svg'
 alt: 'arango-backup'
 author:
   name: 'Pooya Golchian'
