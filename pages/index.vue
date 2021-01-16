@@ -20,7 +20,7 @@
           <ul
             class="p-0 m-0 d-flex justify-content-center align-items-start flex-column flex-1 w-100 app-subtitle"
           >
-            <li>who hacks everything new</li>
+            <li>who hacks everything</li>
             <li>Full-Stack javascript developer</li>
             <li>DevOps</li>
             <li>Code, Coffee, Crypto</li>
