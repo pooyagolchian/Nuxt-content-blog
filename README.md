@@ -11,15 +11,15 @@ I enjoyed developing and designing this project. Please star and fork it ♥️.
 
 I use Nuxt content and Nuxt module to develop static (JAMSTACK) blog!
 
-- ✅ Bootstrap 4 scss
-- ✅ Multiple theme
-- ✅ Fully responsive (Bootstrap 4 grid breakpoint)
-- ✅ PWA - (manifest, custome icon, ... )
-- ✅ Google analytics configuration - Only track code needed.
-- ✅ Google fonts - Poppins font family
-- ✅ Blazing fast
-- ✅ SEO tags ready!
-- ✅ SVG loader
+- ✅ - Bootstrap 4 scss
+- ✅ - Multiple theme
+- ✅ - Fully responsive (Bootstrap 4 grid breakpoint)
+- ✅ - PWA - (manifest, custome icon, ... )
+- ✅ - Google analytics configuration - Only track code needed.
+- ✅ - Google fonts - Poppins font family
+- ✅ - Blazing fast
+- ✅ - SEO tags ready!
+- ✅ - SVG loader
 
 ## Deploy on GH_PAGES 🪄
 
