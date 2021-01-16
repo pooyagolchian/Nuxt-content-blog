@@ -3,10 +3,14 @@
     <div class="container">
       <div class="row pb-30">
         <div class="col-12 col-sm-12 col-md-6">
-          <img class="h1-00 w-100" src="/img/home-img/header.svg" alt="" />
+          <img
+            class="h1-00 w-100 pb-20 pt-20"
+            src="/img/home-img/header.svg"
+            alt=""
+          />
         </div>
         <div
-          class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column"
+          class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column cp"
         >
           <h1
             class="fs-18 app-title text-left d-flex flex-1 w-100 font-weight-bold"
@@ -20,6 +24,54 @@
             <li>Full-Stack javascript developer</li>
             <li>DevOps</li>
             <li>Code, Coffee, Crypto</li>
+          </ul>
+          <ul class="footer-social d-flex flex-start w-100 pt-10">
+            <li>
+              <a
+                class="col-auto app-title font-weight-light fs-12 pl-0"
+                href="https://github.com/pooyagolchian"
+                target="_blank"
+              >
+                Github
+              </a>
+            </li>
+            <li>
+              <a
+                class="col-auto app-title font-weight-light fs-12"
+                href="https://linkedin.com/in/pooyagolchian"
+                target="_blank"
+              >
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <a
+                class="col-auto app-title font-weight-light fs-12"
+                href="https://dribbble.com/pooyagolchian"
+                target="_blank"
+              >
+                Dribbble
+              </a>
+            </li>
+            <li>
+              <a
+                class="col-auto app-title font-weight-light fs-12"
+                href="https://dev.to/pooyagolchian"
+                target="_blank"
+              >
+                Dev
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="col-auto app-title font-weight-light fs-12"
+                href="/blog/rss.xml"
+                target="_blank"
+              >
+                RSS
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -105,7 +157,11 @@
           </ul>
         </div>
         <div class="col-12 col-sm-12 col-md-6">
-          <img class="h1-00 w-100" src="/img/home-img/1.svg" alt="" />
+          <img
+            class="h1-00 w-100 pb-20 pt-20"
+            src="/img/home-img/1.svg"
+            alt=""
+          />
         </div>
       </div>
     </div>
