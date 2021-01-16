@@ -1,8 +1,6 @@
 export default {
   googleAnalytics: {
-    asyncID: async () => {
-      return 'UA-114457345-1'
-    },
+    id: 'UA-114457345-1',
   },
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
