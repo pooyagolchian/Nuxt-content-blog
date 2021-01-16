@@ -25,6 +25,19 @@ export default {
         content:
           'fontend developer, Web Developer, Javascript, Vue.js, Nuxt.js',
       },
+      { property: 'og:site_name', content: 'Pooya Golchian' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://pooyagolchian.ir',
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Pooya Golchian | Software Engineer',
+      },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
@@ -53,9 +66,16 @@ export default {
     '@nuxtjs/feed',
   ],
   pwa: {
-    icon: false, // disables the icon module
+    meta: {
+      title: 'Pooya Golchian | Software Engineer',
+      author: 'Pooya Golchian',
+    },
+    manifest: {
+      name: 'Pooya Golchian Technical Blog',
+      short_name: 'Pooya Golchian Blog',
+      lang: 'en',
+    },
   },
-
   feed() {
     const baseUrlArticles = ''
     const baseLinkFeedArticles = '/blog'
