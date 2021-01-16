@@ -7,10 +7,20 @@
       placeholder="Search Articles"
       class="search w-100"
     />
-    <ul class="search-container pt-10" v-if="articles.length">
+    <ul class="search__container pt-10" v-if="articles.length">
       <li v-for="article of articles" :key="article.slug" class="mt-10 mb-10">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-          {{ article.title }}
+          <div class="row">
+            <div class="col-2">
+              <img class="w-100" :src="article.img" :alt="article.title" />
+            </div>
+            <div
+              class="col-10 d-flex justify-content-start align-items-center flex-column"
+            >
+              <div class="d-flex w-100 fs-15">{{ article.title }}</div>
+              <div class="d-flex w-100 fs-12">{{ article.date }}</div>
+            </div>
+          </div>
         </NuxtLink>
       </li>
     </ul>
@@ -52,6 +62,20 @@ export default {
   color: var(--app-title-color);
   &:focus {
     outline: none;
+  }
+
+  &__container {
+    margin-top: 16px;
+    border-radius: 30px;
+    border: 1px solid var(--app-subtitle-color);
+    padding: 16px;
+    li {
+      border-bottom: 1px solid var(--app-subtitle-color);
+      padding-bottom: 13px;
+      &:last-child {
+        border: none;
+      }
+    }
   }
 }
 </style>
