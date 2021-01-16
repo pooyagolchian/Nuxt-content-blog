@@ -1,9 +1,6 @@
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
-  router: {
-    base: '/',
-  },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -132,6 +129,10 @@ export default {
       },
     },
     nestedProperties: ['author.name'],
+  },
+  generate: {
+    fallback: true,
+    exclude: [/code/, /^(?=.*\btest\b).*$/],
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
