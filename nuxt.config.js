@@ -5,10 +5,6 @@ export default {
     base: '/',
   },
 
-  googleAnalytics: {
-    id: 'UA-114457345-1',
-  },
-
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'Pooya Golchian | Software Engineer',
@@ -48,7 +44,18 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: ['@nuxtjs/google-analytics'],
+  buildModules: ['@nuxtjs/google-analytics', '@nuxtjs/google-fonts'],
+
+  googleFonts: {
+    families: {
+      Poppins: [300, 400, 500, 600, 700],
+    },
+    display: 'swap',
+  },
+
+  googleAnalytics: {
+    id: 'UA-114457345-1',
+  },
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
