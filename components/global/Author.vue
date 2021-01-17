@@ -3,13 +3,18 @@
     <NuxtLink
       tag="div"
       :to="`/blog/author/${author.name}`"
-      class="row align-item-center mt-50 mb-50 cp"
+      class="d-flex flex-row pt-20 pb-20 cp"
     >
-      <div class="col-auto align-item-center justify-content-center">
-        <img class="author-img" :src="author.img" />
+      <div class="d-flex align-item-center justify-content-center">
+        <img
+          class="author-img justify-content-center align-items-center mr-10"
+          :src="author.img"
+        />
       </div>
-      <div class="col-auto align-item-center">
-        <h4 class="app-title fs-20">{{ author.name }}</h4>
+      <div
+        class="d-flex flex-column justify-content-start align-items-center w-100"
+      >
+        <h4 class="app-title fs-20 w-100">{{ author.name }}</h4>
         <div class="app-subtitle">{{ author.bio }}</div>
       </div>
     </NuxtLink>
@@ -30,7 +35,7 @@ export default {
 <style lang="scss">
 .author-img {
   border-radius: 100px;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
 }
 </style>
