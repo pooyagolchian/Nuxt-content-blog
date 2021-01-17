@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 p-0">
+  <div class="col-12">
     <div class="container">
       <div class="row pt-30 pb-30 justify-content-between">
         <div class="col-auto row">
