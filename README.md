@@ -5,7 +5,7 @@ I enjoyed developing and designing this project. Please star and fork it ♥️.
 
 ## Demo page (it's my real blog!)
 
-[Pooya Golchian Blog Link](https://pooyaholchian.ir)
+[Pooya Golchian Blog Link](https://pooyagolchian.ir)
 
 ## Nuxt content static generator website
 
