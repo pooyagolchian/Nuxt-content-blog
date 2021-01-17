@@ -5,8 +5,8 @@
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         style="margin: auto; display: flex"
-        width="200px"
-        height="200px"
+        width="100px"
+        height="100px"
         viewBox="0 0 100 100"
         preserveAspectRatio="xMidYMid"
       >
@@ -283,11 +283,10 @@ body {
 }
 
 .loader {
-  position: absolute;
-  background: transparent;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 100%);
-  z-index: 9999999;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 </style>
