@@ -5,17 +5,17 @@
       :to="`/blog/author/${author.name}`"
       class="d-flex flex-row pt-20 pb-20 cp"
     >
-      <div class="d-flex align-item-center justify-content-center">
+      <div class="d-flex align-items-center justify-content-center">
         <img
           class="author-img justify-content-center align-items-center mr-10"
           :src="author.img"
         />
       </div>
       <div
-        class="d-flex flex-column justify-content-start align-items-center w-100"
+        class="d-flex flex-column justify-content-center align-items-center w-100"
       >
         <h4 class="app-title fs-20 w-100">{{ author.name }}</h4>
-        <div class="app-subtitle">{{ author.bio }}</div>
+        <div class="app-subtitle w-100">{{ author.bio }}</div>
       </div>
     </NuxtLink>
   </div>
