@@ -130,3 +130,9 @@ a {
 .cp {
   cursor: pointer !important;
 }
+
+.link {
+  &:hover {
+    text-decoration: none;
+  }
+}

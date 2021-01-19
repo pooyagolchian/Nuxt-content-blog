@@ -12,8 +12,9 @@
         :key="article.slug"
       >
         <NuxtLink
-          tag="div"
+          tag="a"
           :to="{ name: 'blog-slug', params: { slug: article.slug } }"
+          class="link"
         >
           <div>
             <div

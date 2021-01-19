@@ -85,9 +85,9 @@
         :key="article.slug"
       >
         <NuxtLink
-          tag="div"
+          tag="a"
           :to="{ name: 'blog-slug', params: { slug: article.slug } }"
-          class="mb-30 cp"
+          class="mb-30 cp link"
         >
           <div class="w-100 d-flex flex-column flex-sm-column flex-md-row">
             <div class="col-12 col-sm-12 col-md-4">
@@ -120,9 +120,9 @@
           :key="article.slug"
         >
           <NuxtLink
-            tag="div"
+            tag="a"
             :to="{ name: 'blog-slug', params: { slug: article.slug } }"
-            class="cp mb-20"
+            class="cp mb-20 link"
           >
             <div>
               <div
