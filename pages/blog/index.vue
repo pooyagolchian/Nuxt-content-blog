@@ -21,7 +21,7 @@
                 background: url('${article.img}') center center no-repeat;
                 height: 200px;
                 background-size: contain;
-                width: 70%;
+                width: 100%;
                 position:relative;
                 `"
               ></div>

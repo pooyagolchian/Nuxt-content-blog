@@ -90,7 +90,7 @@
           class="mb-30 cp link"
         >
           <div class="w-100 d-flex flex-column flex-sm-column flex-md-row">
-            <div class="col-12 col-sm-12 col-md-4">
+            <div class="col-12 col-sm-12 col-md-4 text-center">
               <img
                 class="img-fluid w-75"
                 :src="article.img"
@@ -124,13 +124,13 @@
             :to="{ name: 'blog-slug', params: { slug: article.slug } }"
             class="cp mb-20 link"
           >
-            <div>
+            <div class="w-100">
               <div
                 :style="`
                 background: url('${article.img}') center center no-repeat;
                 height: 200px;
                 background-size: contain;
-                width: 70%;
+                width: 100%;
                 position:relative;
                 `"
               ></div>
