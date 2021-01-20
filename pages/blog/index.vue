@@ -18,9 +18,8 @@
             <div>
               <div
                 :style="`
-                background: url('${article.img}') center center no-repeat;
+                background: url('${article.img}') center center / contain no-repeat;
                 height: 200px;
-                background-size: contain;
                 width: 100%;
                 position:relative;
                 `"
