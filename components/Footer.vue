@@ -2,11 +2,11 @@
   <div class="col-12 pt-20 pb-20">
     <div class="container">
       <div class="row justify-content-between pt-30">
-        <div class="col-auto">
+        <div class="col-auto p-0 text-sm-center">
           <ul class="footer-social">
-            <li>
+            <li class="pl-0">
               <a
-                class="col-auto app-title font-weight-light fs-12"
+                class="col-auto pl-0 app-title font-weight-light fs-12"
                 href="https://github.com/pooyagolchian"
                 target="_blank"
               >
@@ -53,7 +53,7 @@
           </ul>
         </div>
 
-        <div class="app-subtitle fs-12 col-auto d-flex align-items-center">
+        <div class="app-subtitle fs-12 col-auto d-flex align-items-center p-0">
           Develop with ♥️ - {{ new Date().getFullYear() }}
         </div>
       </div>

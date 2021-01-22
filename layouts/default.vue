@@ -244,10 +244,11 @@
       </svg>
     </div>
     <div v-else>
-      <app-nav></app-nav>
-
-      <Nuxt />
-      <app-footer></app-footer>
+      <div>
+        <app-nav></app-nav>
+        <Nuxt />
+        <app-footer></app-footer>
+      </div>
     </div>
   </div>
 </template>
