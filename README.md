@@ -20,6 +20,7 @@ I use Nuxt content and Nuxt module to develop static (JAMSTACK) blog!
 - ✅ - Blazing fast
 - ✅ - SEO tags ready!
 - ✅ - SVG loader
+- ✅ - Github action on push
 
 ## Deploy on GH_PAGES 🪄
 
