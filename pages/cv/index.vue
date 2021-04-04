@@ -36,22 +36,23 @@
       <div class="row pt-20 justify-content-between">
         <div class="col-9 pl-0">
           <div class="cv-header">EXPERIENCE</div>
-
-          <div v-for="(item, index) in expItem" :key="index" class="pt-10">
-            <div class="font-weight-bolder fs-17">{{ item.jobTitle }}</div>
-            <div class="text-muted fs-14 font-weight-bold">
-              {{ item.company }}
-            </div>
-            <div class="row fs-12 text-muted">
-              <div class="col-auto">{{ item.date }}</div>
-              <div class="col-auto">{{ item.location }}</div>
-            </div>
-            <ul class="company-layout">
-              <li v-for="(achiveItem, index) in item.jobItem" :key="index">
-                {{ achiveItem }}
-              </li>
-            </ul>
-          </div>
+          <ul class="exp-list">
+            <li v-for="(item, index) in expItem" :key="index" class="pt-10">
+              <div class="font-weight-bolder fs-17">{{ item.jobTitle }}</div>
+              <div class="text-muted fs-14 font-weight-bold">
+                {{ item.company }}
+              </div>
+              <div class="row fs-12 text-muted">
+                <div class="col-auto">{{ item.date }}</div>
+                <div class="col-auto">{{ item.location }}</div>
+              </div>
+              <ul class="company-layout">
+                <li v-for="(achiveItem, index) in item.jobItem" :key="index">
+                  {{ achiveItem }}
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
         <div class="col-3 pr-0 flex-column">
           <div class="col-12 p-0">
@@ -238,18 +239,29 @@ export default {
   li {
     list-style: none;
     padding-bottom: 3px;
-    border-bottom: 1px #ddd solid dotted;
   }
 }
+
+.exp-list {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    padding-bottom: 3px;
+    border-bottom: 1px #ddd dotted;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
 .company-layout {
   padding: 5px 0 5px 15px;
   margin: 0;
-  border-bottom: 2px dotted #ddd;
-  &:last-child {
-    border-bottom: none;
-  }
   li {
     font-size: 12px;
+    border-bottom: none;
+    list-style: square;
   }
 }
 
