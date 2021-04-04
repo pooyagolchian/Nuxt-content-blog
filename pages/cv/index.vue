@@ -1,6 +1,6 @@
 <template>
   <div class="col-12">
-    <div class="container pt-50 pb-50">
+    <div class="cv-container pt-50 pb-50">
       <div class="row flex-column">
         <div class="font-weight-bolder fs-30 text-uppercase">
           Pooya Golchian
@@ -217,6 +217,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.cv-container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
 .cv-header {
   border-bottom: 3px solid black;
   font-weight: bolder;

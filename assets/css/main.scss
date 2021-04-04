@@ -73,55 +73,55 @@ a {
   }
 }
 
-@for $i from 1 through 100 {
+@for $i from 1 through 500 {
   .fs-#{$i} {
     font-size: $i + px !important;
   }
 }
 
-@for $i from 1 through 150 {
+@for $i from 1 through 500 {
   .pt-#{$i} {
     padding-top: $i + px !important;
   }
 }
 
-@for $i from 1 through 150 {
+@for $i from 1 through 500 {
   .pb-#{$i} {
     padding-bottom: $i + px !important;
   }
 }
 
-@for $i from 1 through 150 {
+@for $i from 1 through 500 {
   .pl-#{$i} {
     padding-left: $i + px !important;
   }
 }
 
-@for $i from 1 through 150 {
+@for $i from 1 through 500 {
   .pr-#{$i} {
     padding-right: $i + px !important;
   }
 }
 
-@for $i from 1 through 150 {
+@for $i from 1 through 500 {
   .mt-#{$i} {
     margin-top: $i + px !important;
   }
 }
 
-@for $i from 1 through 150 {
+@for $i from 1 through 500 {
   .mb-#{$i} {
     margin-bottom: $i + px !important;
   }
 }
 
-@for $i from 1 through 150 {
+@for $i from 1 through 500 {
   .ml-#{$i} {
     margin-left: $i + px !important;
   }
 }
 
-@for $i from 1 through 150 {
+@for $i from 1 through 500 {
   .mr-#{$i} {
     margin-right: $i + px !important;
   }
