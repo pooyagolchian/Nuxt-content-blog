@@ -2,7 +2,7 @@
   <div class="col-12">
     <div class="cv-container pt-50 pb-50">
       <div class="row flex-column">
-        <div class="font-weight-bolder fs-30 text-uppercase">
+        <div class="font-weight-bolder fs-35 text-uppercase">
           Pooya Golchian
         </div>
         <div class="text-muted font-weight-bolder fs-15">
@@ -38,7 +38,7 @@
           <div class="cv-header">EXPERIENCE</div>
           <ul class="exp-list">
             <li v-for="(item, index) in expItem" :key="index" class="pt-10">
-              <div class="font-weight-bolder fs-17">{{ item.jobTitle }}</div>
+              <div class="font-weight-bolder fs-20">{{ item.jobTitle }}</div>
               <div class="text-muted fs-14 font-weight-bold">
                 {{ item.company }}
               </div>
@@ -136,7 +136,7 @@ export default {
       ],
       expItem: [
         {
-          jobTitle: 'Frontend Developer',
+          jobTitle: 'Frontend Developer | DevOps Engineer',
           company: 'haftcin.com',
           date: '11/2019 - Ongoing',
           location: 'Iran,Tehran',
@@ -154,7 +154,7 @@ export default {
         {
           jobTitle: 'Frontend Developer',
           company: 'azki.com',
-          date: '09/2017 - 11/2019',
+          date: '09/2019 - 11/2019',
           location: 'Iran,Tehran',
           jobItem: [
             'Developing custom Vue.js component for Admin panel with ANT design framework',
@@ -165,9 +165,9 @@ export default {
           ],
         },
         {
-          jobTitle: 'Frontend Developer',
+          jobTitle: 'Frontend Developer | DevOps Engineer',
           company: 'ENTEKHAB Investment Development Group',
-          date: '09/2017 - 11/2019',
+          date: '09/2017 - 09/2019',
           location: 'Iran,Tehran',
           jobItem: [
             'Develop custom React.js component for local TV application and wrap with Electron.js',
@@ -184,7 +184,7 @@ export default {
         {
           jobTitle: 'Frontend Developer',
           company: 'axprint.com',
-          date: '09/2014 - 09/2015',
+          date: '09/2015 - 09/2017',
           location: 'Iran,Tehran',
           jobItem: [
             'Redesign axprint.com with JQuery and pure Javascript',
@@ -201,7 +201,7 @@ export default {
         {
           jobTitle: 'Frontend Developer',
           company: 'rayvarz.com',
-          date: '01/2013 - 08/2014',
+          date: '01/2014 - 08/2015',
           location: 'Iran,Tehran',
           jobItem: [
             'Develop 20 portal with Drupal 7',
@@ -217,6 +217,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media print {
+  .cv-container {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  @page {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  body {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .cv-container {
   width: 100%;
   max-width: 1080px;
@@ -225,7 +240,7 @@ export default {
 .cv-header {
   border-bottom: 3px solid black;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 .info-list {
