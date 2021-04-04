@@ -8,28 +8,38 @@
         <div class="text-muted font-weight-bolder fs-15">
           Software Engineer [Web & DevOps Engineer]
         </div>
-        <ul class="row fs-13 pt-15 info-list">
+        <ul class="row fs-16 pt-15 info-list">
           <li class="col-auto p-0 pr-10">
-            <span class="text-muted">Phone:</span>
+            <span class="text-muted">
+              <fa :icon="['fas', 'mobile-alt']"
+            /></span>
             +989306016111
           </li>
           <li class="col-auto p-0 pr-10">
-            <span class="text-muted">Website:</span>
+            <span class="text-muted"> <fa :icon="['fas', 'globe']" /></span>
             <a target="blank" href="https://pooyagolchian.ir">
               pooyagolchian.ir
             </a>
           </li>
           <li class="col-auto p-0 pr-10">
-            <span class="text-muted">Location:</span> Iran,Tehran
+            <span class="text-muted">
+              <fa :icon="['fas', 'map-marker-alt']" />
+            </span>
+            Iran,Tehran
           </li>
           <li class="col-auto p-0 pr-10">
-            <span class="text-muted">Email:</span> pooya.golchian@gmail.com
+            <span class="text-muted"><fa :icon="['fas', 'inbox']" /></span>
+            pooya.golchian@gmail.com
           </li>
           <li class="col-auto p-0 pr-10">
-            <span class="text-muted">Github:</span> pooyagolchian
+            <span class="text-muted"><fa :icon="['fab', 'github']" /></span>
+            pooyagolchian
           </li>
           <li class="col-auto p-0 pr-10">
-            <span class="text-muted">Linkedin:</span> pooyagolchian
+            <span class="text-muted"
+              ><span class="text-muted"><fa :icon="['fab', 'linkedin']" /></span
+            ></span>
+            pooyagolchian
           </li>
         </ul>
       </div>
@@ -100,7 +110,6 @@
 <script>
 export default {
   layout: 'resume',
-
   data() {
     return {
       skills: [
@@ -122,7 +131,7 @@ export default {
 
       education: [
         {
-          degree: 'Master of Softwar Engineering (M.SE)',
+          degree: 'Mastr of Softwar Engineering (M.SE)',
           university: 'Islamic Azad University, Karaj',
           date: '2014 - 2017',
           location: 'Iran, Karaj',

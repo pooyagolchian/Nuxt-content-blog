@@ -41,7 +41,36 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
-  buildModules: ['@nuxtjs/google-analytics', '@nuxtjs/google-fonts'],
+  buildModules: [
+    '@nuxtjs/google-analytics',
+    '@nuxtjs/google-fonts',
+    [
+      'nuxt-fontawesome',
+      {
+        component: 'fa', //customize component name
+        imports: [
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: [
+              'faLightbulb',
+              'faMapMarkerAlt',
+              'faGlobe',
+              'faMobileAlt',
+              'faInbox',
+            ],
+          },
+          {
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['faGithub', 'faLinkedin'],
+          },
+          {
+            set: '@fortawesome/free-regular-svg-icons',
+            icons: ['faLightbulb'],
+          },
+        ],
+      },
+    ],
+  ],
 
   googleFonts: {
     families: {
