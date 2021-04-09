@@ -3,7 +3,7 @@
     <div class="col-12">
       <div class="container">
         <div class="row pt-30 pb-30 justify-content-between">
-          <div class="col-auto row">
+          <div class="col-auto row justify-content-center align-items-center">
             <router-link class="cp" to="/" tag="div">
               <img
                 class="nav-logo"
@@ -68,20 +68,10 @@ export default {
       isShow: false,
     }
   },
-  watch: {
-    $route(to, from) {
-      this.isShow = false
-    },
-  },
 
   methods: {
     handleMenu() {
       this.isShow = !this.isShow
-    },
-    changeTheme() {
-      window.localStorage.clear()
-      this.$router.push('/cv')
-      window.location.reload()
     },
   },
 }
@@ -97,9 +87,13 @@ export default {
 .nav-link {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+  margin: 0 !important;
   li {
     list-style: none;
-    padding-left: 7px;
+    padding-left: 10px;
   }
 }
 
