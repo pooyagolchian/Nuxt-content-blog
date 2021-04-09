@@ -1,6 +1,6 @@
 <template>
   <div class="col-12">
-    <div class="cv-container pt-50 pb-50">
+    <div class="cv-container pt-20 pb-20">
       <div class="row flex-column">
         <div class="font-weight-bolder fs-35 text-uppercase">
           Pooya Golchian
@@ -17,7 +17,7 @@
           </li>
           <li class="col-auto p-0 pr-10">
             <span class="text-muted"> <fa :icon="['fas', 'globe']" /></span>
-            <a target="blank" href="https://pooyagolchian.ir">
+            <a target="_blank" href="https://pooyagolchian.ir">
               pooyagolchian.ir
             </a>
           </li>
@@ -33,26 +33,36 @@
           </li>
           <li class="col-auto p-0 pr-10">
             <span class="text-muted"><fa :icon="['fab', 'github']" /></span>
-            pooyagolchian
+            <a
+              href="https://github.com/pooyagolchian"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Github</a
+            >
           </li>
           <li class="col-auto p-0 pr-10">
             <span class="text-muted"
               ><span class="text-muted"><fa :icon="['fab', 'linkedin']" /></span
             ></span>
-            pooyagolchian
+            <a
+              href="https://www.linkedin.com/in/pooyagolchian/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Linkedin</a
+            >
           </li>
         </ul>
       </div>
       <div class="row pt-20 justify-content-between">
-        <div class="col-9 pl-0">
+        <div class="col-8 pl-0">
           <div class="cv-header">EXPERIENCE</div>
           <ul class="exp-list">
             <li v-for="(item, index) in expItem" :key="index" class="pt-10">
               <div class="font-weight-bolder fs-20">{{ item.jobTitle }}</div>
-              <div class="text-muted fs-14 font-weight-bold">
+              <div class="text-muted fs-16 font-weight-bold">
                 {{ item.company }}
               </div>
-              <div class="row fs-12 text-muted">
+              <div class="row fs-14 text-muted">
                 <div class="col-auto">{{ item.date }}</div>
                 <div class="col-auto">{{ item.location }}</div>
               </div>
@@ -64,11 +74,11 @@
             </li>
           </ul>
         </div>
-        <div class="col-3 pr-0 flex-column">
+        <div class="col-4 pr-0 flex-column">
           <div class="col-12 p-0">
             <div class="cv-header">LANGUAGES</div>
             <ul class="cv-item">
-              <li class="pt-10 pb-10 fs-13">
+              <li class="pt-10 pb-10 fs-15">
                 English <span class="text-muted">(Intermediate)</span>
               </li>
             </ul>
@@ -179,13 +189,13 @@ export default {
           date: '09/2017 - 09/2019',
           location: 'Iran,Tehran',
           jobItem: [
-            'Develop custom React.js component for local TV application and wrap with Electron.js',
-            'Develop a contact application with react native.',
+            'Developing custom React.js component for local TV application and wrap with Electron.js',
+            'Developing a contact application with react native.',
             'Customize Bootstap4 Sass for projects',
-            'Develop two Admin panel and back-office website with ant-design',
+            'Developing two Admin panel and back-office website with ant-design',
             'Experience with Twig, Symfony4',
             'Configure Direct Amin, Gitlab CI/CD',
-            'Develop Drupal-based newsroom and portal for some company of Entekhab holding',
+            'Developing Drupal-based newsroom and portal for some company of Entekhab holding',
             'Entekhab.com | iranef.com | iranef.com/mag | Entekhab.tv | peyeshpress.com | snowaeps.com',
           ],
         },
@@ -198,7 +208,7 @@ export default {
           jobItem: [
             'Redesign axprint.com with JQuery and pure Javascript',
             'Drupal 7 developer (Theme designer and Developer)',
-            'Develop custom mini-framework with Bourbon SCSS pre-compiler and Neat grid system',
+            'Developing custom mini-framework with Bourbon SCSS pre-compiler and Neat grid system',
             'Work with Balsamiq and Adobe illustrator.',
             'Linux server administration',
             'Build custom ES2015 modules',
@@ -213,9 +223,9 @@ export default {
           date: '01/2014 - 08/2015',
           location: 'Iran,Tehran',
           jobItem: [
-            'Develop 20 portal with Drupal 7',
-            'Develop custom components with JQuery like image slider, grid system, masonry grid system, ….',
-            'Design logo, vector, icon set for BPMS, and e-office application',
+            'Developing 20 portal with Drupal 7',
+            'Developing custom components with JQuery like image slider, grid system, masonry grid system, ….',
+            'Designing logo, vector, icon set for BPMS, and e-office application',
             'Rayvarz.com | bpms.rayvarz.com | abfa-shiraz.com | notary.ir | saham.parsian-bank.ir',
           ],
         },
@@ -288,7 +298,7 @@ export default {
   padding: 5px 0 5px 15px;
   margin: 0;
   li {
-    font-size: 12px;
+    font-size: 14px;
     border-bottom: none;
     list-style: square;
   }
@@ -303,8 +313,7 @@ export default {
     border-bottom: 1px solid #333;
     padding: 2px 2px 0 2px;
     margin: 0 9px 6px 0px;
-
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 </style>
