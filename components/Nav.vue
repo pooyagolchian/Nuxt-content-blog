@@ -32,6 +32,9 @@
               <li>
                 <router-link to="/blog">Blog</router-link>
               </li>
+              <li>
+                <router-link to="/cv"> CV </router-link>
+              </li>
             </ul>
           </div>
 
@@ -51,6 +54,7 @@
             >Blog</router-link
           >
         </li>
+
         <li class="app-title cp" @click="isShow = false">BACK TO WEBSITE</li>
       </ul>
     </div>
@@ -73,6 +77,11 @@ export default {
   methods: {
     handleMenu() {
       this.isShow = !this.isShow
+    },
+    changeTheme() {
+      window.localStorage.clear()
+      this.$router.push('/cv')
+      window.location.reload()
     },
   },
 }
