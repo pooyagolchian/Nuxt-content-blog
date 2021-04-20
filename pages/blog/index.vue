@@ -6,7 +6,7 @@
       </div>
       <div class="row pb-40 pt-40">
         <div
-          class="col-12 col-sm-12 col-md-4 mb-10 mt-10"
+          class="col-12 col-sm-12 col-md-12 mb-10 mt-10"
           v-for="article of articles"
           :key="article.slug"
         >
@@ -16,14 +16,6 @@
             class="cp link"
           >
             <div>
-              <div
-                :style="`
-                background: url('${article.img}') center center / contain no-repeat;
-                height: 200px;
-                width: 100%;
-                position:relative;
-                `"
-              ></div>
               <h2 class="app-title fs-19 font-weight-bold pt-10">
                 {{ article.title }}
               </h2>

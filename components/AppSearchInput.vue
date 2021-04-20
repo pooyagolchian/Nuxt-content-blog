@@ -11,11 +11,8 @@
       <li v-for="article of articles" :key="article.slug" class="mt-10 mb-10">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
           <div class="row">
-            <div class="col-2">
-              <img class="w-100" :src="article.img" :alt="article.title" />
-            </div>
             <div
-              class="col-10 d-flex justify-content-start align-items-center flex-column"
+              class="col-12 d-flex justify-content-start align-items-center flex-column"
             >
               <div class="d-flex w-100 fs-15">{{ article.title }}</div>
               <div class="d-flex w-100 fs-12">{{ article.date }}</div>

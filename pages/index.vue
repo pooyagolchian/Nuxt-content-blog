@@ -79,43 +79,10 @@
       <div class="col-12 p-0">
         <AppSearchInput />
       </div>
-      <div
-        class="row pt-40"
-        v-for="article of firstArticles"
-        :key="article.slug"
-      >
-        <NuxtLink
-          tag="a"
-          :to="{ name: 'blog-slug', params: { slug: article.slug } }"
-          class="mb-30 cp link"
-        >
-          <div class="w-100 d-flex flex-column flex-sm-column flex-md-row">
-            <div class="col-12 col-sm-12 col-md-4 text-center">
-              <img
-                class="img-fluid w-75"
-                :src="article.img"
-                :alt="article.alt"
-              />
-            </div>
-            <div
-              class="col-12 col-sm-12 col-md-8 d-flex justify-content-center align-items-start flex-column"
-            >
-              <h2 class="app-title fs-19 font-weight-bold pt-10">
-                {{ article.title }}
-              </h2>
-              <div class="app-subtitle fs-13">
-                {{ formatDate(article.date) }}
-              </div>
-              <div class="app-subtitle fa-15 pt-10">
-                {{ article.description }}
-              </div>
-            </div>
-          </div>
-        </NuxtLink>
-      </div>
-      <div class="row pb-40">
+
+      <div class="row pb-40 pt-40">
         <div
-          class="col-12 col-sm-12 col-md-4"
+          class="col-12 col-sm-12 col-md-12 pt-15 pb-15"
           v-for="article of articles"
           :key="article.slug"
         >
@@ -125,14 +92,6 @@
             class="cp mb-20 link"
           >
             <div class="w-100">
-              <div
-                :style="`
-                background: url('${article.img}') center center / contain no-repeat;
-                height: 200px;
-                width: 100%;
-                position:relative;
-                `"
-              ></div>
               <h2 class="app-title fs-19 font-weight-bold pt-10">
                 {{ article.title }}
               </h2>
@@ -182,17 +141,11 @@ export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
       .sortBy('date', 'desc')
-      .skip(1)
-      .fetch()
-
-    const firstArticles = await $content('articles', params.slug)
-      .sortBy('date', 'desc')
-      .limit(1)
+      .limit()
       .fetch()
 
     return {
       articles,
-      firstArticles,
     }
   },
   methods: {
