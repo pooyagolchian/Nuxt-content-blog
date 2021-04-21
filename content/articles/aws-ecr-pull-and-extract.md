@@ -1,5 +1,5 @@
 ---
-title: 'How to pull the AWS ECR docker file and extract all things in the docker image?'
+title: 'How to pull the AWS ECR docker image and extract all things in the docker image?'
 date: '2021-04-21'
 slug: 'aws-ecr-pull-and-extract'
 description: 'Useful tips to pull docker file and access to all content in it'
