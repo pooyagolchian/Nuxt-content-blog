@@ -12,6 +12,14 @@
             "author": {}
         },
         {
+            "id": "/aws-ecr-pull-and-extract",
+            "content_html": "Useful tips to pull docker file and access to all content in it",
+            "url": "/aws-ecr-pull-and-extract",
+            "title": "How to pull the AWS ECR docker file and extract all things in the docker image?",
+            "summary": "Useful tips to pull docker file and access to all content in it",
+            "author": {}
+        },
+        {
             "id": "/configure-fcm",
             "content_html": "Configuration firebase push notification with CDN",
             "url": "/configure-fcm",

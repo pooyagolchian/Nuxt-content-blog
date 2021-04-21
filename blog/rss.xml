@@ -4,7 +4,7 @@
         <title>Pooya Golchian | Software Engineer</title>
         <link></link>
         <description>I'm Frontend developer and DevOps engineer</description>
-        <lastBuildDate>Tue, 20 Apr 2021 16:05:39 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Apr 2021 17:06:49 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -13,6 +13,13 @@
             <guid>/arangodb-devops</guid>
             <description><![CDATA[I use Shell script for all steps to automate Arangodb backup and update from a to z!]]></description>
             <content:encoded><![CDATA[I use Shell script for all steps to automate Arangodb backup and update from a to z!]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How to pull the AWS ECR docker file and extract all things in the docker image?]]></title>
+            <link>/aws-ecr-pull-and-extract</link>
+            <guid>/aws-ecr-pull-and-extract</guid>
+            <description><![CDATA[Useful tips to pull docker file and access to all content in it]]></description>
+            <content:encoded><![CDATA[Useful tips to pull docker file and access to all content in it]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Configure Firebase Cloud Messaging (FCM)]]></title>
