@@ -30,6 +30,12 @@ You can run and execute a command in your docker image:
 docker run --rm -it --entrypoint=/bin/bash YOUR_DOCKER_IMAGE_URL
 ```
 
+For example:
+
+```bash
+docker run --rm -it --entrypoint=/bin/bash YOUR_DOCKER_IMAGE_URL ls -la
+```
+
 ## Extract Docker image and searching in the files
 
 ```bash
