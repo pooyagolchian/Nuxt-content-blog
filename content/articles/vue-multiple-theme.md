@@ -3,8 +3,7 @@ title: 'Vue.js multiple theme with css variable'
 date: '2021-01-17'
 slug: 'vue-multiple-theme'
 description: 'Recently, I develop a customizable npm package for the color mode in Vue.js with CSS variable.'
-img: '/img/content/vue-multiple-theme/header.svg'
-alt: 'arango-backup'
+
 author:
   name: 'Pooya Golchian'
   bio: 'Frontend developer and DevOps engineer.'

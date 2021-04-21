@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12 p-0">
           <article class="container">
-            <h1 class="app-title p-0 m-0 font-weight-bolder">
+            <h1 class="app-title p-0 m-0 font-weight-bolder pb-20">
               {{ article.title }}
             </h1>
             <p class="app-subtitle">{{ article.description }}</p>
@@ -27,11 +27,7 @@
                 </ul>
               </nav>
             </div>
-            <img
-              class="article-slug img-fluid pt-20 pb-20"
-              :src="article.img"
-              :alt="article.alt"
-            />
+
             <nuxt-content
               class="app-subtitle article-slug"
               :document="article"

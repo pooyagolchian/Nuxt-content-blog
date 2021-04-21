@@ -3,8 +3,7 @@ title: 'Configure Firebase Cloud Messaging (FCM)'
 date: '2020-04-25'
 slug: 'configure-fcm'
 description: 'Configuration firebase push notification with CDN'
-img: '/img/content/fcm/header.svg'
-alt: ''
+
 author:
   name: 'Pooya Golchian'
   bio: 'Frontend developer and DevOps engineer.'

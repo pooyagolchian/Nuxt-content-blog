@@ -3,8 +3,7 @@ title: 'Build poor mans VPN with SSH and Bitvise'
 date: '2020-05-31'
 slug: 'ssh-tunnel'
 description: 'When you have a server and you want to have a VPN on the server. You can use this method. The following concepts are required to install.'
-img: '/img/content/ssh-tunnel/header.svg'
-alt: ''
+
 author:
   name: 'Pooya Golchian'
   bio: 'Frontend developer and DevOps engineer.'
