@@ -4,7 +4,7 @@
       <div class="col-12 p-0">
         <AppSearchInput />
       </div>
-      <div class="row pb-40 pt-40">
+      <div class="row pb-20 pt-20">
         <div
           class="col-12 col-sm-12 col-md-12 mb-10 mt-10"
           v-for="article of articles"
