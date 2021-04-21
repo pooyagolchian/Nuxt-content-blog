@@ -4,7 +4,7 @@
         <title>Pooya Golchian | Software Engineer</title>
         <link></link>
         <description>I'm Frontend developer and DevOps engineer</description>
-        <lastBuildDate>Wed, 21 Apr 2021 17:13:59 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 21 Apr 2021 17:14:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -15,7 +15,7 @@
             <content:encoded><![CDATA[I use Shell script for all steps to automate Arangodb backup and update from a to z!]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[How to pull the AWS ECR docker file and extract all things in the docker image?]]></title>
+            <title><![CDATA[How to pull the AWS ECR docker image and extract all things in the docker image?]]></title>
             <link>/aws-ecr-pull-and-extract</link>
             <guid>/aws-ecr-pull-and-extract</guid>
             <description><![CDATA[Useful tips to pull docker file and access to all content in it]]></description>
