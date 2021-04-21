@@ -6,7 +6,7 @@
           Pooya Golchian
         </div>
         <div class="text-muted font-weight-bolder fs-15">
-          Software Engineer [Web & DevOps Engineer]
+          Frontend develoepr | DevOps Engineer
         </div>
         <ul class="row fs-16 pt-15 info-list">
           <li class="col-auto p-0 pr-10">
@@ -135,8 +135,10 @@ export default {
         'Shell script',
         'AWS',
         'Github Action',
+        'Gitlab CI',
         'Express.js',
         'MongoDB',
+        'Docker',
       ],
 
       education: [
