@@ -223,7 +223,7 @@ export default {
           location: 'Iran,Tehran',
           jobItem: [
             'Developing 20 portal with Drupal 7',
-            'Developing custom components with JQuery like image slider, grid system, masonry grid system, ….',
+            'Developing custom components with JQuery like image slider, grid system, masonry grid system.',
             'Designing logo, vector, icon set for BPMS, and e-office application',
           ],
         },
