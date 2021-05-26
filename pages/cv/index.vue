@@ -5,9 +5,7 @@
         <div class="font-weight-bolder fs-35 text-uppercase">
           Pooya Golchian
         </div>
-        <div class="text-muted font-weight-bolder fs-15">
-          Frontend develoepr | DevOps Engineer
-        </div>
+        <div class="text-muted font-weight-bolder fs-15">DevOps Engineer</div>
         <ul class="row fs-16 pt-15 info-list">
           <li class="col-auto p-0 pr-10">
             <span class="text-muted">
@@ -124,9 +122,15 @@ export default {
     return {
       skills: [
         'Git',
-        'Linux',
+        'Git-flow',
+        'Git-hook',
+        'Linux Ubuntu',
+        'Linux Fedora',
         'Shell script',
+        'Heroku',
         'AWS',
+        'AWS EC2',
+        'AWS ECS',
         'Github Action',
         'Gitlab CI',
         'Express.js',
@@ -137,6 +141,9 @@ export default {
         'LPIC1',
         'LPIC2',
         'Docker',
+        'Zabbix',
+        'Grafana',
+        'Networking, Security, Protocols',
         'Vue.js',
         'Nuxt.js',
         'Javascript',
@@ -266,8 +273,8 @@ export default {
     margin: 0 auto;
   }
   @page {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   body {
     padding-top: 50px;
