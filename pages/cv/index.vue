@@ -123,13 +123,6 @@ export default {
   data() {
     return {
       skills: [
-        'Vue.js',
-        'Nuxt.js',
-        'Javascript',
-        'Typescript',
-        'React',
-        'Redux',
-        'Next.js',
         'Git',
         'Linux',
         'Shell script',
@@ -138,7 +131,19 @@ export default {
         'Gitlab CI',
         'Express.js',
         'MongoDB',
+        'ArangoDB',
+        'TCP/IP',
+        'Python',
+        'LPIC1',
+        'LPIC2',
         'Docker',
+        'Vue.js',
+        'Nuxt.js',
+        'Javascript',
+        'Typescript',
+        'React',
+        'Redux',
+        'Next.js',
       ],
 
       education: [
@@ -157,18 +162,28 @@ export default {
       ],
       expItem: [
         {
-          jobTitle: 'Frontend Developer | DevOps Engineer',
+          jobTitle: 'DevOps Engineer',
           company: 'haftcin.com',
-          date: '11/2019 - Ongoing',
+          date: '1/2020 - 5/2020',
+          location: 'Iran,Tehran',
+          jobItem: [
+            'Building with S3 and use AWS API CLI for automatic backup',
+            'Working with Arango DB, Mongo DB (Backup, Restore, Maintenance)',
+            'Developing custom Webpack configuration with Vue.js for Dotnet core.',
+            'Dockerizing all applications and configure Github Action and use ECS.',
+            'Building private DNS solution with Wireguard, Shadowsocks R',
+          ],
+        },
+
+        {
+          jobTitle: 'Frontend Developer',
+          company: 'haftcin.com',
+          date: '11/2019 - 1/2020',
           location: 'Iran,Tehran',
           jobItem: [
             'Developing custom Vue.js component.',
             'Developing a custom grid system with Flex-Box and CSS-Grid',
             'Developing 10 Admin panel and back-office website with ant-design, Element UI, Vutify',
-            'Building with S3 and use AWS API CLI for automatic backup',
-            'Working with Arango DB (Backup, Restore, Maintenance)',
-            'Developing custom Webpack configuration with Vue.js for Dotnet core.',
-            'Dockerizing all applications and configure Github Action and use ECS.',
           ],
         },
         {
@@ -184,10 +199,21 @@ export default {
             'Developing a website with the Laravel Blade template engine and JQuery. (ES6, Modules, Webpack, LARAVEL Mix)',
           ],
         },
+
         {
-          jobTitle: 'Frontend Developer | DevOps Engineer',
+          jobTitle: ' DevOps Engineer',
           company: 'ENTEKHAB Investment Development Group',
-          date: '09/2017 - 09/2019',
+          date: '09/2018 - 09/2019',
+          location: 'Iran,Tehran',
+          jobItem: [
+            'Configure Direct Admin, Gitlab CI, Ansible, Rabbitmq, Jenkins ',
+            'Configure Grafana, Zabbix',
+          ],
+        },
+        {
+          jobTitle: 'Frontend Developer',
+          company: 'ENTEKHAB Investment Development Group',
+          date: '09/2017 - 09/2018',
           location: 'Iran,Tehran',
           jobItem: [
             'Developing custom React.js component for local TV application and wrap with Electron.js',
@@ -195,7 +221,6 @@ export default {
             'Customize Bootstap4 Sass for projects',
             'Developing two Admin panel and back-office website with ant-design',
             'Experience with Twig, Symfony4',
-            'Configure Direct Amin, Gitlab CI, Ansible',
             'Developing Drupal-based newsroom and portal for some company of Entekhab holding',
           ],
         },
