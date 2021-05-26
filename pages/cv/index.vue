@@ -136,6 +136,7 @@ export default {
         'Express.js',
         'MongoDB',
         'ArangoDB',
+        'Wireguard',
         'TCP/IP',
         'Python',
         'LPIC1',
@@ -176,7 +177,6 @@ export default {
           jobItem: [
             'Building with S3 and use AWS API CLI for automatic backup',
             'Working with Arango DB, Mongo DB (Backup, Restore, Maintenance)',
-            'Developing custom Webpack configuration with Vue.js for Dotnet core.',
             'Dockerizing all applications and configure Github Action and use ECS.',
             'Building private DNS solution with Wireguard, Shadowsocks R',
           ],
@@ -190,6 +190,7 @@ export default {
           jobItem: [
             'Developing custom Vue.js component.',
             'Developing a custom grid system with Flex-Box and CSS-Grid',
+            'Developing custom Webpack configuration with Vue.js for Dotnet core.',
             'Developing 10 Admin panel and back-office website with ant-design, Element UI, Vutify',
           ],
         },
