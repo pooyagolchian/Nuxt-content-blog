@@ -5,7 +5,9 @@
         <div class="font-weight-bolder fs-35 text-uppercase">
           Pooya Golchian
         </div>
-        <div class="text-muted font-weight-bolder fs-15">Frontend Developer | DevOps Engineer</div>
+        <div class="text-muted font-weight-bolder fs-15">
+          Frontend Developer | DevOps Engineer
+        </div>
         <ul class="row fs-16 pt-15 info-list">
           <li class="col-auto p-0 pr-10">
             <span class="text-muted">
@@ -175,7 +177,7 @@ export default {
           date: '1/2020 - 5/2020',
           location: 'Iran,Tehran',
           jobItem: [
-            'Building with S3 and use AWS API CLI for automatic backup',
+            'Building automatic backup with S3, Bash, Linux systemd',
             'Working with Arango DB, Mongo DB (Backup, Restore, Maintenance)',
             'Dockerizing all applications and configure Github Action and use ECS.',
             'Building private DNS solution with Wireguard, Shadowsocks R',
