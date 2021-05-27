@@ -6,7 +6,7 @@
           Pooya Golchian
         </div>
         <div class="text-muted font-weight-bolder fs-15">
-          Frontend Developer | DevOps Engineer
+          DevOps Engineer | Ex-frontend-developer
         </div>
         <ul class="row fs-16 pt-15 info-list">
           <li class="col-auto p-0 pr-10">
@@ -144,6 +144,7 @@ export default {
         'LPIC1',
         'LPIC2',
         'Docker',
+        'Kubernetes',
         'Zabbix',
         'Grafana',
         'Networking, Security, Protocols',
@@ -153,7 +154,6 @@ export default {
         'Typescript',
         'React',
         'Redux',
-        'Next.js',
       ],
 
       education: [
@@ -199,7 +199,7 @@ export default {
         {
           jobTitle: 'Frontend Developer',
           company: 'azki.com',
-          date: '09/2019 - 11/2019',
+          date: '06/2019 - 11/2019',
           location: 'Iran,Tehran',
           jobItem: [
             'Developing custom Vue.js component for Admin panel with ANT design framework',
@@ -213,7 +213,7 @@ export default {
         {
           jobTitle: ' DevOps Engineer',
           company: 'ENTEKHAB Investment Development Group',
-          date: '09/2018 - 09/2019',
+          date: '09/2018 - 06/2019',
           location: 'Iran,Tehran',
           jobItem: [
             'Configure Direct Admin, Gitlab CI, Ansible, Rabbitmq, Jenkins ',
