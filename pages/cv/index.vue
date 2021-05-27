@@ -5,9 +5,7 @@
         <div class="font-weight-bolder fs-35 text-uppercase">
           Pooya Golchian
         </div>
-        <div class="text-muted font-weight-bolder fs-15">
-          DevOps Engineer | Ex-frontend-developer
-        </div>
+        <div class="text-muted font-weight-bolder fs-15">Frontend Engineer</div>
         <ul class="row fs-16 pt-15 info-list">
           <li class="col-auto p-0 pr-10">
             <span class="text-muted">
@@ -57,15 +55,11 @@
       <div class="row pt-10">
         <div class="cv-header col-12 p-0">About</div>
         <p class="pt-20 text-justify">
-          I'm an ex-frontend developer who has been changing his way to DevOps.
-          I passionate about DevOps tools and workflow. I have +7 years of
-          experience with Linux tools and servers. Recently I worked with AWS
-          tools and Github action. I have comprehensive experience with EC2 and
-          AWS VM and TCP/IP tools. I made a private DNS solution with Wireguard
-          and Shadowsocks. I'm so enthusiastic to work with a team that uses
-          high-tech and best practices in DevOps. I am actively looking for a
-          new opportunity in a DevOps job. I have some experience in Docker,
-          Kubernetes, Ansible, Bash Script, and Jenkins.
+          I am a frontend developer who curious about clean code. I am so
+          enthusiastic about javascript and frontend technology. I have good
+          knowledge of Linux and Operating systems. One of my hubbies is
+          Opensource contributing and use them in the application. I love Vue.js
+          and React.js.
         </p>
       </div>
 
