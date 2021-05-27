@@ -53,7 +53,23 @@
           </li>
         </ul>
       </div>
-      <div class="row pt-20 justify-content-between">
+
+      <div class="row pt-10">
+        <div class="cv-header col-12 p-0">About</div>
+        <p class="pt-20 text-justify">
+          I'm an ex-frontend developer who has been changing his way to DevOps.
+          I passionate about DevOps tools and workflow. I have +7 years of
+          experience with Linux tools and servers. Recently I worked with AWS
+          tools and Github action. I have comprehensive experience with EC2 and
+          AWS VM and TCP/IP tools. I made a private DNS solution with Wireguard
+          and Shadowsocks. I'm so enthusiastic to work with a team that uses
+          high-tech and best practices in DevOps. I am actively looking for a
+          new opportunity in a DevOps job. I have some experience in Docker,
+          Kubernetes, Ansible, Bash Script, and Jenkins.
+        </p>
+      </div>
+
+      <div class="row pt-10 justify-content-between">
         <div class="col-8 pl-0">
           <div class="cv-header">EXPERIENCE</div>
           <ul class="exp-list">
