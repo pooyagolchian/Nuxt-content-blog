@@ -59,7 +59,10 @@
           enthusiastic about javascript and frontend technology. I have good
           knowledge of Linux and Operating systems. One of my hubbies is
           Opensource contributing and use them in the application. I love Vue.js
-          and React.js.
+          and React.js. I worked as a Vue.js developer for 2 years and a
+          React.js developer for 1 year. I learned a React.js new feature like
+          React Hook, etc. I want to work with a team that beliefs in clean code
+          and test. I am a fast learner and curious about high-tech stuff.
         </p>
       </div>
 
@@ -133,6 +136,12 @@ export default {
   data() {
     return {
       skills: [
+        'Vue.js',
+        'Nuxt.js',
+        'Javascript',
+        'Typescript',
+        'React',
+        'Redux',
         'Git',
         'Git-flow',
         'Git-hook',
@@ -149,15 +158,8 @@ export default {
         'Wireguard',
         'TCP/IP',
         'LPIC1,2',
-        'LPIC2',
         'Docker',
         'Kubernetes',
-        'Vue.js',
-        'Nuxt.js',
-        'Javascript',
-        'Typescript',
-        'React',
-        'Redux',
       ],
 
       education: [
@@ -178,7 +180,7 @@ export default {
         {
           jobTitle: 'DevOps Engineer',
           company: 'haftcin.com',
-          date: '1/2020 - 5/2020',
+          date: '3/2021 - 5/2021',
           location: 'Iran,Tehran',
           jobItem: [
             'Building automatic backup with S3, Bash, Linux systemd',
@@ -191,7 +193,7 @@ export default {
         {
           jobTitle: 'Frontend Developer',
           company: 'haftcin.com',
-          date: '11/2019 - 1/2020',
+          date: '11/2019 - 3/2021',
           location: 'Iran,Tehran',
           jobItem: [
             'Developing custom Vue.js component.',
