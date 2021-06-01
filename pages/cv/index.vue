@@ -93,8 +93,11 @@
           <div class="col-12 p-0">
             <div class="cv-header">LANGUAGES</div>
             <ul class="cv-item">
-              <li class="pt-10 pb-10 fs-15">
+              <li class="pt-10 fs-15">
                 English <span class="text-muted">(Intermediate)</span>
+              </li>
+              <li class="pb-5 fs-15">
+                Persian <span class="text-muted">(Native)</span>
               </li>
             </ul>
           </div>
@@ -259,7 +262,7 @@ export default {
             'Redesigned & built new Axprint.com, OO SCSS & reduce the size of CSS to 50K, and built a Modular page',
             'Built fully customizable modern blog and website theme for Drupal7',
             'Built marketing landing pages A to Z like Referral, etc. Analytics and help to selling team',
-            'Built automated tasks for printer and server task batch script for print workflow job definition format (JDF)',
+            'Built automated tasks for printer and server task batch script for print workflow JDF (Job Definition Format)',
             'Experience with pure javascript (OOP, Modules, ES6) and build reusable modules',
             'Developed customer grid system with the Bourbon preprocessor Sass framework',
           ],
