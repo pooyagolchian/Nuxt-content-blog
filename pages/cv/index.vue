@@ -5,7 +5,9 @@
         <div class="font-weight-bolder fs-35 text-uppercase">
           Pooya Golchian
         </div>
-        <div class="text-muted font-weight-bolder fs-15">Frontend Engineer</div>
+        <div class="text-muted font-weight-bolder fs-15">
+          Frontend Engineer | DevOps Engineer | Linux server administrator
+        </div>
         <ul class="row fs-16 pt-15 info-list">
           <li class="col-auto p-0 pr-10">
             <span class="text-muted">
@@ -58,8 +60,8 @@
           I am a frontend developer who curious about clean code. I am so
           enthusiastic about javascript and frontend technology. I have good
           knowledge of Linux and Operating systems. One of my hubbies is
-          Opensource contributing and use them in the application. I love Vue.js
-          and React.js. I worked as a Vue.js developer for 3 years and a
+          open-source contributing and use them in the application. I love
+          Vue.js and React.js. I worked as a Vue.js developer for 3 years and a
           React.js developer for 1 year. I learned a React.js new feature like
           React Hook, etc. I want to work with a team that beliefs in clean code
           and test. I am a fast learner and curious about high-tech stuff. I've
