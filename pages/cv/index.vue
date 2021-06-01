@@ -59,10 +59,12 @@
           enthusiastic about javascript and frontend technology. I have good
           knowledge of Linux and Operating systems. One of my hubbies is
           Opensource contributing and use them in the application. I love Vue.js
-          and React.js. I worked as a Vue.js developer for 2 years and a
+          and React.js. I worked as a Vue.js developer for 3 years and a
           React.js developer for 1 year. I learned a React.js new feature like
           React Hook, etc. I want to work with a team that beliefs in clean code
-          and test. I am a fast learner and curious about high-tech stuff.
+          and test. I am a fast learner and curious about high-tech stuff. I've
+          been worked as a web developer since 2012. My first struggle in this
+          field is related to Drupal.
         </p>
       </div>
 
@@ -183,10 +185,10 @@ export default {
           date: '3/2021 - 5/2021',
           location: 'Iran,Tehran',
           jobItem: [
-            'Building automatic backup with S3, Bash, Linux systemd',
-            'Working with Arango DB, Mongo DB (Backup, Restore, Maintenance)',
-            'Dockerizing all applications and configure Github Action and use ECS.',
-            'Building private DNS solution with Wireguard, Shadowsocks R',
+            'Built automatic backup with S3, Bash, Linux systemd',
+            'Worked with Arango DB, Mongo DB (Backup, Restore, Maintenance)',
+            'Dockerized all applications and configure Github Action and use ECS.',
+            'Built private DNS solution with Wireguard, Shadowsocks R',
           ],
         },
 
@@ -196,10 +198,10 @@ export default {
           date: '11/2019 - 3/2021',
           location: 'Iran,Tehran',
           jobItem: [
-            'Developing custom Vue.js component.',
-            'Developing a custom grid system with Flex-Box and CSS-Grid',
-            'Developing custom Webpack configuration with Vue.js for Dotnet core.',
-            'Developing 10 Admin panel and back-office website with ant-design, Element UI, Vutify',
+            'Developed custom Vue.js component.',
+            'Developed a custom grid system with Flex-Box and CSS-Grid',
+            'Developed custom Webpack configuration with Vue.js for Dotnet core.',
+            'Developed 10 Admin panel and back-office website with ant-design, Element UI, Vutify',
           ],
         },
         {
@@ -208,11 +210,11 @@ export default {
           date: '06/2019 - 11/2019',
           location: 'Iran,Tehran',
           jobItem: [
-            'Developing custom Vue.js component for Admin panel with ANT design framework',
-            'Developing custom mini UI framework with bootstrap4',
-            'Developing 2 Admin panel and back-office website with ANT design',
-            'Developing and fix in open-source projects like ant-design (Date picker filter in data table)',
-            'Developing a website with the Laravel Blade template engine and JQuery. (ES6, Modules, Webpack, LARAVEL Mix)',
+            'Developed custom Vue.js component for Admin panel with ANT design framework',
+            'Developed custom mini UI framework with bootstrap4',
+            'Developed 2 Admin panel and back-office website with ANT design',
+            'Developed and fix in open-source projects like ant-design (Date picker filter in data table)',
+            'Developed a website with the Laravel Blade template engine and JQuery. (ES6, Modules, Webpack, LARAVEL Mix)',
           ],
         },
 
@@ -222,8 +224,8 @@ export default {
           date: '09/2018 - 06/2019',
           location: 'Iran,Tehran',
           jobItem: [
-            'Configure Direct Admin, Gitlab CI, Ansible, Rabbitmq, Jenkins ',
-            'Configure Grafana, Zabbix',
+            'Configured Direct Admin, Gitlab CI, Ansible, Rabbitmq, Jenkins ',
+            'Configured Grafana, Zabbix',
           ],
         },
         {
@@ -232,46 +234,48 @@ export default {
           date: '09/2017 - 09/2018',
           location: 'Iran,Tehran',
           jobItem: [
-            'Developing custom React.js component for local TV application and wrap with Electron.js',
-            'Developing a contact application with react native.',
-            'Customize Bootstap4 Sass for projects',
-            'Developing two Admin panel and back-office website with ant-design',
-            'Experience with Twig, Symfony4',
-            'Developing Drupal-based newsroom and portal for some company of Entekhab holding',
+            'Developed custom React.js component for local TV application and wrap with Electron.js',
+            'Developed a contact application with react native.',
+            'Customized Bootstap4 Sass for projects',
+            'Developed two Admin panel and back-office website with ant-design',
+            'Worked with Twig, Symfony4',
+            'Developed Drupal-based newsroom and portal for some company of Entekhab holding',
           ],
         },
 
         {
-          jobTitle: 'Frontend Developer',
+          jobTitle: 'Web Developer',
           company: 'axprint.com',
           date: '09/2015 - 09/2017',
           location: 'Iran,Tehran',
           jobItem: [
-            'Redesign axprint.com with JQuery and pure Javascript',
+            'Redesigned axprint.com with JQuery and pure Javascript',
             'Drupal 7 developer (Theme designer and Developer)',
-            'Developing custom mini-framework with Bourbon SCSS pre-compiler and Neat grid system',
-            'Work with Balsamiq and Adobe illustrator.',
+            'Used Drupal 7 as Headless CMS',
+            'Develoved custom mini-framework with Bourbon SCSS pre-compiler and Neat grid system',
+            'Worked with Balsamiq and Adobe illustrator.',
             'Linux server administration',
-            'Build custom ES2015 modules',
-            'Refactor Axprint.com with React.js',
+            'Built custom ES2015 modules',
           ],
         },
 
         {
-          jobTitle: 'Frontend Developer',
+          jobTitle: 'Drupal Developer',
           company: 'rayvarz.com',
           date: '01/2014 - 08/2015',
           location: 'Iran,Tehran',
           jobItem: [
-            'Developing 20 portal with Drupal 7',
-            'Developing custom components with JQuery like image slider, grid system, masonry grid system.',
-            'Designing logo, vector, icon set for BPMS, and e-office application',
+            'Developed 20 portal with Drupal 7',
+            'Developed custom components with JQuery like image slider, grid system, masonry grid system.',
+            'Designed logo, vector, icon set for BPMS, and e-office application',
+            'Worked with SVN, Git',
+            'Worked with Debian server',
           ],
         },
       ],
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
