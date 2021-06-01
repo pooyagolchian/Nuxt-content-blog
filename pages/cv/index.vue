@@ -144,6 +144,8 @@ export default {
         'Typescript',
         'React',
         'Redux',
+        'Headless CMS',
+        'JAM stack',
         'Git',
         'Git-flow',
         'Git-hook',
