@@ -273,7 +273,7 @@ export default {
             'Built Drupal7 portal & website for banking and government customer.',
             'Designed pixel-perfect PSD, Logo design, Booklet design with Adobe InDesign.',
             'Built Mobile-first and responsive html5 website and landing pages.',
-            'Customize Boostrap V2 with less.',
+            'Customized Boostrap2 with less.',
             'Developed Drupal theme with bootstrap3.',
             'Developed custom Drupal modules.',
             'Built headless with Service modules in drupal7.',
