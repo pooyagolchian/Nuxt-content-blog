@@ -94,10 +94,10 @@
             <div class="cv-header">LANGUAGES</div>
             <ul class="cv-item">
               <li class="pt-10 fs-15">
-                English <span class="text-muted">(Intermediate)</span>
+                English <span class="text-muted fs-12">(Intermediate)</span>
               </li>
               <li class="pb-5 fs-15">
-                Persian <span class="text-muted">(Native)</span>
+                Persian <span class="text-muted fs-12">(Native)</span>
               </li>
             </ul>
           </div>
