@@ -192,6 +192,7 @@ export default {
             'Dockerized all applications and configure Github Action and use ECS',
             'Built private DNS solution with Wireguard, Shadowsocks R',
             'Configure Ansible for EC2',
+            'Built poor-mans-VPN',
           ],
         },
 
