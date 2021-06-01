@@ -20,7 +20,8 @@
           <ul
             class="p-0 m-0 d-flex justify-content-center align-items-start flex-column flex-1 w-100 app-subtitle"
           >
-            <li>Frontend Developer (Vue.js/React.js)</li>
+            <li>Frontend Engineer (Vue.js/React.js)</li>
+            <li>DevOps Engineer and Linux Server Engineer</li>
             <li>Code, Coffee, Crypto</li>
           </ul>
           <ul class="footer-social d-flex flex-start w-100 pt-10">
@@ -140,19 +141,19 @@ export default {
     const articles = await $content('articles', params.slug)
       .sortBy('date', 'desc')
       .limit()
-      .fetch()
+      .fetch();
 
     return {
       articles,
-    }
+    };
   },
   methods: {
     formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      return new Date(date).toLocaleDateString('en', options);
     },
   },
-}
+};
 </script>
 
 <style lang="scss"></style>
