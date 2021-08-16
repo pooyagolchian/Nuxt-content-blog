@@ -17,8 +17,8 @@
           </li>
           <li class="col-auto p-0 pr-10">
             <span class="text-muted"> <fa :icon="['fas', 'globe']" /></span>
-            <a target="_blank" href="https://pooyagolchian.ir">
-              pooyagolchian.ir
+            <a target="_blank" href="http://pooyagolchian.com">
+              pooyagolchian.com
             </a>
           </li>
           <li class="col-auto p-0 pr-10">

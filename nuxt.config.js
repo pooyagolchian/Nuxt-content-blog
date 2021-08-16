@@ -20,7 +20,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://pooyagolchian.ir',
+        content: 'http://pooyagolchian.com',
       },
       {
         hid: 'og:title',

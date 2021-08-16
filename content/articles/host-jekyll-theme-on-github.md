@@ -16,7 +16,7 @@ author:
 2. To do this, open your favourite text editor and type yout custom domain.
 
 ```
-www.pooyagolchian.ir
+www.pooyagolchian.com
 ```
 
 3. Go to your [CloudFlare account](https://www.cloudflare.com/)
