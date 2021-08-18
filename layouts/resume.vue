@@ -1,17 +1,23 @@
 <template>
-  <div>
+  <div class="bg-white">
     <Nuxt />
   </div>
 </template>
 
-<script>
-export default {
-  mounted() {
-    console.log(window.localStorage)
-    if (window.localStorage.length > 0) {
-      window.localStorage.clear()
-      window.location.reload()
-    }
-  },
+<style lang="scss" scoped>
+body {
+  background: white !important;
+  background-color: white !important;
+  color: black !important;
+  
 }
-</script>
+
+a { 
+  color: black !important;
+  text-decoration: none !important;
+  &:hover {
+    color: black !important;
+    text-decoration: none !important;
+  }
+}
+</style>
