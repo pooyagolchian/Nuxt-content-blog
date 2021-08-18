@@ -1,3 +1,17 @@
+<template>
+  <div class="vue-multiple-themes">
+    <span v-if="changeThemeOff" class="change-theme-box" @click="changeTheme()">
+            <div v-if="themeName === 'light'">
+              <img class="theme-icon" src="/img/icon/sun.svg" alt="sun-icon">
+            </div>
+            <div v-if="themeName === 'dark'">
+              <img class="theme-icon" src="/img/icon/moon.svg" alt="moon-icon">
+            </div>
+    </span>
+  </div>
+</template>
+
+
 <script>
 export default {
   name: 'ChangeTheme',
@@ -7,7 +21,7 @@ export default {
       type: String,
     },
     themeColorList: {
-      default: ['light', 'dark', 'sepia', 'black', 'coffee', 'rose'],
+      default: ['light', 'dark'],
       type: Array,
     },
     changeThemeOff: {
@@ -65,10 +79,4 @@ export default {
 }
 </script>
 
-<template>
-  <div class="vue-multiple-themes">
-    <span v-if="changeThemeOff" class="change-theme-box" @click="changeTheme()">
-      {{ themeName }}
-    </span>
-  </div>
-</template>
+

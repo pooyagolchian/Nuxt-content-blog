@@ -4,23 +4,11 @@
       <div class="container">
         <div class="row pt-30 pb-30 justify-content-between">
           <div class="col-auto row justify-content-center align-items-center">
-            <router-link class="cp" to="/" tag="div">
-              <img
-                class="nav-logo"
-                src="/img/avatar/pooya-golchian.jpg"
-                alt="Logo"
-              />
-            </router-link>
-
             <change-theme
               :defaultTheme="'light'"
               :themeColorList="[
                 'light',
-                'dark',
-                'sepia',
-                'black',
-                'coffee',
-                'rose',
+                'dark'
               ]"
               :changeThemeOff="true"
               class="

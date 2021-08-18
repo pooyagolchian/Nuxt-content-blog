@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-auto app-title font-weight-bolder fs-20 cp">
-          <router-link tag="div" to="/"> Pooya Golchian </router-link>
+          <nuxt-link tag="div" to="/"> Pooya Golchian </nuxt-link>
           <div
             class="col-auto fs-14 font-weight-light d-flex justify-content-center align-items-center cp"
           >
@@ -12,10 +12,6 @@
               :themeColorList="[
                 'light',
                 'dark',
-                'sepia',
-                'black',
-                'coffee',
-                'rose',
               ]"
               :changeThemeOff="true"
             ></change-theme>
