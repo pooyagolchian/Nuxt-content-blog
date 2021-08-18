@@ -4,6 +4,14 @@
       <div class="container">
         <div class="row pt-30 pb-30 justify-content-between">
           <div class="col-auto row justify-content-center align-items-center">
+            <nuxt-link class="cp pr-5" to="/" tag="div">
+              <img
+                class="nav-logo"
+                src="/img/avatar/pooya-golchian.jpg"
+                alt="Logo"
+              />
+            </nuxt-link>
+
             <change-theme
               :defaultTheme="'light'"
               :themeColorList="[
