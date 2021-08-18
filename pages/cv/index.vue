@@ -192,7 +192,7 @@ export default {
          {
           jobTitle: 'Senior Frontend Developer',
           company: 'azkivam.com',
-          date: '3/2021 - NOW',
+          date: '5/2021 - NOW',
           location: 'Iran,Tehran',
           jobItem: [
             'Built panel.azkivam.com with Nuxt.js',
