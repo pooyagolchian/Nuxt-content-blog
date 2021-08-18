@@ -1,9 +1,11 @@
 <template>
   <div class="col-12">
-    <div class="cv-container pt-20 pb-20">
+    <div class="cv-container">
       <div class="row flex-column">
         <div class="font-weight-bolder fs-35 text-uppercase">
+           <nuxt-link to="/"> 
           Pooya Golchian
+           </nuxt-link>
         </div>
         <div class="text-muted font-weight-bolder fs-15">
           Frontend Engineer | DevOps Engineer | Linux server administrator
@@ -17,9 +19,10 @@
           </li>
           <li class="col-auto p-0 pr-10">
             <span class="text-muted"> <fa :icon="['fas', 'globe']" /></span>
-            <a target="_blank" href="http://pooyagolchian.com">
-              pooyagolchian.com
-            </a>
+            
+          <nuxt-link to="/"> 
+            pooyagolchian.com
+          </nuxt-link>
           </li>
           <li class="col-auto p-0 pr-10">
             <span class="text-muted">
@@ -71,7 +74,7 @@
       </div>
 
       <div class="row pt-10 justify-content-between">
-        <div class="col-8 pl-0">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-8 pl-0">
           <div class="cv-header">EXPERIENCE</div>
           <ul class="exp-list">
             <li v-for="(item, index) in expItem" :key="index" class="pt-10">
@@ -91,7 +94,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-4 pr-0 flex-column">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 pr-0 flex-column">
           <div class="col-12 p-0">
             <div class="cv-header">LANGUAGES</div>
             <ul class="cv-item">
@@ -186,6 +189,17 @@ export default {
         },
       ],
       expItem: [
+         {
+          jobTitle: 'Senior Frontend Developer',
+          company: 'azkivam.com',
+          date: '3/2021 - NOW',
+          location: 'Iran,Tehran',
+          jobItem: [
+            'Built panel.azkivam.com with Nuxt.js',
+            'Built azkivam.com with Nuxt.js',
+            'Built dynamic form builder for Cummunda BPMS',  
+          ],
+        },
         {
           jobTitle: 'DevOps Engineer',
           company: 'haftcin.com',
@@ -202,7 +216,7 @@ export default {
         },
 
         {
-          jobTitle: 'Frontend Developer',
+          jobTitle: 'Senior Frontend Developer',
           company: 'haftcin.com',
           date: '11/2019 - 3/2021',
           location: 'Iran,Tehran',
@@ -217,7 +231,7 @@ export default {
           ],
         },
         {
-          jobTitle: 'Frontend Developer',
+          jobTitle: 'Senior Frontend Developer',
           company: 'azki.com',
           date: '06/2019 - 11/2019',
           location: 'Iran,Tehran',
@@ -256,7 +270,7 @@ export default {
         },
 
         {
-          jobTitle: 'Web Developer',
+          jobTitle: 'Frontend Developer | Drupal Developer',
           company: 'axprint.com',
           date: '09/2015 - 09/2017',
           location: 'Iran,Tehran',
@@ -296,6 +310,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+body {
+  overflow: hidden;
+}
+
+a {
+  color: black !important;
+  &:hover {
+    text-decoration: none !important;
+    color: black !important;
+  }
+}
+
 @media print {
   .cv-container {
     width: 100%;
@@ -313,8 +339,9 @@ export default {
 }
 .cv-container {
   width: 100%;
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 .cv-header {
   border-bottom: 3px solid black;

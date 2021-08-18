@@ -23,7 +23,15 @@
                 'rose',
               ]"
               :changeThemeOff="true"
-              class="fs-14 font-weight-light mr-10 ml-10 d-flex justify-content-center align-items-center"
+              class="
+                fs-14
+                font-weight-light
+                mr-10
+                ml-10
+                d-flex
+                justify-content-center
+                align-items-center
+              "
             ></change-theme>
           </div>
 
@@ -54,6 +62,9 @@
             >Blog</router-link
           >
         </li>
+        <li>
+          <router-link to="/cv"> CV </router-link>
+        </li>
 
         <li class="app-title cp" @click="isShow = false">BACK TO WEBSITE</li>
       </ul>
@@ -66,15 +77,15 @@ export default {
   data() {
     return {
       isShow: false,
-    }
+    };
   },
 
   methods: {
     handleMenu() {
-      this.isShow = !this.isShow
+      this.isShow = !this.isShow;
     },
   },
-}
+};
 </script>
 
 <style lang="scss">

@@ -85,6 +85,13 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
+    [
+      '@netsells/nuxt-hotjar',
+      {
+        id: '2560666',
+        sv: '6',
+      },
+    ],
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
@@ -111,23 +118,23 @@ export default {
     },
   },
   feed() {
-    const baseUrlArticles = ''
-    const baseLinkFeedArticles = '/blog'
+    const baseUrlArticles = '';
+    const baseLinkFeedArticles = '/blog';
     const feedFormats = {
       rss: { type: 'rss2', file: 'rss.xml' },
       json: { type: 'json1', file: 'feed.json' },
-    }
-    const { $content } = require('@nuxt/content')
+    };
+    const { $content } = require('@nuxt/content');
 
     const createFeedArticles = async function (feed) {
       feed.options = {
         title: 'Pooya Golchian | Software Engineer',
         description: "I'm Frontend developer and DevOps engineer",
         link: baseUrlArticles,
-      }
-      const articles = await $content('articles').fetch()
+      };
+      const articles = await $content('articles').fetch();
       articles.forEach((article) => {
-        const url = `${baseUrlArticles}/${article.slug}`
+        const url = `${baseUrlArticles}/${article.slug}`;
         feed.addItem({
           title: article.title,
           id: url,
@@ -136,15 +143,15 @@ export default {
           description: article.description,
           content: article.description,
           author: article.author.name,
-        })
-      })
-    }
+        });
+      });
+    };
 
     return Object.values(feedFormats).map(({ file, type }) => ({
       path: `${baseLinkFeedArticles}/${file}`,
       type: type,
       create: createFeedArticles,
-    }))
+    }));
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -166,4 +173,4 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
-}
+};
