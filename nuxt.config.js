@@ -12,7 +12,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'fontend developer, Web Developer, Javascript, Vue.js, Nuxt.js',
+          'fontend developer, frontend engineer, Web Developer, Javascript Developer, Vue.js Developer, Nuxt.js Developer, React.js Developer',
       },
       { property: 'og:site_name', content: 'Pooya Golchian' },
       { hid: 'og:type', property: 'og:type', content: 'website' },

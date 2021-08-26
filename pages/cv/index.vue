@@ -197,7 +197,8 @@ export default {
           jobItem: [
             'Built panel.azkivam.com with Nuxt.js',
             'Built azkivam.com with Nuxt.js',
-            'Built dynamic form builder for Cummunda BPMS',  
+            'Built dynamic form builder for Cummunda BPMS',
+            'azkivam.com | panel.azkivam.com'  
           ],
         },
         {
@@ -228,6 +229,7 @@ export default {
             'Experience with Typescript',
             'Developed best practice design patterns like Factory and Pub/Sub',
             'Customized Webpack with dotNet core versions 2 and 3',
+            'yiata.com | mobile.get3000.com | get3000.com' 
           ],
         },
         {
@@ -241,6 +243,7 @@ export default {
             'Developed 2 Admin panel and back-office website with ANT design',
             'Developed and fix in open-source projects like ant-design (Date picker filter in data table)',
             'Developed a website with the Laravel Blade template engine and JQuery. (ES6, Modules, Webpack, LARAVEL Mix)',
+            'azki.com'
           ],
         },
 
@@ -281,6 +284,7 @@ export default {
             'Built automated tasks for printer and server task batch script for print workflow JDF (Job Definition Format)',
             'Experience with pure javascript (OOP, Modules, ES6) and build reusable modules',
             'Developed customer grid system with the Bourbon preprocessor Sass framework',
+            'axprint.com | blog.axprint.com | pamp.com'
           ],
         },
 
@@ -301,6 +305,7 @@ export default {
             'Worked with theme building',
             'Worked with Jquery and pure javascript',
             'Developed an admin panel with Jquery and Drupal 7',
+            'rayvarz.com | bpms.rayvaz.com'
           ],
         },
       ],
