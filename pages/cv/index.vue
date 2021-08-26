@@ -58,7 +58,7 @@
       </div>
       <div class="row pt-10 col col-12">
         <div class="cv-header col-12">About</div>
-        <p class="pt-20 text-justify">
+        <p class="pt-20">
           I am a frontend developer who curious about clean code. I am so
           enthusiastic about javascript and frontend technology. I have good
           knowledge of Linux and Operating systems. One of my hubbies is
@@ -93,7 +93,7 @@
           </ul>
         </div>
         <div class="col col-12 col-sm-12 col-md-12 col-lg-4 col-print-4">
-          <div class="col-12 p-0">
+          <div class="col-12">
             <div class="cv-header">LANGUAGES</div>
             <ul class="cv-item">
               <li class="pt-10 fs-15">
@@ -105,7 +105,7 @@
             </ul>
           </div>
 
-          <div class="col-12 p-0 pt-10">
+          <div class="col-12 pt-10">
             <div class="cv-header">SKILLS</div>
             <div class="pt-10 pb-10">
               <ul class="skills row">
@@ -120,7 +120,7 @@
             </div>
           </div>
 
-          <div class="col-12 p-0">
+          <div class="col-12">
             <div class="cv-header">EDUCATION</div>
             <div v-for="(item, index) in education" :key="index" class="pt-10">
               <div class="font-weight-bolder fs-15">{{ item.degree }}</div>
