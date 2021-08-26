@@ -140,3 +140,17 @@ a {
 .theme-icon {
   width: 25px;
 }
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @for $i from 1 through $grid-columns {
+      @media print {
+        .col-print#{$infix}-#{$i} {
+          @include make-col($i, $grid-columns);
+        }
+      }
+    }
+  }
+}

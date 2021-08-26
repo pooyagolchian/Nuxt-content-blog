@@ -1,7 +1,7 @@
 <template>
   <div class="col-12">
     <div class="cv-container">
-      <div class="row flex-column">
+      <div class="row col col-12 flex-column">
         <div class="font-weight-bolder fs-35 text-uppercase">
            <nuxt-link to="/"> 
           Pooya Golchian
@@ -56,9 +56,8 @@
           </li>
         </ul>
       </div>
-
-      <div class="row pt-10">
-        <div class="cv-header col-12 p-0">About</div>
+      <div class="row pt-10 col col-12">
+        <div class="cv-header col-12">About</div>
         <p class="pt-20 text-justify">
           I am a frontend developer who curious about clean code. I am so
           enthusiastic about javascript and frontend technology. I have good
@@ -72,9 +71,8 @@
           field is related to Drupal.
         </p>
       </div>
-
       <div class="row pt-10 justify-content-between">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-8 pl-0">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-8 col-print-8">
           <div class="cv-header">EXPERIENCE</div>
           <ul class="exp-list">
             <li v-for="(item, index) in expItem" :key="index" class="pt-10">
@@ -94,7 +92,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-12 col-sm-12 col-md-12 col-lg-4 pr-0 flex-column">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-4 col-print-4">
           <div class="col-12 p-0">
             <div class="cv-header">LANGUAGES</div>
             <ul class="cv-item">
@@ -140,6 +138,8 @@
     </div>
   </div>
 </template>
+
+
 <script>
 export default {
   layout: 'resume',
@@ -195,9 +195,10 @@ export default {
           date: '5/2021 - NOW',
           location: 'Iran,Tehran',
           jobItem: [
-            'Built panel.azkivam.com with Nuxt.js',
-            'Built azkivam.com with Nuxt.js',
-            'Built dynamic form builder for Cummunda BPMS',
+            'Build panel.azkivam.com with Nuxt.js',
+            'Build azkivam.com with Nuxt.js',
+            'Build dynamic form builder for Cummunda BPMS',
+            'Build reusable components for panel and website',
             'azkivam.com | panel.azkivam.com'  
           ],
         },
@@ -330,12 +331,12 @@ a {
 @media print {
   .cv-container {
     width: 100%;
-    max-width: 980px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   @page {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 100px;
   }
   body {
     padding-top: 50px;
