@@ -95,9 +95,9 @@
                 {{ article.title }}
               </h2>
               <div class="app-subtitle fs-13">
-                {{ formatDate(article.date) }}
+                <span class='lnr lnr-calendar-full pr-5'></span>{{ formatDate(article.date) }}
               </div>
-              <div class="app-subtitle fa-15 pt-10">
+              <div class="app-subtitle fs-14 fa-15 pt-10">
                 {{ article.description }}
               </div>
             </div>
