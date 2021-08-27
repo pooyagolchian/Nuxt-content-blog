@@ -54,7 +54,7 @@
         </div>
 
         <div class="app-subtitle fs-12 col-auto d-flex align-items-center p-0">
-          Develop with ♥️ - {{ new Date().getFullYear() }}
+          <span class='pr-3'>Develop with</span> <span class='lnr lnr-heart pr-3 pl-3'> </span> - {{ new Date().getFullYear() }}
         </div>
       </div>
     </div>
