@@ -1,5 +1,5 @@
 <template>
-  <div class='app-nav d-flex'>
+  <div class='app-nav col col-1 justify-content-center'>
       <div class='d-flex flex-column pr-5 pl-5 pt-20 pb-20'>
         <div class='col-auto p-0 justify-content-center align-items-center'>
           <nuxt-link  class='cp text-center' tag='div' to='/'>
@@ -23,7 +23,7 @@
               '
           ></change-theme>
         </div>
-        <div class='col-auto p-0 d-none d-md-flex justify-content-center align-items-end'>
+        <div class='col-auto p-0 justify-content-center align-items-end'>
           <ul class='app-nav-link fs-14'>
             <li class='d-flex justify-content-center align-items-center'>
               <nuxt-link to='/blog'>Blog</nuxt-link>
@@ -36,7 +36,7 @@
             </li>
           </ul>
         </div>
-        <div class='col-auto p-0 d-sm-flex d-md-none'>
+        <div class='col-auto p-0 d-none'>
           <ul class='app-nav-link'>
             <li class='app-title cp' @click='handleMenu'>
               <span class='lnr lnr-menu fs-30'></span>

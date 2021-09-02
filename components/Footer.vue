@@ -1,5 +1,5 @@
 <template>
-  <div class='footer'>
+  <div class='footer col col-1 p-0 m-0'>
     <div class='d-flex align-items-center justify-content-center text-sm-center pt-10'>
       <ul class='footer-social'>
         <li class='d-flex justify-content-center align-items-center'>
