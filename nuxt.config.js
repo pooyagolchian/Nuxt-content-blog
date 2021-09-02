@@ -4,7 +4,11 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Pooya Golchian | Software Engineer',
+    titleTemplate: 'Pooya Golchian | %s',
+    title: 'Software Engineer, Frontend developer, DevOps Engineer',
+    htmlAttrs: {
+      lang: 'en'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -12,7 +16,7 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'fontend developer, frontend engineer, Web Developer, Javascript Developer, Vue.js Developer, Nuxt.js Developer, React.js Developer'
+          'pooya golchian, pooya, golchian, fontend developer, frontend engineer, Web Developer, Javascript Developer, Vue.js Developer, Nuxt.js Developer, React.js Developer'
       },
       { property: 'og:site_name', content: 'Pooya Golchian' },
       { hid: 'og:type', property: 'og:type', content: 'website' },

@@ -37,6 +37,16 @@
 </template>
 <script>
 export default {
+  head: {
+    title: 'About author',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Pooya Golchian list of articles'
+      }
+    ],
+  },
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
       .where({

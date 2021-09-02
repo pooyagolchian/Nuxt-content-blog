@@ -39,3 +39,19 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  head() {
+    return {
+      title: 'About',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'About pooya golchian'
+        }
+      ],
+    }
+  },
+};
+</script>
