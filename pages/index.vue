@@ -88,7 +88,6 @@
          target='_blank'>
         Customize Vuetify.js form builder for Nuxt.js for panel.azkivam.com
       </a>
-
       <a class='app-title d-flex flex-row pt-2 pb-2' href='https://github.com/pooyagolchian/docker-and-kubernetes-tutorial'
          target='_blank'>
         Docker, Kubernetes | tutorial and cheatsheet
