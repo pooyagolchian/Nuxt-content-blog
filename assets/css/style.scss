@@ -211,6 +211,7 @@ h6,
 
 .app-nav {
   border-right: 1px solid var(--app-title-color);
+  border-left: 1px solid var(--app-title-color);
   background-color: var(--app-background-color);
   position: relative;
   float: left;
@@ -237,6 +238,8 @@ h6,
 .body-container-divider {
   display: flex;
   flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 
@@ -269,6 +272,7 @@ h6,
   display: flex;
   position: relative;
   border-left: 1px solid var(--app-title-color);
+  border-right: 1px solid var(--app-title-color);
   float: right;
   flex-direction: column;
   justify-content: space-between;

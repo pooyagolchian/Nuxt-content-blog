@@ -1,6 +1,6 @@
 <template>
   <div class='app-nav d-flex'>
-      <div class='d-flex flex-column pr-5 pl-5 pt-5'>
+      <div class='d-flex flex-column pr-5 pl-5 pt-20 pb-20'>
         <div class='col-auto p-0 justify-content-center align-items-center'>
           <nuxt-link  class='cp text-center' tag='div' to='/'>
             <span class='lnr lnr-home app-title fs-20'></span>
@@ -14,10 +14,9 @@
                 'dark'
               ]"
             class='
-                fs-14
                 font-weight-light
-                 mt-10
-                 mb-10
+                 mt-20
+                 mb-20
                 d-flex
                 justify-content-center
                 align-items-center

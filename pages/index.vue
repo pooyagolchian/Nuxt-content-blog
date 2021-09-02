@@ -32,7 +32,7 @@
       </div>
 
     </div>
-    <div class='col-12 col-sm-12 col-md-4 info'>
+    <div class='col-12 col-sm-12 col-md-3 info'>
       <div class="row pb-30">
         <div class="col-12 col-sm-12 col-md-12">
           <img
@@ -60,7 +60,7 @@
       </div>
 
     </div>
-    <div class='col-12 col-sm-12 col-md-3 project'>
+    <div class='col-12 col-sm-12 col-md-4 project'>
       <div class='font-weight-bold app-title pt-10 fs-20 pb-20'>Open-Source project</div>
       <a target='_blank' class='app-title d-flex flex-row pt-2 pb-2' href='https://www.npmjs.com/package/vue-multiple-themes'>VUE.js multiple theme  color NPM package</a>
       <a target='_blank' class='app-title d-flex flex-row pt-2 pb-2' href='https://www.npmjs.com/package/vue-js-star-rating'>VUE.js icon rating NPM package</a>

@@ -2,10 +2,10 @@
   <div class="vue-multiple-themes">
     <span v-if="changeThemeOff" class="change-theme-box" @click="changeTheme()">
             <div v-if="themeName === 'light'">
-              <span class='lnr lnr-sun fs-21'></span>
+              <span class='lnr lnr-sun fs-20'></span>
             </div>
             <div v-if="themeName === 'dark'">
-              <span class='lnr lnr-moon fs-21'></span>
+              <span class='lnr lnr-moon fs-20'></span>
             </div>
     </span>
   </div>
