@@ -1,6 +1,6 @@
 <template>
   <div class='footer'>
-    <div class='col-auto text-sm-center pt-10'>
+    <div class='col-auto p-0 text-sm-center pt-10'>
       <ul class='footer-social'>
         <li>
           <a
