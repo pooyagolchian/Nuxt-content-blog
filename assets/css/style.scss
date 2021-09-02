@@ -220,18 +220,15 @@ h6,
 
 
 .blog {
-  overflow-y: scroll;
-  scroll-behavior: unset;
+
   border-right: 1px solid var(--app-title-color);
   position: relative;
-  height: 100vh;
+
   @include media-breakpoint-down(sm) {
     border: none;
   }
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+
 }
 
 

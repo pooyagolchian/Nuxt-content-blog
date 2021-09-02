@@ -25,10 +25,10 @@
         </div>
         <div class='col-auto p-0 d-none d-md-flex justify-content-center align-items-end'>
           <ul class='app-nav-link fs-14'>
-            <li>
+            <li class='d-flex justify-content-center align-items-center'>
               <nuxt-link to='/blog'>Blog</nuxt-link>
             </li>
-            <li>
+            <li class='d-flex justify-content-center align-items-center'>
               <nuxt-link to='/cv'>CV</nuxt-link>
             </li>
           </ul>

@@ -2,7 +2,7 @@
   <div class='footer'>
     <div class='col-auto p-0 text-sm-center pt-10'>
       <ul class='footer-social'>
-        <li>
+        <li class='d-flex justify-content-center align-items-center'>
           <a
             class='col-auto p-0 pb-10 app-title font-weight-light fs-12'
             href='https://github.com/pooyagolchian'
@@ -11,7 +11,7 @@
             Github
           </a>
         </li>
-        <li>
+        <li class='d-flex justify-content-center align-items-center'>
           <a
             class='col-auto p-0 pb-10 app-title font-weight-light fs-12'
             href='https://linkedin.com/in/pooyagolchian'
@@ -20,7 +20,7 @@
             Linkedin
           </a>
         </li>
-        <li>
+        <li class='d-flex justify-content-center align-items-center'>
           <a
             class='col-auto p-0 pb-10 app-title font-weight-light fs-12'
             href='https://dribbble.com/pooyagolchian'
@@ -29,7 +29,7 @@
             Dribbble
           </a>
         </li>
-        <li>
+        <li class='d-flex justify-content-center align-items-center'>
           <a
             class='col-auto p-0 pb-10 app-title font-weight-light fs-12'
             href='https://dev.to/pooyagolchian'
@@ -39,7 +39,7 @@
           </a>
         </li>
 
-        <li>
+        <li class='d-flex justify-content-center align-items-center'>
           <a
             class='col-auto p-0 pb-10 app-title font-weight-light fs-12'
             href='/blog/rss.xml'
