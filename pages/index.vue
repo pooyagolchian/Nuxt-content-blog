@@ -35,13 +35,15 @@
     <div class='col-12 col-sm-12 col-md-3 info'>
       <div class='row pb-30'>
         <div class='col-12 col-sm-12 col-md-12'>
-          <img
-            alt=''
-            class='h1-00 w-100 pb-20 pt-20 my-photo'
-            src='/img/home-img/pooya-golchian.JPG'
-          />
+          <nuxt-link to='/about' tag='div'>
+            <img
+              alt=''
+              class='h1-00 w-100 pb-20 pt-20 my-photo cp'
+              src='/img/home-img/pooya-golchian.JPG'
+            />
+          </nuxt-link>
         </div>
-        <div
+        <nuxt-link to='/about' tag='div'
           class='col-12 col-sm-12 col-md-12 d-flex justify-content-center align-items-center flex-column cp'
         >
           <h1
@@ -67,7 +69,7 @@
             <nuxt-link to='/cv'>CV</nuxt-link>
             .
           </p>
-        </div>
+        </nuxt-link>
       </div>
 
     </div>

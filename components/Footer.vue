@@ -39,6 +39,16 @@
           </a>
         </li>
 
+
+        <li class='d-flex justify-content-center align-items-center'>
+          <a
+            class='col-auto p-0 pb-10 app-title font-weight-light fs-12'
+            href='https://stackoverflow.com/users/2257357/pooya-golchian'
+            target='_blank'
+          >
+            Stackoverflow
+          </a>
+        </li>
         <li class='d-flex justify-content-center align-items-center'>
           <a
             class='col-auto p-0 pb-10 app-title font-weight-light fs-12'
@@ -48,6 +58,8 @@
             RSS
           </a>
         </li>
+
+
       </ul>
     </div>
 
