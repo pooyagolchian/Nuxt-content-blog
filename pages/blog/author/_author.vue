@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="embed-responsive pr-10 pl-10">
     <h1 class="app-title">Author: {{ articles[0].author.name }}</h1>
     <p class="app-subtitle">Bio: {{ articles[0].author.bio }}</p>
     <h3 class="app-subtitle">
