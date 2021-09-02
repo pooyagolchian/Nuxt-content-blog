@@ -1,31 +1,31 @@
 <template>
-  <div class='embed-responsive pr-20 pl-20 pt-20 fill-height blog-list'>
-    <div>
-      <div class='col-12 p-0'>
-        <AppSearchInput />
-      </div>
-      <div class='row pb-20'>
-        <div
-          v-for='article of articles'
-          :key='article.slug'
-          class='col-12 col-sm-12 col-md-12 mb-10 mt-10'
+  <div class='embed-responsive pr-10 pl-10 pt-20 fill-height blog-list'>
+    <div class='col-12 p-0'>
+      <app-search-input class='pt-20' />
+    </div>
+    <div class='row pb-40'>
+      <div
+        v-for='article of articles'
+        :key='article.slug'
+        class='col-12 col-sm-12 col-md-12 pt-15 pb-15'
+      >
+        <NuxtLink
+          :to="{ name: 'blog-slug', params: { slug: article.slug } }"
+          class='cp mb-20 link'
+          tag='a'
         >
-          <NuxtLink
-            :to="{ name: 'blog-slug', params: { slug: article.slug } }"
-            class='cp link'
-            tag='a'
-          >
-            <div>
-              <h2 class='app-title fs-19 font-weight-bold pt-10'>
-                {{ article.title }}
-              </h2>
-              <div class='app-subtitle'>{{ formatDate(article.date) }}</div>
-              <div class='app-subtitle fa-15 pt-10'>
-                {{ article.description }}
-              </div>
+          <div class='w-100'>
+            <h2 class='app-title fs-19 font-weight-normal pt-10'>
+              {{ article.title }}
+            </h2>
+            <div class='app-subtitle fs-13'>
+              <span class='lnr lnr-calendar-full pr-5'></span>{{ formatDate(article.date) }}
             </div>
-          </NuxtLink>
-        </div>
+            <div class='app-subtitle fs-14 fa-15 pt-10'>
+              {{ article.description }}
+            </div>
+          </div>
+        </NuxtLink>
       </div>
     </div>
   </div>
