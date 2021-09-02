@@ -1,13 +1,9 @@
 <template>
   <div class='app-nav d-flex'>
-      <div class='d-flex flex-column'>
-        <div class='col-auto justify-content-center align-items-center'>
-          <nuxt-link class='cp' tag='div' to='/'>
-            <img
-              alt='Logo'
-              class='nav-logo mb-10 mt-10'
-              src='/img/avatar/pooya-golchian.jpg'
-            />
+      <div class='d-flex flex-column pr-5 pl-5 pt-5'>
+        <div class='col-auto p-0 justify-content-center align-items-center'>
+          <nuxt-link  class='cp text-center' tag='div' to='/'>
+            <span class='lnr lnr-home app-title fs-20'></span>
           </nuxt-link>
 
           <change-theme
@@ -29,7 +25,7 @@
           ></change-theme>
         </div>
         <div class='col-auto p-0 d-none d-md-flex justify-content-center align-items-end'>
-          <ul class='app-nav-link'>
+          <ul class='app-nav-link fs-14'>
             <li>
               <nuxt-link to='/blog'>Blog</nuxt-link>
             </li>
