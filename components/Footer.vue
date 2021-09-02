@@ -51,7 +51,7 @@
       </ul>
     </div>
 
-    <div class='app-subtitle footer-copyright fs-12 col-auto d-flex align-items-center pb-10'>
+    <div class='app-subtitle footer-copyright fs-12 col-auto d-flex align-items-center pb-40'>
       <span class='pr-3'>Develop with</span> <span class='lnr lnr-heart pt-3 pb-3'> </span> -
       {{ new Date().getFullYear() }}
     </div>
