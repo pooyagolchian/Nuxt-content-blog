@@ -209,7 +209,7 @@ h6,
 
 
 .blog {
-  overflow-x: scroll;
+  overflow-y: scroll;
   scroll-behavior: unset;
   border-right: 1px solid var(--app-title-color);
   position: relative;
@@ -297,5 +297,14 @@ h6,
   border-right: 1px solid var(--app-title-color);
   @include media-breakpoint-down(sm) {
     border: none;
+  }
+}
+
+
+.blog-list {
+  overflow-y: scroll;
+  scroll-behavior: unset;
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
