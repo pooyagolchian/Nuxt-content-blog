@@ -1,6 +1,6 @@
 <template>
   <div class='row m-0'>
-    <div class='col-12 col-sm-12 col-md-6 blog'>
+    <div class='col-12 col-sm-12 col-md-5 blog'>
 
       <div class='col-12 p-0'>
         <app-search-input class='pt-20' />
@@ -32,7 +32,7 @@
       </div>
 
     </div>
-    <div class='col-12 col-sm-12 col-md-3 info'>
+    <div class='col-12 col-sm-12 col-md-4 info'>
       <div class='row pb-30'>
         <div class='col-12 col-sm-12 col-md-12'>
           <nuxt-link to='/about' tag='div'>
