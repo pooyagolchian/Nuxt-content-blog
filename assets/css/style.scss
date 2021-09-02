@@ -312,11 +312,8 @@ h6,
 
 
 .blog-list {
-  overflow-y: scroll;
-  scroll-behavior: unset;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  min-height: 100vh;
+  height: 100%;
 }
 
 
