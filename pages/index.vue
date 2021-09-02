@@ -1,6 +1,6 @@
 <template>
   <div class='row m-0'>
-    <div class='col-12 col-sm-12 col-md-5 blog'>
+    <div class='col-12 col-sm-12 col-md-6 blog'>
 
       <div class='col-12 p-0'>
         <app-search-input class='pt-20' />
@@ -73,24 +73,24 @@
       </div>
 
     </div>
-    <div class='col-12 col-sm-12 col-md-4 project pb-50'>
+    <div class='col-12 col-sm-12 col-md-3 project pb-50'>
       <div class='font-weight-bold app-title pt-10 fs-20 pb-10'>Open-Source project</div>
-      <a class='app-title d-flex flex-row pt-2 pb-2 fs-16' href='https://www.npmjs.com/package/vue-multiple-themes'
+      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://www.npmjs.com/package/vue-multiple-themes'
          target='_blank'>VUE.js multiple theme color NPM package</a>
-      <a class='app-title d-flex flex-row pt-2 pb-2 fs-16' href='https://www.npmjs.com/package/vue-js-star-rating'
+      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://www.npmjs.com/package/vue-js-star-rating'
          target='_blank'>VUE.js icon rating NPM package</a>
-      <a class='app-title d-flex flex-row pt-2 pb-2 fs-16' href='https://github.com/pooyagolchian/pooyagolchian.github.io'
+      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://github.com/pooyagolchian/pooyagolchian.github.io'
          target='_blank'>NUXT.js SSG blog</a>
-      <a class='app-title d-flex flex-row pt-2 pb-2 fs-16' href='https://github.com/pooyagolchian/memegen' target='_blank'>Meme
+      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://github.com/pooyagolchian/memegen' target='_blank'>Meme
         generator React.js application</a>
-      <a class='app-title d-flex flex-row pt-2 pb-2 fs-16' href='https://www.npmjs.com/package/scss-helper' target='_blank'>
+      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://www.npmjs.com/package/scss-helper' target='_blank'>
         Mini UI SCSS helper, Grid, Typography, etc.
       </a>
-      <a class='app-title d-flex flex-row pt-2 pb-2 fs-16' href='https://www.npmjs.com/package/vuetify-form-base-ssr'
+      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://www.npmjs.com/package/vuetify-form-base-ssr'
          target='_blank'>
         Customize Vuetify.js form builder for Nuxt.js for panel.azkivam.com
       </a>
-      <a class='app-title d-flex flex-row pt-2 pb-2 fs-16' href='https://github.com/pooyagolchian/docker-and-kubernetes-tutorial'
+      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://github.com/pooyagolchian/docker-and-kubernetes-tutorial'
          target='_blank'>
         Docker, Kubernetes | tutorial and cheatsheet
       </a>
