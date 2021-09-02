@@ -100,18 +100,7 @@
 
 <script>
 export default {
-  head() {
-    return {
-      title: 'CV',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Pooya Golchian CV'
-        }
-      ],
-    }
-  },
+
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
       .sortBy('date', 'desc')

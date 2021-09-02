@@ -3,7 +3,7 @@
     <div class="cv-container">
       <div class="row col col-12 flex-column">
         <div class="font-weight-bolder fs-35 text-uppercase">
-           <nuxt-link to="/"> 
+           <nuxt-link to="/">
           Pooya Golchian
            </nuxt-link>
         </div>
@@ -19,8 +19,8 @@
           </li>
           <li class="col-auto p-0 pr-10">
             <span class="text-muted"> <fa :icon="['fas', 'globe']" /></span>
-            
-          <nuxt-link to="/"> 
+
+          <nuxt-link to="/">
             pooyagolchian.com
           </nuxt-link>
           </li>
@@ -143,6 +143,18 @@
 <script>
 export default {
   layout: 'resume',
+  head() {
+    return {
+      title: 'CV',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Pooya Golchian CV'
+        }
+      ],
+    }
+  },
   data() {
     return {
       skills: [
@@ -199,7 +211,7 @@ export default {
             'Build azkivam.com with Nuxt.js',
             'Build dynamic form builder for Cummunda BPMS',
             'Build reusable components for panel and website',
-            'azkivam.com | panel.azkivam.com'  
+            'azkivam.com | panel.azkivam.com'
           ],
         },
         {
@@ -230,7 +242,7 @@ export default {
             'Experience with Typescript',
             'Developed best practice design patterns like Factory and Pub/Sub',
             'Customized Webpack with dotNet core versions 2 and 3',
-            'yiata.com | mobile.get3000.com | get3000.com' 
+            'yiata.com | mobile.get3000.com | get3000.com'
           ],
         },
         {
