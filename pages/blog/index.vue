@@ -1,10 +1,10 @@
 <template>
-  <div class='container'>
+  <div class='embed-responsive pr-10 pl-10 pt-10 fill-height'>
     <div>
       <div class='col-12 p-0'>
         <AppSearchInput />
       </div>
-      <div class='row pb-20 pt-20'>
+      <div class='row pb-20'>
         <div
           v-for='article of articles'
           :key='article.slug'

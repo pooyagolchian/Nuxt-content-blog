@@ -42,6 +42,16 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
 }
 
 .ff-header {
@@ -177,6 +187,8 @@ h6,
 .h5,
 .h6 {
   line-height: 1.5 !important;
+  font-weight: normal;
+  font-size: 20px;
 }
 
 
@@ -184,4 +196,106 @@ h6,
   position: absolute;
   top: 1.5em;
   right: .7em;
+}
+
+
+.app-nav {
+  border-right: 1px solid var(--app-title-color);
+  background-color: var(--app-background-color);
+  position: relative;
+  float: left;
+  z-index: 99999;
+}
+
+
+.blog {
+  overflow-x: scroll;
+  scroll-behavior: unset;
+  border-right: 1px solid var(--app-title-color);
+  position: relative;
+  height: 100vh;
+  @include media-breakpoint-down(sm) {
+    border: none;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+.body-container-divider {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.app-nav-link {
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  li {
+    a {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.fill-height {
+  height: 100vh;
+}
+
+
+.footer {
+  display: flex;
+  position: relative;
+  border-left: 1px solid var(--app-title-color);
+  float: right;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+
+
+  li {
+    list-style: none;
+
+    a {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+
+.footer-copyright {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  border-right: 1px solid var(--app-title-color);
+  @include media-breakpoint-down(sm) {
+    border: none;
+  }
 }

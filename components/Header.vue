@@ -1,6 +1,5 @@
 <template>
-  <div class="header col-12 pt-30 pb-30">
-    <div class="container">
+   <div class="col-12">
       <div class="row justify-content-between">
         <div class="col-auto app-title font-weight-bolder fs-20 cp">
           <nuxt-link tag="div" to="/"> Pooya Golchian </nuxt-link>
@@ -19,5 +18,4 @@
         </div>
       </div>
     </div>
-  </div>
 </template>

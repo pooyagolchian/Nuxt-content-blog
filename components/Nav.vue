@@ -1,71 +1,67 @@
 <template>
-  <div>
-    <div class='col-12'>
-      <div class='container'>
-        <div class='row pt-30 pb-30 justify-content-between'>
-          <div class='col-auto row justify-content-center align-items-center'>
-            <nuxt-link class='cp pr-5' tag='div' to='/'>
-              <img
-                alt='Logo'
-                class='nav-logo'
-                src='/img/avatar/pooya-golchian.jpg'
-              />
-            </nuxt-link>
+  <div class='app-nav d-flex'>
+      <div class='d-flex flex-column'>
+        <div class='col-auto justify-content-center align-items-center'>
+          <nuxt-link class='cp' tag='div' to='/'>
+            <img
+              alt='Logo'
+              class='nav-logo mb-10 mt-10'
+              src='/img/avatar/pooya-golchian.jpg'
+            />
+          </nuxt-link>
 
-            <change-theme
-              :changeThemeOff='true'
-              :defaultTheme="'light'"
-              :themeColorList="[
+          <change-theme
+            :changeThemeOff='true'
+            :defaultTheme="'light'"
+            :themeColorList="[
                 'light',
                 'dark'
               ]"
-              class='
+            class='
                 fs-14
                 font-weight-light
-                mr-10
-                ml-10
+                 mt-10
+                 mb-10
                 d-flex
                 justify-content-center
                 align-items-center
               '
-            ></change-theme>
-          </div>
-
-          <div class='col-auto p-0 d-none d-md-flex'>
-            <ul class='nav-link'>
-              <li>
-                <router-link to='/blog'>Blog</router-link>
-              </li>
-              <li>
-                <router-link to='/cv'>CV</router-link>
-              </li>
-            </ul>
-          </div>
-
-          <div class='col-auto p-0 d-sm-flex d-md-none'>
-            <ul class='nav-link'>
-              <li class='app-title cp' @click='handleMenu'>
-                <span class='lnr lnr-menu fs-30'></span>
-              </li>
-            </ul>
-          </div>
+          ></change-theme>
+        </div>
+        <div class='col-auto p-0 d-none d-md-flex justify-content-center align-items-end'>
+          <ul class='app-nav-link'>
+            <li>
+              <nuxt-link to='/blog'>Blog</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to='/cv'>CV</nuxt-link>
+            </li>
+          </ul>
+        </div>
+        <div class='col-auto p-0 d-sm-flex d-md-none'>
+          <ul class='app-nav-link'>
+            <li class='app-title cp' @click='handleMenu'>
+              <span class='lnr lnr-menu fs-30'></span>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+
+
 
     <div v-if='isShow' class='mobile-menu'>
-      <div class='clos-btn app-title'  @click='isShow = false'>
+      <div class='clos-btn app-title' @click='isShow = false'>
         <span class='lnr lnr-cross fs-40'></span>
       </div>
       <ul class='text-center p-0 m-0'>
         <li>
-          <router-link to='/blog' @click.native='isShow = false'
+          <nuxt-link to='/blog' @click.native='isShow = false'
           >Blog
-          </router-link
+          </nuxt-link
           >
         </li>
         <li>
-          <router-link to='/cv'>CV</router-link>
+          <nuxt-link to='/cv'>CV</nuxt-link>
         </li>
         <li class='app-title cp' @click='isShow = false'>
           <span class='lnr lnr-arrow-left'></span>

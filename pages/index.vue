@@ -1,85 +1,11 @@
 <template>
-  <div>
-    <div class="container">
-      <div class="row pb-30">
-        <div class="col-12 col-sm-12 col-md-6">
-          <img
-            class="h1-00 w-100 pb-20 pt-20"
-            src="/img/home-img/header.svg"
-            alt=""
-          />
-        </div>
-        <div
-          class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column cp"
-        >
-          <h1
-            class="fs-18 app-title text-left d-flex flex-1 w-100 font-weight-bold"
-          >
-            I'm Pooya Golchian
-          </h1>
-          <ul
-            class="p-0 m-0 d-flex justify-content-center align-items-start flex-column flex-1 w-100 app-subtitle"
-          >
-            <li>Frontend Engineer (Vue.js/React.js)</li>
-            <li>DevOps Engineer and Linux Server Engineer</li>
-            <li>Code, Coffee, Crypto</li>
-          </ul>
-          <ul class="footer-social d-flex flex-start w-100 pt-10">
-            <li>
-              <a
-                class="col-auto app-title font-weight-light fs-12 pl-0"
-                href="https://github.com/pooyagolchian"
-                target="_blank"
-              >
-                Github
-              </a>
-            </li>
-            <li>
-              <a
-                class="col-auto app-title font-weight-light fs-12"
-                href="https://linkedin.com/in/pooyagolchian"
-                target="_blank"
-              >
-                Linkedin
-              </a>
-            </li>
-            <li>
-              <a
-                class="col-auto app-title font-weight-light fs-12"
-                href="https://dribbble.com/pooyagolchian"
-                target="_blank"
-              >
-                Dribbble
-              </a>
-            </li>
-            <li>
-              <a
-                class="col-auto app-title font-weight-light fs-12"
-                href="https://dev.to/pooyagolchian"
-                target="_blank"
-              >
-                Dev
-              </a>
-            </li>
-
-            <li>
-              <a
-                class="col-auto app-title font-weight-light fs-12"
-                href="/blog/rss.xml"
-                target="_blank"
-              >
-                RSS
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+  <div class='row m-0'>
+    <div class="col-12 col-sm-12 col-md-5 blog">
 
       <div class="col-12 p-0">
-        <AppSearchInput />
+        <app-search-input class='pt-20' />
       </div>
-
-      <div class="row pb-40 pt-40">
+      <div class="row pb-40">
         <div
           class="col-12 col-sm-12 col-md-12 pt-15 pb-15"
           v-for="article of articles"
@@ -91,7 +17,7 @@
             class="cp mb-20 link"
           >
             <div class="w-100">
-              <h2 class="app-title fs-19 font-weight-bold pt-10">
+              <h2 class="app-title fs-19 font-weight-normal pt-10">
                 {{ article.title }}
               </h2>
               <div class="app-subtitle fs-13">
@@ -105,32 +31,41 @@
         </div>
       </div>
 
-      <div class="row">
+    </div>
+    <div class='col-12 col-sm-12 col-md-4 info'>
+      <div class="row pb-30">
+        <div class="col-12 col-sm-12 col-md-12">
+          <img
+            class="h1-00 w-100 pb-20 pt-20 my-photo"
+            src="/img/home-img/pooya-golchian.JPG"
+            alt=""
+          />
+        </div>
         <div
-          class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center flex-column"
+          class="col-12 col-sm-12 col-md-12 d-flex justify-content-center align-items-center flex-column cp"
         >
           <h1
             class="fs-18 app-title text-left d-flex flex-1 w-100 font-weight-bold"
           >
-            Web Development
+            I'm Pooya Golchian
           </h1>
           <ul
             class="p-0 m-0 d-flex justify-content-center align-items-start flex-column flex-1 w-100 app-subtitle"
           >
-            <li>API design (Microservice architecture)</li>
-            <li>JAM-Stack and SSR</li>
-            <li>Nosql database</li>
-            <li>DevOps and Server adminstration</li>
+            <li>Frontend Engineer (Vue.js/React.js)</li>
+            <li>DevOps Engineer and Linux Server Engineer</li>
+            <li>Code, Coffee, Crypto</li>
           </ul>
         </div>
-        <div class="col-12 col-sm-12 col-md-6">
-          <img
-            class="h1-00 w-100 pb-20 pt-20"
-            src="/img/home-img/1.svg"
-            alt=""
-          />
-        </div>
       </div>
+
+    </div>
+    <div class='col-12 col-sm-12 col-md-3 project'>
+      <div class='font-weight-bold app-title pt-10 fs-20 pb-20'>Open-Source project</div>
+      <a target='_blank' class='app-title d-flex flex-row pt-2 pb-2' href='https://www.npmjs.com/package/vue-multiple-themes'>VUE.js multiple theme  color NPM package</a>
+      <a target='_blank' class='app-title d-flex flex-row pt-2 pb-2' href='https://www.npmjs.com/package/vue-js-star-rating'>VUE.js icon rating NPM package</a>
+      <a target='_blank' class='app-title d-flex flex-row pt-2 pb-2' href='https://github.com/pooyagolchian/pooyagolchian.github.io'>NUXT.js SSG blog</a>
+      <a target='_blank' class='app-title d-flex flex-row pt-2 pb-2' href='https://github.com/pooyagolchian/memegen'>Meme generator React.js application</a>
     </div>
   </div>
 </template>

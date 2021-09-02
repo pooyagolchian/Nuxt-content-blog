@@ -50,7 +50,7 @@ export default {
 .search {
   border: none;
   box-shadow: none;
-  border-radius: 30px;
+  border-radius: 8px;
   text-indent: 20px;
   padding: 10px;
   width: 100%;
@@ -63,7 +63,7 @@ export default {
 
   &__container {
     margin-top: 16px;
-    border-radius: 30px;
+    border-radius: 8px;
     border: 1px solid var(--app-subtitle-color);
     padding: 16px;
     li {
