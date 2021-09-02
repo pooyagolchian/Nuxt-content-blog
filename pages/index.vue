@@ -63,7 +63,9 @@
             development. I have 4 years of experience in Vue.js and, Nuxt.js. I worked with React.js too. I have
             developed lots of web applications with high-tech frameworks. I have experience with PHP, WordPress, Drupal,
             headless CMS, and JAM STACK architecture. For more information about my professional full-time work, please
-            see my <nuxt-link to='/cv'>CV</nuxt-link>.
+            see my
+            <nuxt-link to='/cv'>CV</nuxt-link>
+            .
           </p>
         </div>
       </div>
@@ -79,6 +81,13 @@
          target='_blank'>NUXT.js SSG blog</a>
       <a class='app-title d-flex flex-row pt-2 pb-2' href='https://github.com/pooyagolchian/memegen' target='_blank'>Meme
         generator React.js application</a>
+      <a class='app-title d-flex flex-row pt-2 pb-2' href='https://www.npmjs.com/package/scss-helper' target='_blank'>
+        Mini UI SCSS helper, Grid, Typography, etc.
+      </a>
+      <a class='app-title d-flex flex-row pt-2 pb-2' href='https://www.npmjs.com/package/vuetify-form-base-ssr'
+         target='_blank'>
+        Customize Vuetify.js form builder for Nuxt.js for panel.azkivam.com
+      </a>
     </div>
   </div>
 </template>
