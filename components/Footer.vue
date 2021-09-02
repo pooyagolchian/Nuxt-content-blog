@@ -4,7 +4,7 @@
       <ul class='footer-social'>
         <li>
           <a
-            class='col-auto app-title font-weight-light fs-12'
+            class='col-auto p-0 pb-10 app-title font-weight-light fs-12'
             href='https://github.com/pooyagolchian'
             target='_blank'
           >
@@ -13,7 +13,7 @@
         </li>
         <li>
           <a
-            class='col-auto app-title font-weight-light fs-12'
+            class='col-auto p-0 pb-10 app-title font-weight-light fs-12'
             href='https://linkedin.com/in/pooyagolchian'
             target='_blank'
           >
@@ -22,7 +22,7 @@
         </li>
         <li>
           <a
-            class='col-auto app-title font-weight-light fs-12'
+            class='col-auto p-0 pb-10 app-title font-weight-light fs-12'
             href='https://dribbble.com/pooyagolchian'
             target='_blank'
           >
@@ -31,7 +31,7 @@
         </li>
         <li>
           <a
-            class='col-auto app-title font-weight-light fs-12'
+            class='col-auto p-0 pb-10 app-title font-weight-light fs-12'
             href='https://dev.to/pooyagolchian'
             target='_blank'
           >
@@ -41,7 +41,7 @@
 
         <li>
           <a
-            class='col-auto app-title font-weight-light fs-12'
+            class='col-auto p-0 pb-10 app-title font-weight-light fs-12'
             href='/blog/rss.xml'
             target='_blank'
           >
