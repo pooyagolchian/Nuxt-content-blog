@@ -1,5 +1,5 @@
 <template>
-  <div class='embed-responsive pr-10 pl-10 pt-10 fill-height blog-list'>
+  <div class='embed-responsive pr-20 pl-20 pt-20 fill-height blog-list'>
     <div>
       <div class='col-12 p-0'>
         <AppSearchInput />

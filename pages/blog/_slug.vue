@@ -1,5 +1,5 @@
 <template>
-  <div class='d-flex flex-grow-1 embed-responsive pt-50 pr-sm-0 pl-sm-0 pr-md-5 pl-md-5'>
+  <div class='d-flex flex-grow-1 embed-responsive pt-20 pl-10 pr-10'>
     <article class='col-auto'>
       <h1 class="app-title p-0 m-0 font-weight-normal pb-20 fs-25">
         {{ article.title }}
