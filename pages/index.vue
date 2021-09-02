@@ -73,7 +73,7 @@
       </div>
 
     </div>
-    <div class='col-12 col-sm-12 col-md-4 project'>
+    <div class='col-12 col-sm-12 col-md-4 project pb-50'>
       <div class='font-weight-bold app-title pt-10 fs-20 pb-10'>Open-Source project</div>
       <a class='app-title d-flex flex-row pt-2 pb-2' href='https://www.npmjs.com/package/vue-multiple-themes'
          target='_blank'>VUE.js multiple theme color NPM package</a>

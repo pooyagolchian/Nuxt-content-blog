@@ -1,5 +1,5 @@
 <template>
-  <div class='body-container-divider'>
+  <div class='body-container-divider h-100'>
     <app-nav class='d-flex flex-grow-1'></app-nav>
     <Nuxt />
     <app-footer class='d-flex flex-grow-1'></app-footer>

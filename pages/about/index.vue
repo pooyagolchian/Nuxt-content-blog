@@ -1,6 +1,6 @@
 <template>
-  <div class='embed-responsive pr-20 pl-20 fill-height'>
-    <div class='row pb-30'>
+  <div class='embed-responsive-item pr-20 pl-20 about'>
+    <div class='row pb-30 d-flex'>
       <div class='col-12 col-sm-12 col-md-6'>
         <img
           alt=''
@@ -25,7 +25,6 @@
         </ul>
 
       </div>
-
       <p class='fs-14 app-title pr-10 pl-10 col col-12'>
         I was born in Tehran in 1990. When my father bought a computer for our home, I fell in love with it. I start
         to learned Linux with Ubuntu and Fedora when I was 16 years old. Now, I have a master's degree in computer
@@ -38,6 +37,5 @@
         .
       </p>
     </div>
-
   </div>
 </template>
