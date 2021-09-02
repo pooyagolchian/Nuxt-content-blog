@@ -44,6 +44,11 @@ export default {
         hid: 'description',
         name: 'description',
         content: 'Pooya Golchian list of articles'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Pooya Golchian list of articles'
       }
     ],
   },

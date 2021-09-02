@@ -48,7 +48,12 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'About pooya golchian'
+          content: 'About Pooya Golchian'
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'About Pooya Golchian'
         }
       ],
     }

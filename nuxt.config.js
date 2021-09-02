@@ -24,7 +24,7 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'http://pooyagolchian.com'
+        content: 'https://pooyagolchian.com'
       },
       {
         hid: 'og:title',
@@ -119,7 +119,7 @@ export default {
       name: 'Pooya Golchian Technical Blog',
       short_name: 'Pooya Golchian Blog',
       lang: 'en',
-      description: 'Pooya Golchian Personal Blog'
+      description: 'Pooya Golchian Personal Website'
     },
     icon: {
       fileName: 'icon.png',

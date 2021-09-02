@@ -41,6 +41,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: 'Pooya Golchian technical Blog'
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Pooya Golchian technical Blog'
         }
       ],
     }

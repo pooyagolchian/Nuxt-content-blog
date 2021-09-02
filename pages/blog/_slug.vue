@@ -45,6 +45,11 @@ export default {
           hid: 'description',
           name: 'description',
           content: this.article.description
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: `Pooya Golchian | ${this.article.title}`
         }
       ],
     }
