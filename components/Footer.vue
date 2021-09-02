@@ -1,6 +1,6 @@
 <template>
   <div class='footer'>
-    <div class='col-auto p-0 text-sm-center pt-10'>
+    <div class='d-flex align-items-center justify-content-center text-sm-center pt-10'>
       <ul class='footer-social'>
         <li class='d-flex justify-content-center align-items-center'>
           <a
@@ -63,8 +63,8 @@
       </ul>
     </div>
 
-    <div class='app-subtitle footer-copyright fs-12 col-auto d-flex align-items-center pb-40'>
-      <span class='pr-3'>Develop with</span> <span class='lnr lnr-heart pt-3 pb-3'> </span> -
+    <div class='app-subtitle footer-copyright fs-12 d-flex align-items-center justify-content-center pb-40'>
+      <span>Develop with</span> <span class='lnr lnr-heart pt-3 pb-3'> </span> -
       {{ new Date().getFullYear() }}
     </div>
   </div>
