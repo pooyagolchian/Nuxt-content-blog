@@ -15,7 +15,7 @@
               ]"
             class='
                 font-weight-light
-                 pl-5 pr-5
+                 pl-15 pr-5
                 d-flex
                 justify-content-center
                 align-items-center
