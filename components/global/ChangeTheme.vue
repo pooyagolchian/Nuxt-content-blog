@@ -70,6 +70,7 @@ export default {
       this.themeName = this.theme;
       this.themeColor(this.theme);
     }
+
   }
 };
 </script>

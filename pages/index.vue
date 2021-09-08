@@ -3,15 +3,16 @@
     <div class='col-12 col-sm-12 col-md-4 info'>
       <div class='row pb-30'>
         <div class='col-12 col-sm-12 col-md-12'>
-          <nuxt-link to='/about' tag='div'>
+          <nuxt-link tag='div' to='/about'>
             <div
               class='h1-00 w-100 pb-20 pt-20 my-photo col-12 cp mt-20'
               style="background: url('/img/home-img/pooya-golchian.JPG') center center no-repeat; "
             />
           </nuxt-link>
         </div>
-        <nuxt-link to='/about' tag='div'
-                   class='col-12 col-sm-12 col-md-12 d-flex justify-content-center align-items-center flex-column cp'
+        <nuxt-link class='col-12 col-sm-12 col-md-12 d-flex justify-content-center align-items-center flex-column cp'
+                   tag='div'
+                   to='/about'
         >
           <h1
             class='fs-18 pt-20 app-title text-left d-flex flex-1 w-100 font-weight-bold'
@@ -78,18 +79,22 @@
          target='_blank'>VUE.js multiple theme color NPM package</a>
       <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://www.npmjs.com/package/vue-js-star-rating'
          target='_blank'>VUE.js icon rating NPM package</a>
-      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://github.com/pooyagolchian/pooyagolchian.github.io'
+      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14'
+         href='https://github.com/pooyagolchian/pooyagolchian.github.io'
          target='_blank'>NUXT.js SSG blog</a>
-      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://github.com/pooyagolchian/memegen' target='_blank'>Meme
+      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://github.com/pooyagolchian/memegen'
+         target='_blank'>Meme
         generator React.js application</a>
-      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://www.npmjs.com/package/scss-helper' target='_blank'>
+      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://www.npmjs.com/package/scss-helper'
+         target='_blank'>
         Mini UI SCSS helper, Grid, Typography, etc.
       </a>
       <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://www.npmjs.com/package/vuetify-form-base-ssr'
          target='_blank'>
         Customize Vuetify.js form builder for Nuxt.js for panel.azkivam.com
       </a>
-      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://github.com/pooyagolchian/docker-and-kubernetes-tutorial'
+      <a class='app-title d-flex flex-row pt-2 pb-2 fs-14'
+         href='https://github.com/pooyagolchian/docker-and-kubernetes-tutorial'
          target='_blank'>
         Docker, Kubernetes | tutorial and cheatsheet
       </a>
@@ -99,7 +104,11 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      photoClass: ''
+    };
+  },
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
       .sortBy('date', 'desc')
@@ -115,8 +124,7 @@ export default {
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
       return new Date(date).toLocaleDateString('en', options);
     }
-  }
+  },
 };
 </script>
 
-<style lang='scss'></style>

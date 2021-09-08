@@ -301,10 +301,9 @@ h6,
 
 
 .my-photo {
-  filter: grayscale(70%);
   width: 100%;
   height: 570px;
   min-height: 100%;
   border-radius: 16px;
-
+  filter: grayscale(80%);
 }
