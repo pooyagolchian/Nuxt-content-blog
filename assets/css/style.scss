@@ -210,20 +210,13 @@ h6,
 
 
 .app-nav {
-  border-right: 1px solid var(--app-title-color);
-  border-left: 1px solid var(--app-title-color);
   background-color: var(--app-background-color);
   position: relative;
-  float: left;
-  z-index: 99999;
 }
 
 
 .blog {
-
-  border-right: 1px solid var(--app-title-color);
   position: relative;
-
   @include media-breakpoint-down(sm) {
     border: none;
   }
@@ -234,7 +227,7 @@ h6,
 
 .body-container-divider {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -244,17 +237,13 @@ h6,
   justify-content: center;
   align-items: center;
   display: flex;
-  flex: 1;
-  flex-direction: column;
-
+  flex-direction: row;
   li {
     a {
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-bottom: 20px;
+      padding: 0 1em;
     }
   }
 }
@@ -267,44 +256,37 @@ h6,
 .footer {
   display: flex;
   position: relative;
-  border-left: 1px solid var(--app-title-color);
-  border-right: 1px solid var(--app-title-color);
   float: right;
   flex-direction: column;
   justify-content: space-between;
+
 
 }
 
 .footer-social {
   display: flex;
-  flex-direction: column;
-
-
+  justify-content: center;
+  align-items: center;
   li {
     list-style: none;
-
+    padding-top: 10px;
+    padding-bottom: 10px;
     a {
-      writing-mode: vertical-rl;
-      text-orientation: mixed;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding-bottom: 20px;
     }
   }
 }
 
 
 .footer-copyright {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .info {
-  border-right: 1px solid var(--app-title-color);
   @include media-breakpoint-down(sm) {
     border: none;
   }

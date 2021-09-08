@@ -1,9 +1,9 @@
 <template>
-  <div class='app-nav col col-1 justify-content-center'>
-      <div class='d-flex flex-column pr-5 pl-5 pt-20 pb-20'>
-        <div class='col-auto p-0 justify-content-center align-items-center'>
+  <div class='app-nav col col-12 justify-content-center'>
+      <div class='row justify-content-between align-items-center pt-20 pb-10'>
+        <div class='col-auto justify-content-center align-items-center flex-row d-flex'>
           <nuxt-link  class='cp text-center' tag='div' to='/'>
-            <span class='lnr lnr-home app-title fs-20'></span>
+            <span class='lnr lnr-home app-title fs-20 pr-5 pl-5'></span>
           </nuxt-link>
 
           <change-theme
@@ -15,28 +15,28 @@
               ]"
             class='
                 font-weight-light
-                 mt-20
-                 mb-20
+                 pl-5 pr-5
                 d-flex
                 justify-content-center
                 align-items-center
               '
           ></change-theme>
         </div>
-        <div class='col-auto p-0 justify-content-center align-items-end'>
+        <div class='col-auto justify-content-center align-items-center d-none d-sm-none d-md-none d-lg-flex '>
           <ul class='app-nav-link fs-14'>
             <li class='d-flex justify-content-center align-items-center'>
               <nuxt-link to='/blog'>Blog</nuxt-link>
             </li>
             <li class='d-flex justify-content-center align-items-center'>
-              <nuxt-link to='/cv'>CV</nuxt-link>
+              <nuxt-link to='/about'>About</nuxt-link>
             </li>
             <li class='d-flex justify-content-center align-items-center'>
-              <nuxt-link to='/about'>About</nuxt-link>
+              <nuxt-link to='/cv'>CV</nuxt-link>
             </li>
           </ul>
         </div>
-        <div class='col-auto p-0 d-none'>
+
+        <div class='col-auto d-sm-block d-md-block d-lg-none'>
           <ul class='app-nav-link'>
             <li class='app-title cp' @click='handleMenu'>
               <span class='lnr lnr-menu fs-30'></span>
@@ -51,7 +51,7 @@
       <div class='clos-btn app-title' @click='isShow = false'>
         <span class='lnr lnr-cross fs-40'></span>
       </div>
-      <ul class='text-center p-0 m-0'>
+      <ul class='text-center'>
         <li>
           <nuxt-link to='/blog' @click.native='isShow = false'
           >Blog

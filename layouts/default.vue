@@ -1,8 +1,8 @@
 <template>
-  <div class='body-container-divider h-100'>
-    <app-nav class='d-flex flex-grow-1'></app-nav>
+  <div class='body-container-divider'>
+    <app-nav></app-nav>
     <Nuxt />
-    <app-footer class='d-flex flex-grow-1'></app-footer>
+    <app-footer></app-footer>
   </div>
 </template>
 
