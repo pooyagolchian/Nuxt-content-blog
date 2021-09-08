@@ -64,7 +64,7 @@
     </div>
 
     <div class='app-subtitle footer-copyright fs-12 d-flex align-items-center justify-content-center pt-20 pb-20'>
-      <span>Develop with</span> <span class='lnr lnr-heart pr-3 pl-3'> </span> -
+      <span>Develop with</span> <span class='lnr lnr-heart pr-10 pl-10'> </span> -
       {{ new Date().getFullYear() }}
     </div>
   </div>

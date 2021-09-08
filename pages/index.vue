@@ -4,10 +4,9 @@
       <div class='row pb-30'>
         <div class='col-12 col-sm-12 col-md-12'>
           <nuxt-link to='/about' tag='div'>
-            <img
-              alt=''
-              class='h1-00 w-100 pb-20 pt-20 my-photo cp'
-              src='/img/home-img/pooya-golchian.JPG'
+            <div
+              class='h1-00 w-100 pb-20 pt-20 my-photo col-12 cp mt-20'
+              style="background: url('/img/home-img/pooya-golchian.JPG') center center no-repeat; "
             />
           </nuxt-link>
         </div>
@@ -15,7 +14,7 @@
                    class='col-12 col-sm-12 col-md-12 d-flex justify-content-center align-items-center flex-column cp'
         >
           <h1
-            class='fs-18 app-title text-left d-flex flex-1 w-100 font-weight-bold'
+            class='fs-18 pt-20 app-title text-left d-flex flex-1 w-100 font-weight-bold'
           >
             I'm Pooya Golchian
           </h1>
