@@ -1,10 +1,10 @@
 <template>
-  <div class="vue-multiple-themes">
-    <span v-if="changeThemeOff" class="change-theme-box" @click="changeTheme()">
-            <div v-if="themeName === 'light'">
+  <div class='vue-multiple-themes'>
+    <span v-if='changeThemeOff' class='change-theme-box' @click='changeTheme()'>
+            <div v-if='!themeSwitch'>
               <span class='lnr lnr-sun fs-20'></span>
             </div>
-            <div v-if="themeName === 'dark'">
+            <div v-else>
               <span class='lnr lnr-moon fs-20'></span>
             </div>
     </span>
@@ -14,63 +14,64 @@
 
 <script>
 export default {
+  layout: 'default',
   name: 'ChangeTheme',
   props: {
     defaultTheme: {
       default: 'light',
-      type: String,
+      type: String
     },
     themeColorList: {
       default: ['light', 'dark'],
-      type: Array,
+      type: Array
     },
     changeThemeOff: {
       default: true,
-      type: Boolean,
-    },
+      type: Boolean
+    }
   },
   data() {
     return {
       theme: this.defaultTheme,
-      counter: 0,
+      themeSwitch: false,
       themeName: this.defaultTheme,
-      showChangeTheme: this.changeThemeOff,
-    }
+      showChangeTheme: this.changeThemeOff
+    };
   },
 
   methods: {
     themeColor(themeColor) {
-      this.theme = `${themeColor}`
-      const bodyElement = document.body
-      bodyElement.classList.add('app-background')
-      const htmlElement = document.documentElement
-      htmlElement.setAttribute('theme', `${themeColor}`)
-      localStorage.setItem('theme', JSON.stringify(`${themeColor}`))
+      this.theme = `${themeColor}`;
+      const bodyElement = document.body;
+      bodyElement.classList.add('app-background');
+      const htmlElement = document.documentElement;
+      htmlElement.setAttribute('theme', `${themeColor}`);
+      localStorage.setItem('theme', JSON.stringify(`${themeColor}`));
     },
     changeTheme() {
-      this.counter = this.counter + 1
-      if (this.counter === this.themeColorList.length) {
-        this.counter = 0
-      }
-      this.themeName = this.themeColorList[this.counter]
-      this.themeColor(this.themeName)
-    },
+      this.themeSwitch = !this.themeSwitch;
+      this.themeSwitch ? this.themeColor('dark') : this.themeColor('light');
+    }
   },
   mounted() {
     if (localStorage.getItem('theme') && this.showChangeTheme) {
-      this.theme = JSON.parse(localStorage.getItem('theme'))
-      this.themeName = this.theme
-      this.themeColor(this.theme)
+      this.theme = JSON.parse(localStorage.getItem('theme'));
+      const htmlElement = document.documentElement;
+      htmlElement.setAttribute('theme', this.theme);
+      if (this.theme === 'light') {
+        this.themeSwitch = false;
+      } else {
+        this.themeSwitch = true;
+      }
+      this.themeName = this.theme;
+      this.themeColor(this.theme);
     } else {
-      this.theme = this.defaultTheme
-      this.themeName = this.theme
-      this.themeColor(this.theme)
+      this.theme = this.defaultTheme;
+      this.themeName = this.theme;
+      this.themeColor(this.theme);
     }
-    this.theme = this.defaultTheme
-    this.themeName = this.theme
-    this.themeColor(this.theme)
-  },
-}
+  }
+};
 </script>
 
 
