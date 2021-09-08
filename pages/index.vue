@@ -104,11 +104,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      photoClass: ''
-    };
-  },
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
       .sortBy('date', 'desc')
@@ -124,7 +119,7 @@ export default {
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
       return new Date(date).toLocaleDateString('en', options);
     }
-  },
+  }
 };
 </script>
 

@@ -171,6 +171,7 @@ a {
 ul {
   padding: 0;
   margin: 0;
+
   li {
     list-style: none;
     margin: 0;
@@ -232,6 +233,7 @@ h6,
   align-items: center;
   display: flex;
   flex-direction: row;
+
   li {
     a {
       display: flex;
@@ -261,10 +263,12 @@ h6,
   display: flex;
   justify-content: center;
   align-items: center;
+
   li {
     list-style: none;
     padding-top: 10px;
     padding-bottom: 10px;
+
     a {
       display: flex;
       justify-content: center;
@@ -297,7 +301,6 @@ h6,
   min-height: 100vh;
   height: 100%;
 }
-
 
 
 .my-photo {
