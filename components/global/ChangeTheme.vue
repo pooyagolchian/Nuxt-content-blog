@@ -37,15 +37,7 @@ export default {
       showChangeTheme: this.changeThemeOff,
     }
   },
-  computed: {
-    showChangeThemeHandler() {
-      if (!this.showChangeTheme) {
-        this.theme = this.defaultTheme
-        this.themeName = this.theme
-        this.themeColor(this.theme)
-      }
-    },
-  },
+
   methods: {
     themeColor(themeColor) {
       this.theme = `${themeColor}`
@@ -65,7 +57,6 @@ export default {
     },
   },
   mounted() {
-    if (!this.showChangeTheme) this.showChangeThemeHandler()
     if (localStorage.getItem('theme') && this.showChangeTheme) {
       this.theme = JSON.parse(localStorage.getItem('theme'))
       this.themeName = this.theme
@@ -75,6 +66,9 @@ export default {
       this.themeName = this.theme
       this.themeColor(this.theme)
     }
+    this.theme = this.defaultTheme
+    this.themeName = this.theme
+    this.themeColor(this.theme)
   },
 }
 </script>
