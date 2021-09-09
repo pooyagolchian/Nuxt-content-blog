@@ -11,7 +11,7 @@
         class='col-12 col-sm-12 col-md-8 justify-content-center text-left d-flex flex-column'
       >
         <h1
-          class='fs-18 pt-20 app-title text-left font-weight-bold'
+          class='fs-18 pt-20 app-title text-left font-weight-bold pt-50'
         >
           I'm Pooya Golchian
         </h1>
