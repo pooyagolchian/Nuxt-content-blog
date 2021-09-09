@@ -62,10 +62,15 @@ a {
 
 .app-background {
   background-color: var(--app-background-color);
+  -webkit-transition: background 0.2s 0s ease-in;
+  -moz-transition: background 0.2s 0s ease-in;
+  -o-transition: background 0.2s 0s ease-in;
+  transition: background 0.2s 0s ease-in;
 }
 
 .app-title {
   color: var(--app-title-color);
+
 }
 
 .app-subtitle {
@@ -205,7 +210,6 @@ h6,
 
 
 .app-nav {
-  background-color: var(--app-background-color);
   position: relative;
 }
 

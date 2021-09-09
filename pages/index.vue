@@ -1,5 +1,37 @@
 <template>
   <div class='row m-0'>
+    <div class='col-12 col-sm-12 col-md-5 blog'>
+
+      <div class='col-12 p-0'>
+        <app-search-input class='pt-20' />
+      </div>
+      <div class='row pb-40'>
+        <div
+          v-for='article of articles'
+          :key='article.slug'
+          class='col-12 col-sm-12 col-md-12 pt-15 pb-15'
+        >
+          <NuxtLink
+            :to="{ name: 'blog-slug', params: { slug: article.slug } }"
+            class='cp mb-20 link'
+            tag='a'
+          >
+            <div class='w-100'>
+              <h2 class='app-title fs-19 font-weight-normal pt-10'>
+                {{ article.title }}
+              </h2>
+              <div class='app-subtitle fs-13'>
+                <span class='lnr lnr-calendar-full pr-5'></span>{{ formatDate(article.date) }}
+              </div>
+              <div class='app-subtitle fs-14 fa-15 pt-10'>
+                {{ article.description }}
+              </div>
+            </div>
+          </NuxtLink>
+        </div>
+      </div>
+
+    </div>
     <div class='col-12 col-sm-12 col-md-4 info'>
       <div class='row pb-30'>
         <div class='col-12 col-sm-12 col-md-12'>
@@ -38,38 +70,6 @@
             .
           </p>
         </nuxt-link>
-      </div>
-
-    </div>
-    <div class='col-12 col-sm-12 col-md-5 blog'>
-
-      <div class='col-12 p-0'>
-        <app-search-input class='pt-20' />
-      </div>
-      <div class='row pb-40'>
-        <div
-          v-for='article of articles'
-          :key='article.slug'
-          class='col-12 col-sm-12 col-md-12 pt-15 pb-15'
-        >
-          <NuxtLink
-            :to="{ name: 'blog-slug', params: { slug: article.slug } }"
-            class='cp mb-20 link'
-            tag='a'
-          >
-            <div class='w-100'>
-              <h2 class='app-title fs-19 font-weight-normal pt-10'>
-                {{ article.title }}
-              </h2>
-              <div class='app-subtitle fs-13'>
-                <span class='lnr lnr-calendar-full pr-5'></span>{{ formatDate(article.date) }}
-              </div>
-              <div class='app-subtitle fs-14 fa-15 pt-10'>
-                {{ article.description }}
-              </div>
-            </div>
-          </NuxtLink>
-        </div>
       </div>
 
     </div>
