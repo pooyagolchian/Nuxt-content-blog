@@ -1,5 +1,46 @@
 <template>
   <div class='row m-0'>
+    <div class='col-12 col-sm-12 col-md-4 info'>
+      <div class='row pb-30'>
+        <div class='col-12 col-sm-12 col-md-12'>
+          <nuxt-link tag='div' to='/about'>
+            <div
+              class='h1-00 w-100 pb-20 pt-20 my-photo col-12 cp mt-20'
+              style="background: url('/img/home-img/pooya-golchian.JPG') center center no-repeat; "
+            />
+          </nuxt-link>
+        </div>
+        <nuxt-link class='col-12 col-sm-12 col-md-12 cp'
+                   tag='div'
+                   to='/about'
+        >
+          <h1
+            class='fs-18 pt-20 app-title text-left'
+          >
+            I'm Pooya Golchian
+          </h1>
+          <ul
+            class='col-12 p-0 fs-16  app-subtitle font-weight-light'
+          >
+            <li>Frontend Engineer (Vue.js/React.js)</li>
+            <li>DevOps Engineer and Linux Server Engineer</li>
+            <li>Code, Coffee, Crypto</li>
+          </ul>
+          <p class='fs-14 app-title pt-10'>
+            I was born in Tehran in 1990. When my father bought a computer for our home, I fell in love with it. I start
+            to learned Linux with Ubuntu and Fedora when I was 16 years old. Now, I have a master's degree in computer
+            engineering. I have 10 years' experience in web development. I have been using Javascript for web
+            development. I have 4 years of experience in Vue.js and, Nuxt.js. I worked with React.js too. I have
+            developed lots of web applications with high-tech frameworks. I have experience with PHP, WordPress, Drupal,
+            headless CMS, and JAM STACK architecture. For more information about my professional full-time work, please
+            see my
+            <nuxt-link to='/cv'>CV</nuxt-link>
+            .
+          </p>
+        </nuxt-link>
+      </div>
+
+    </div>
     <div class='col-12 col-sm-12 col-md-5 blog'>
 
       <div class='col-12 p-0'>
@@ -29,47 +70,11 @@
             </div>
           </NuxtLink>
         </div>
-      </div>
-
-    </div>
-    <div class='col-12 col-sm-12 col-md-4 info'>
-      <div class='row pb-30'>
-        <div class='col-12 col-sm-12 col-md-12'>
-          <nuxt-link tag='div' to='/about'>
-            <div
-              class='h1-00 w-100 pb-20 pt-20 my-photo col-12 cp mt-20'
-              style="background: url('/img/home-img/pooya-golchian.JPG') center center no-repeat; "
-            />
+        <div class='col col-12'>
+          <nuxt-link to='/blog' class='blog-more-btn'>
+            More Articles
           </nuxt-link>
         </div>
-        <nuxt-link class='col-12 col-sm-12 col-md-12 d-flex justify-content-center align-items-center flex-column cp'
-                   tag='div'
-                   to='/about'
-        >
-          <h1
-            class='fs-18 pt-20 app-title text-left d-flex flex-1 w-100 font-weight-bold'
-          >
-            I'm Pooya Golchian
-          </h1>
-          <ul
-            class='p-0 m-0 d-flex justify-content-center align-items-start flex-column flex-1 w-100 app-subtitle'
-          >
-            <li>Frontend Engineer (Vue.js/React.js)</li>
-            <li>DevOps Engineer and Linux Server Engineer</li>
-            <li>Code, Coffee, Crypto</li>
-          </ul>
-          <p class='fs-14 app-title pt-10'>
-            I was born in Tehran in 1990. When my father bought a computer for our home, I fell in love with it. I start
-            to learned Linux with Ubuntu and Fedora when I was 16 years old. Now, I have a master's degree in computer
-            engineering. I have 10 years' experience in web development. I have been using Javascript for web
-            development. I have 4 years of experience in Vue.js and, Nuxt.js. I worked with React.js too. I have
-            developed lots of web applications with high-tech frameworks. I have experience with PHP, WordPress, Drupal,
-            headless CMS, and JAM STACK architecture. For more information about my professional full-time work, please
-            see my
-            <nuxt-link to='/cv'>CV</nuxt-link>
-            .
-          </p>
-        </nuxt-link>
       </div>
 
     </div>
@@ -107,7 +112,7 @@ export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
       .sortBy('date', 'desc')
-      .limit()
+      .limit(4)
       .fetch();
 
     return {

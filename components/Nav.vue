@@ -49,7 +49,7 @@
 
     <div v-if='isShow' class='mobile-menu'>
       <div class='clos-btn app-title' @click='isShow = false'>
-        <span class='lnr lnr-cross fs-40'></span>
+        <span class='lnr lnr-cross fs-30'></span>
       </div>
       <ul class='text-center'>
         <li>
