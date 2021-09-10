@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1631195946",layout:"default",error:a,serverRendered:true,routePath:"\u002Fblog\u002Fhost-jekyll-theme-on-github",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"3f2f4561"}}}}(null));
