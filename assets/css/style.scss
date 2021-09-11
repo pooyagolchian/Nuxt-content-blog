@@ -313,10 +313,6 @@ h6,
   min-height: 100%;
   border-radius: 8px;
   filter: grayscale(30%);
-
-  &:hover {
-    filter: sepia(0.5);
-  }
 }
 
 .blog-more-btn {
@@ -333,5 +329,25 @@ h6,
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+
+.project-list {
+  li {
+    border-bottom: 1px dashed var(--app-title-color);
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    a {
+
+    }
   }
 }
