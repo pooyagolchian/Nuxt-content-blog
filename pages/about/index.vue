@@ -1,14 +1,8 @@
 <template>
   <div class='col-12  about'>
     <div class='row pb-30'>
-      <div class='col-12 col-sm-12 col-md-4'>
-        <div
-          class='pb-20 pt-20 my-photo col-12 mt-20'
-          style="background: url('/img/home-img/pooya-golchian.JPG') center center no-repeat; "
-        />
-      </div>
       <div
-        class='col-12 col-sm-12 col-md-8 justify-content-center text-left d-flex flex-column'
+        class='col-12 col-sm-12 justify-content-center text-left d-flex flex-column'
       >
         <h1
           class='fs-18 pt-20 app-title text-left font-weight-bold pt-50'

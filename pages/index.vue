@@ -9,7 +9,7 @@
         <div
           v-for='article of articles'
           :key='article.slug'
-          class='col-12 col-sm-12 col-md-12 pt-15 pb-15'
+          class='col-12 col-sm-12 col-md-12 pt-5 pb-5'
         >
           <NuxtLink
             :to="{ name: 'blog-slug', params: { slug: article.slug } }"
@@ -17,11 +17,11 @@
             tag='a'
           >
             <div class='w-100'>
-              <h2 class='app-title fs-19 font-weight-normal pt-10'>
+              <h2 class='app-title fs-16 font-weight-normal pt-10'>
                 {{ article.title }}
               </h2>
-              <div class='app-subtitle fs-13'>
-                <span class='lnr lnr-calendar-full pr-5'></span>{{ formatDate(article.date) }}
+              <div class='app-subtitle fs-11'>
+                <span class='lnr lnr-clock pr-5'></span>{{ formatDate(article.date) }}
               </div>
               <div class='app-subtitle fs-14 fa-15 pt-10'>
                 {{ article.description }}
@@ -38,7 +38,7 @@
 
     </div>
     <div class='col-12 col-sm-12 col-md-4 project pb-50'>
-      <div class='font-weight-bold app-title pt-10 fs-20 pb-10'>Open-Source project</div>
+      <div class='font-weight-normal app-title pt-10 fs-20 pb-10'>Open-Source project</div>
       <ul class='project-list'>
         <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14'
                href='https://www.npmjs.com/package/vue-multiple-themes'
@@ -71,14 +71,6 @@
     </div>
     <div class='col-12 col-sm-12 col-md-4 info'>
       <div class='row pb-30'>
-        <div class='col-12 col-sm-12 col-md-12'>
-          <nuxt-link tag='div' to='/about'>
-            <div
-              class='h1-00 w-100 pb-20 pt-20 my-photo col-12 cp mt-20'
-              style="background: url('/img/home-img/pooya-golchian.JPG') center center no-repeat; "
-            />
-          </nuxt-link>
-        </div>
         <nuxt-link class='col-12 col-sm-12 col-md-12 cp'
                    tag='div'
                    to='/about'
