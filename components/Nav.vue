@@ -1,6 +1,6 @@
 <template>
   <div class='app-nav col col-12 justify-content-center'>
-      <div class='row justify-content-between align-items-center pt-20 pb-10'>
+      <div class='row justify-content-between align-items-center pt-10 pb-10'>
         <div class='col-auto justify-content-center align-items-center flex-row d-flex'>
           <nuxt-link  class='cp text-center' tag='div' to='/'>
             <span class='lnr lnr-home app-title fs-20 pr-5 pl-5'></span>

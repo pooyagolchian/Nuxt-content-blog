@@ -5,7 +5,7 @@
       <div class='col-12 p-0'>
         <app-search-input class='pt-20' />
       </div>
-      <div class='row pb-40'>
+      <div class='row pb-10'>
         <div
           v-for='article of articles'
           :key='article.slug'
@@ -23,7 +23,7 @@
               <div class='app-subtitle fs-11'>
                 <span class='lnr lnr-clock pr-5'></span>{{ formatDate(article.date) }}
               </div>
-              <div class='app-subtitle fs-14 fa-15 pt-10'>
+              <div class='text-muted fs-14 fa-15 pt-10'>
                 {{ article.description }}
               </div>
             </div>
@@ -56,7 +56,7 @@
             <li>DevOps Engineer and Linux Server Engineer</li>
             <li>Code, Coffee, Crypto</li>
           </ul>
-          <p class='fs-14 app-title pt-10'>
+          <p class='fs-14 app-title pt-10 m-0'>
             I was born in Tehran in 1990. When my father bought a computer for our home, I fell in love with it. I start
             to learned Linux with Ubuntu and Fedora when I was 16 years old. Now, I have a master's degree in computer
             engineering. I have 10 years' experience in web development. I have been using Javascript for web

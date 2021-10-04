@@ -36,7 +36,7 @@
 
 .container {
   @include make-container();
-  max-width: 760px;
+  max-width: 960px;
 }
 
 
@@ -211,6 +211,7 @@ h6,
 
 .app-nav {
   position: relative;
+  border-bottom: 1px solid var(--app-title-color);
 }
 
 
@@ -229,6 +230,11 @@ h6,
   flex-direction: column;
   max-width: 960px;
   margin: 0 auto;
+  @include media-breakpoint-up(md) {
+    border-left: 1px solid var(--app-title-color);
+    border-right: 1px solid var(--app-title-color);
+  }
+
 }
 
 
@@ -259,7 +265,7 @@ h6,
   float: right;
   flex-direction: column;
   justify-content: space-between;
-
+  border-top: 1px solid var(--app-title-color)
 
 }
 
@@ -316,7 +322,7 @@ h6,
 
 .blog-more-btn {
   margin-top: 10px;
-  display: flex;
+  display: inline-flex;
   flex: 1;
   padding: 10px;
   color: var(--app-title-color);
@@ -371,7 +377,7 @@ h6,
   }
 
   &__container {
-    margin-top: 16px;
+    margin-top: 5px;
     border: 1px solid var(--app-subtitle-color);
     padding: 16px;
     font-size: 13px;
