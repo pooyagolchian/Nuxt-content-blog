@@ -1,6 +1,6 @@
 <template>
   <div class='row m-0'>
-    <div class='col-12 col-sm-12 col-md-4 blog'>
+    <div class='col-12 col-sm-12 col-md-6 blog'>
 
       <div class='col-12 p-0'>
         <app-search-input class='pt-20' />
@@ -37,40 +37,9 @@
       </div>
 
     </div>
-    <div class='col-12 col-sm-12 col-md-4 project pb-50'>
-      <div class='font-weight-normal app-title pt-10 fs-20 pb-10'>Open-Source project</div>
-      <ul class='project-list'>
-        <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14'
-               href='https://www.npmjs.com/package/vue-multiple-themes'
-               target='_blank'>VUE.js multiple theme color NPM package</a></li>
-        <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://www.npmjs.com/package/vue-js-star-rating'
-               target='_blank'>VUE.js icon rating NPM package</a></li>
-        <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14'
-               href='https://github.com/pooyagolchian/pooyagolchian.github.io'
-               target='_blank'>NUXT.js SSG blog</a></li>
-        <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://github.com/pooyagolchian/memegen'
-               target='_blank'>Meme
-          generator React.js application</a></li>
-        <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://www.npmjs.com/package/scss-helper'
-               target='_blank'>
-          Mini UI SCSS helper, Grid, Typography, etc.
-        </a></li>
-        <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14'
-               href='https://www.npmjs.com/package/vuetify-form-base-ssr'
-               target='_blank'>
-          Customize Vuetify.js form builder for Nuxt.js for panel.azkivam.com
-        </a></li>
-        <li>
-          <a class='app-title d-flex flex-row pt-2 pb-2 fs-14'
-             href='https://github.com/pooyagolchian/docker-and-kubernetes-tutorial'
-             target='_blank'>
-            Docker, Kubernetes | tutorial and cheatsheet
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class='col-12 col-sm-12 col-md-4 info'>
-      <div class='row pb-30'>
+
+    <div class='col-12 col-sm-12 col-md-6 info'>
+      <div class='row pb-10'>
         <nuxt-link class='col-12 col-sm-12 col-md-12 cp'
                    tag='div'
                    to='/about'
@@ -106,7 +75,36 @@
           </nuxt-link>
         </div>
       </div>
-
+      <div class='font-weight-normal app-title pt-10 fs-20 pb-10'>Open-Source project</div>
+      <ul class='project-list'>
+        <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14'
+               href='https://www.npmjs.com/package/vue-multiple-themes'
+               target='_blank'>VUE.js multiple theme color NPM package</a></li>
+        <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://www.npmjs.com/package/vue-js-star-rating'
+               target='_blank'>VUE.js icon rating NPM package</a></li>
+        <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14'
+               href='https://github.com/pooyagolchian/pooyagolchian.github.io'
+               target='_blank'>NUXT.js SSG blog</a></li>
+        <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://github.com/pooyagolchian/memegen'
+               target='_blank'>Meme
+          generator React.js application</a></li>
+        <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14' href='https://www.npmjs.com/package/scss-helper'
+               target='_blank'>
+          Mini UI SCSS helper, Grid, Typography, etc.
+        </a></li>
+        <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14'
+               href='https://www.npmjs.com/package/vuetify-form-base-ssr'
+               target='_blank'>
+          Customize Vuetify.js form builder for Nuxt.js for panel.azkivam.com
+        </a></li>
+        <li>
+          <a class='app-title d-flex flex-row pt-2 pb-2 fs-14'
+             href='https://github.com/pooyagolchian/docker-and-kubernetes-tutorial'
+             target='_blank'>
+            Docker, Kubernetes | tutorial and cheatsheet
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -116,7 +114,7 @@ export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
       .sortBy('date', 'desc')
-      .limit(4)
+      .limit(6)
       .fetch();
 
     return {

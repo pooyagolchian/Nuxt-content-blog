@@ -2,7 +2,6 @@
   <div class="col-12 p-0">
     <input
       v-model="searchQuery"
-      type="search"
       autocomplete="off"
       placeholder="Search Articles"
       class="search w-100"
@@ -45,34 +44,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-.search {
-  border: none;
-  box-shadow: none;
-  border-radius: 8px;
-  text-indent: 20px;
-  padding: 10px;
-  width: 100%;
-  border: 1px solid var(--app-subtitle-color);
-  background-color: var(--app-background-color);
-  color: var(--app-title-color);
-  &:focus {
-    outline: none;
-  }
-
-  &__container {
-    margin-top: 16px;
-    border-radius: 8px;
-    border: 1px solid var(--app-subtitle-color);
-    padding: 16px;
-    li {
-      border-bottom: 1px solid var(--app-subtitle-color);
-      padding-bottom: 13px;
-      &:last-child {
-        border: none;
-      }
-    }
-  }
-}
-</style>

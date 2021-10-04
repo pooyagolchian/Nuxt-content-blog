@@ -3,11 +3,11 @@
     <div class='col-12 p-0'>
       <app-search-input />
     </div>
-    <div class='row pb-40'>
+    <div class='row pt-10 pb-40'>
       <div
         v-for='article of articles'
         :key='article.slug'
-        class='col-12 col-sm-12 col-md-12 pt-15 pb-15'
+        class='col-12 col-sm-12 col-md-12 pt-5 pb-5'
       >
         <NuxtLink
           :to="{ name: 'blog-slug', params: { slug: article.slug } }"
@@ -15,11 +15,11 @@
           tag='a'
         >
           <div class='w-100'>
-            <h2 class='app-title fs-19 font-weight-normal pt-10'>
+            <h2 class='app-title fs-19 font-weight-normal pt-5'>
               {{ article.title }}
             </h2>
-            <div class='app-subtitle fs-13'>
-              <span class='lnr lnr-calendar-full pr-5'></span>{{ formatDate(article.date) }}
+            <div class='app-subtitle fs-12'>
+              <span class='lnr lnr-clock pr-5'></span>{{ formatDate(article.date) }}
             </div>
             <div class='app-subtitle fs-14 fa-15 pt-10'>
               {{ article.description }}
