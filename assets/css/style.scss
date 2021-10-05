@@ -39,7 +39,6 @@
   max-width: 960px;
 }
 
-
 body {
   font-family: 'Poppins', sans-serif;
   height: 100vh;
@@ -70,7 +69,6 @@ a {
 
 .app-title {
   color: var(--app-title-color);
-
 }
 
 .app-subtitle {
@@ -201,29 +199,23 @@ h6,
   font-size: 20px;
 }
 
-
 .clos-btn {
   position: absolute;
   top: 20px;
   right: 15px;
 }
 
-
 .app-nav {
   position: relative;
   border-bottom: 1px solid var(--app-title-color);
 }
-
 
 .blog {
   position: relative;
   @include media-breakpoint-down(sm) {
     border: none;
   }
-
-
 }
-
 
 .body-container-divider {
   display: flex;
@@ -234,9 +226,7 @@ h6,
     border-left: 1px solid var(--app-title-color);
     border-right: 1px solid var(--app-title-color);
   }
-
 }
-
 
 .app-nav-link {
   justify-content: center;
@@ -258,15 +248,13 @@ h6,
   height: 100vh;
 }
 
-
 .footer {
   display: flex;
   position: relative;
   float: right;
   flex-direction: column;
   justify-content: space-between;
-  border-top: 1px solid var(--app-title-color)
-
+  border-top: 1px solid var(--app-title-color);
 }
 
 .footer-social {
@@ -287,7 +275,6 @@ h6,
   }
 }
 
-
 .footer-copyright {
   display: flex;
   justify-content: center;
@@ -300,18 +287,15 @@ h6,
   }
 }
 
-
 .blog-list {
   min-height: 100vh;
   height: 100%;
 }
 
-
 .about {
   min-height: 100vh;
   height: 100%;
 }
-
 
 .my-photo {
   width: 100%;
@@ -344,7 +328,6 @@ h6,
   }
 }
 
-
 .project-list {
   li {
     border-bottom: 1px dashed var(--app-title-color);
@@ -360,9 +343,7 @@ h6,
   }
 }
 
-
 .search {
-  border: none;
   box-shadow: none;
   text-indent: 5px;
   padding: 10px;
@@ -371,6 +352,7 @@ h6,
   background-color: var(--app-background-color);
   color: var(--app-title-color);
   font-size: 13px;
+  border-radius: 0;
 
   &:focus {
     outline: none;
@@ -392,5 +374,3 @@ h6,
     }
   }
 }
-
-

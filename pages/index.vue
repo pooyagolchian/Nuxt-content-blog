@@ -1,5 +1,5 @@
 <template>
-  <div class='row m-0'>
+  <div class='row pb-15 m-0'>
     <div class='col-12 col-sm-12 col-md-6 blog'>
 
       <div class='col-12 p-0'>
@@ -37,7 +37,6 @@
       </div>
 
     </div>
-
     <div class='col-12 col-sm-12 col-md-6 info'>
       <div class='row pb-10'>
         <nuxt-link class='col-12 col-sm-12 col-md-12 cp'
