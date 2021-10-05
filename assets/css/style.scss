@@ -374,3 +374,11 @@ h6,
     }
   }
 }
+
+
+.divider {
+  border: 0;
+  border-top: 1px solid var(--app-title-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

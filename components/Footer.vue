@@ -1,5 +1,5 @@
 <template>
-  <div class="footer col col-12 p-0 m-0 pt-20">
+  <div class="footer col col-12 p-0 m-0">
     <div
       class="
         col-12
@@ -68,26 +68,31 @@
         </li>
       </ul>
     </div>
-
+    <div class='divider'></div>
     <div
       class="
         app-subtitle
-        footer-copyright
         fs-12
-        d-flex
-        align-items-center
-        justify-content-center
+        col col-12
         pt-20
         pb-20
       "
     >
-      This project is Open-Source. You can fork and start it on
-      <a
-        class='pr-2 pl-2'
-        target="_blank"
-        href="https://github.com/pooyagolchian/pooyagolchian.github.io"
-        > Github </a
-      >
+
+      <div class='container'>
+        <div class="row">
+         <div class='col-12 text-center'>
+           <div> <a
+             class="pr-2 pl-2"
+             target="_blank"
+             href="https://github.com/pooyagolchian/pooyagolchian.github.io"
+           >
+             My website is Open-Source. Please fork it and give a star to it. (Github Link)
+           </a></div>
+
+         </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
