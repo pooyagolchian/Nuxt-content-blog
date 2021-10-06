@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1633475856",layout:"default",error:a,serverRendered:true,routePath:"\u002Fblog\u002Farangodb-devops",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a},content:{dbHash:"c078c744"}}}}(null));
