@@ -12,25 +12,27 @@
             back-link
           "
           to="/"
-          ><span class="lnr lnr-arrow-left fs-30 pr-15 d-flex"></span>Pooya
-          Golchian</nuxt-link
         >
+          <span class="lnr lnr-arrow-left fs-30 pr-15 d-flex"></span>
+          <span>Pooya Golchian</span>
+        </nuxt-link>
         <h1 class="app-title p-0 m-0 font-weight-normal pb-20 fs-25">
           {{ article.title }}
         </h1>
         <p class="app-subtitle fs-14 text-muted">{{ article.description }}</p>
         <p class="app-subtitle fs-14 text-muted">
           <span>Article last updated:</span>
-          <span class='lnr lnr-clock pt-5 pl-5'></span>
+          <span class="lnr lnr-clock pt-5 pl-5"></span>
           <span>{{ formatDate(article.updatedAt) }}</span>
         </p>
 
-        <div class='divider'></div>
+        <div class="divider"></div>
 
         <div class="col-12 p-0">
           <nav class="pt-20 pb-20">
             <div class="app-title fs-16 font-weight-normal text-left">
-              <span class='lnr lnr-bookmark pr-5'></span><span>Table of content</span>
+              <span class="lnr lnr-bookmark pr-5"></span
+              ><span>Table of content</span>
             </div>
             <ul>
               <li
@@ -44,7 +46,7 @@
           </nav>
         </div>
 
-        <div class='divider'></div>
+        <div class="divider"></div>
         <nuxt-content class="app-subtitle article-slug" :document="article" />
       </article>
     </div>
