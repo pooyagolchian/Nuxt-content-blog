@@ -10,7 +10,7 @@
           d-flex
         "
       >
-        <nuxt-link class="cp text-center" tag="div" to="/">
+        <nuxt-link class="cp text-center app-nav-link-left" tag="div" to="/">
           <span class="lnr lnr-home app-title fs-20 pr-5 pl-5"></span>
         </nuxt-link>
 
@@ -36,7 +36,7 @@
           d-none d-sm-none d-md-none d-lg-flex
         "
       >
-        <ul class="app-nav-link fs-14">
+        <ul class="app-nav-link app-nav-link-right fs-14">
           <li class="d-flex justify-content-center align-items-center">
             <nuxt-link to="/blog">Blog</nuxt-link>
           </li>

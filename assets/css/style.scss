@@ -403,3 +403,17 @@ h6,
   width: 60px;
   height: 60px;
 }
+
+.app-nav-link-right{
+  .nuxt-link-active {
+    border: 1px solid var(--app-title-color);
+  }
+
+  li {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
