@@ -1,7 +1,7 @@
 <template>
-  <div class='embed-responsive pr-15 pl-15 pt-20 fill-height blog-list'>
+  <div class='col col-12 pt-10 pb-10 blog-list'>
     <div class='col-12 p-0'>
-      <app-search-input />
+      <app-search-input class='pt-10' />
     </div>
     <div class='row pt-10 pb-40'>
       <div
@@ -15,13 +15,13 @@
           tag='a'
         >
           <div class='w-100'>
-            <h2 class='app-title fs-19 font-weight-normal pt-5'>
+            <h2 class='app-title fs-16 font-weight-normal pt-10'>
               {{ article.title }}
             </h2>
-            <div class='app-subtitle fs-12'>
+            <div class='app-subtitle fs-11'>
               <span class='lnr lnr-clock pr-5'></span>{{ formatDate(article.date) }}
             </div>
-            <div class='app-subtitle fs-14 fa-15 pt-10'>
+            <div class='text-muted fs-14 fa-15 pt-10'>
               {{ article.description }}
             </div>
           </div>

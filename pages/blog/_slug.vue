@@ -1,37 +1,51 @@
 <template>
-  <div class='d-flex flex-grow-1 embed-responsive pt-20 pl-10 pr-10'>
-    <article class='col-auto'>
-      <h1 class="app-title p-0 m-0 font-weight-normal pb-20 fs-25">
-        {{ article.title }}
-      </h1>
-      <p class="app-subtitle">{{ article.description }}</p>
-      <p class="app-subtitle">
-        Article last updated: {{ formatDate(article.updatedAt) }}
-      </p>
-      <div class="embed-responsive col-auto">
-        <nav class="pt-20 pb-20">
-          <div class="app-title fs-25 font-weight-normal text-left">
-            Table of content
-          </div>
-          <ul>
-            <li
-              class="app-subtitle"
-              v-for="link of article.toc"
-              :key="link.id"
-            >
-              <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
-            </li>
-          </ul>
-        </nav>
-      </div>
+  <div>
+    <div class="col col-12 p-0">
+      <article class="container">
+        <nuxt-link
+          class="
+            d-flex
+            justify-content-start
+            mt-20
+            mb-20
+            align-items-center
+            back-link
+          "
+          to="/"
+          ><span class="lnr lnr-arrow-left fs-30 pr-5 pl-5 d-flex"></span>Pooya
+          Golchian</nuxt-link
+        >
+        <h1 class="app-title p-0 m-0 font-weight-normal pt-20 pb-20 fs-25">
+          {{ article.title }}
+        </h1>
+        <p class="app-subtitle">{{ article.description }}</p>
+        <p class="app-subtitle">
+          Article last updated: {{ formatDate(article.updatedAt) }}
+        </p>
+        <div class="embed-responsive col-auto">
+          <nav class="pt-20 pb-20">
+            <div class="app-title fs-25 font-weight-normal text-left">
+              Table of content
+            </div>
+            <ul>
+              <li
+                class="app-subtitle"
+                v-for="link of article.toc"
+                :key="link.id"
+              >
+                <NuxtLink :to="`#${link.id}`">{{ link.text }}</NuxtLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <nuxt-content class="app-subtitle article-slug" :document="article" />
+      </article>
+    </div>
+    <div class="divider"></div>
+    <prev-next class="col col-12" :prev="prev" :next="next" />
 
-      <nuxt-content
-        class="app-subtitle article-slug"
-        :document="article"
-      />
-      <author :author="article.author" />
-      <prev-next :prev="prev" :next="next" />
-    </article>
+    <div class="divider"></div>
+    <author class="col col-12" :author="article.author" />
   </div>
 </template>
 
@@ -44,37 +58,37 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.article.description
+          content: this.article.description,
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `Pooya Golchian | ${this.article.title}`
-        }
+          content: `Pooya Golchian | ${this.article.title}`,
+        },
       ],
-    }
+    };
   },
   async asyncData({ $content, params }) {
-    const article = await $content('articles', params.slug).fetch()
+    const article = await $content('articles', params.slug).fetch();
 
     const [prev, next] = await $content('articles')
       .sortBy('createdAt', 'asc')
       .surround(params.slug)
-      .fetch()
+      .fetch();
 
     return {
       article,
       prev,
       next,
-    }
+    };
   },
   methods: {
     formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      return new Date(date).toLocaleDateString('en', options);
     },
   },
-}
+};
 </script>
 
 <style lang="scss">

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='col col-12'>
     <NuxtLink
       tag="div"
       :to="`/blog/author/${author.name}`"
@@ -14,8 +14,8 @@
       <div
         class="d-flex flex-column justify-content-center align-items-center w-100"
       >
-        <h4 class="app-title fs-20 w-100">{{ author.name }}</h4>
-        <div class="app-subtitle w-100">{{ author.bio }}</div>
+        <div class="app-title fs-16 w-100 p-0 m-0">{{ author.name }}</div>
+        <div class="app-subtitle fs-12 w-100">{{ author.bio }}</div>
       </div>
     </NuxtLink>
   </div>
@@ -32,10 +32,3 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.author-img {
-  border-radius: 100px;
-  width: 40px;
-  height: 40px;
-}
-</style>
