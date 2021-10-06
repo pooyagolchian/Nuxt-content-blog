@@ -12,24 +12,29 @@
             back-link
           "
           to="/"
-          ><span class="lnr lnr-arrow-left fs-30 pr-5 pl-5 d-flex"></span>Pooya
+          ><span class="lnr lnr-arrow-left fs-30 pr-15 d-flex"></span>Pooya
           Golchian</nuxt-link
         >
-        <h1 class="app-title p-0 m-0 font-weight-normal pt-20 pb-20 fs-25">
+        <h1 class="app-title p-0 m-0 font-weight-normal pb-20 fs-25">
           {{ article.title }}
         </h1>
-        <p class="app-subtitle">{{ article.description }}</p>
-        <p class="app-subtitle">
-          Article last updated: {{ formatDate(article.updatedAt) }}
+        <p class="app-subtitle fs-14 text-muted">{{ article.description }}</p>
+        <p class="app-subtitle fs-14 text-muted">
+          <span>Article last updated:</span>
+          <span class='lnr lnr-clock pt-5 pl-5'></span>
+          <span>{{ formatDate(article.updatedAt) }}</span>
         </p>
-        <div class="embed-responsive col-auto">
+
+        <div class='divider'></div>
+
+        <div class="col-12 p-0">
           <nav class="pt-20 pb-20">
-            <div class="app-title fs-25 font-weight-normal text-left">
-              Table of content
+            <div class="app-title fs-16 font-weight-normal text-left">
+              <span class='lnr lnr-bookmark pr-5'></span><span>Table of content</span>
             </div>
             <ul>
               <li
-                class="app-subtitle"
+                class="app-subtitle fs-14 pt-10"
                 v-for="link of article.toc"
                 :key="link.id"
               >
@@ -38,6 +43,8 @@
             </ul>
           </nav>
         </div>
+
+        <div class='divider'></div>
         <nuxt-content class="app-subtitle article-slug" :document="article" />
       </article>
     </div>
