@@ -35,7 +35,6 @@
           </nuxt-link>
         </div>
       </div>
-
     </div>
     <div class='col-12 col-sm-12 col-md-6 info'>
       <div class='row pb-10'>
@@ -74,6 +73,8 @@
           </nuxt-link>
         </div>
       </div>
+
+      <div class='divider'></div>
       <div class='font-weight-normal app-title pt-10 fs-20 pb-10'>Open-Source project</div>
       <ul class='project-list'>
         <li><a class='app-title d-flex flex-row pt-2 pb-2 fs-14'
