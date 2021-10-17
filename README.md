@@ -1,11 +1,48 @@
-# STATIC
+# Nuxt ✨ blog template, static generator, SEO and PWA ready!
 
-**This directory is not required, you can delete it if you don't want to use it.**
+This project related to my technical blog ✨, I decided to migrate from the Gatsby to the Nuxt.
+I enjoyed developing and designing this project. Please star and fork it ♥️.
 
-This directory contains your static files.
-Each file inside this directory is mapped to `/`.
-Thus you'd want to delete this README.md before deploying to production.
+## Demo page (it's my real blog!)
 
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
+[Pooya Golchian Blog Link](https://pooyagolchian.com)
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/assets#static).
+## Nuxt content static generator website
+
+I use Nuxt content and Nuxt module to develop static (JAMSTACK) blog!
+
+- ✅ - Bootstrap 4 scss
+- ✅ - Multiple theme
+- ✅ - Fully responsive (Bootstrap 4 grid breakpoint)
+- ✅ - PWA - (manifest, custome icon, ... )
+- ✅ - Google analytics configuration - Only track code needed.
+- ✅ - Google fonts - Poppins font family
+- ✅ - Blazing fast
+- ✅ - SEO tags ready!
+- ✅ - SVG loader
+- ✅ - Github action on push
+
+## Deploy on GH_PAGES 🪄
+
+```bash
+$ yarn deploy
+```
+
+## Build Setup
+
+```bash
+# install dependencies
+$ yarn install
+
+# serve with hot reload at localhost:3000
+$ yarn dev
+
+# build for production and launch server
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
+```
+
+CHEERS!
