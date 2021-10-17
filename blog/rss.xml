@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Pooya Golchian | Software Engineer</title>
+        <link></link>
+        <description>I'm Frontend developer and DevOps engineer</description>
+        <lastBuildDate>Sun, 17 Oct 2021 18:26:39 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[Arangodb install last version and configuration and backup and restore from Amazon AWS]]></title>
+            <link>/arangodb-devops</link>
+            <guid>/arangodb-devops</guid>
+            <description><![CDATA[I use Shell script for all steps to automate Arangodb backup and update from a to z!]]></description>
+            <content:encoded><![CDATA[I use Shell script for all steps to automate Arangodb backup and update from a to z!]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Configure Firebase Cloud Messaging (FCM)]]></title>
+            <link>/configure-fcm</link>
+            <guid>/configure-fcm</guid>
+            <description><![CDATA[Configuration firebase push notification with CDN]]></description>
+            <content:encoded><![CDATA[Configuration firebase push notification with CDN]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[How to pull the AWS ECR docker image and extract all things in the docker image?]]></title>
+            <link>/aws-ecr-pull-and-extract</link>
+            <guid>/aws-ecr-pull-and-extract</guid>
+            <description><![CDATA[Useful tips for AWS to pull docker image and, access all content in it.]]></description>
+            <content:encoded><![CDATA[Useful tips for AWS to pull docker image and, access all content in it.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Host Your Jekyll Theme on GitHub With CloudFlare]]></title>
+            <link>/host-jekyll-theme-on-github</link>
+            <guid>/host-jekyll-theme-on-github</guid>
+            <description><![CDATA[In this article, you learn about how to deploy the Jekyll theme on the custom domain with Cloudflare]]></description>
+            <content:encoded><![CDATA[In this article, you learn about how to deploy the Jekyll theme on the custom domain with Cloudflare]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Build poor mans VPN with SSH and Bitvise]]></title>
+            <link>/ssh-tunnel</link>
+            <guid>/ssh-tunnel</guid>
+            <description><![CDATA[When you have a server and you want to have a VPN on the server. You can use this method. The following concepts are required to install.]]></description>
+            <content:encoded><![CDATA[When you have a server and you want to have a VPN on the server. You can use this method. The following concepts are required to install.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vue.js multiple theme with css variable]]></title>
+            <link>/vue-multiple-theme</link>
+            <guid>/vue-multiple-theme</guid>
+            <description><![CDATA[Recently, I develop a customizable npm package for the color mode in Vue.js with CSS variable.]]></description>
+            <content:encoded><![CDATA[Recently, I develop a customizable npm package for the color mode in Vue.js with CSS variable.]]></content:encoded>
+        </item>
+    </channel>
+</rss>
