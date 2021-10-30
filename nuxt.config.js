@@ -1,6 +1,6 @@
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
-  ssr: false,
+  ssr: true,
   target: 'static',
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
@@ -189,6 +189,7 @@ export default {
     host: '0.0.0.0',
     port: 3000,
   },
+  loading: false,
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
