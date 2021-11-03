@@ -17,10 +17,14 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'pooya golchian, pooyagolcian, pooya, golchian, fontend developer, frontend engineer, Web Developer, Javascript Developer, Vue.js Developer, Nuxt.js Developer, React.js Developer',
+          'pooya golchian, pooyagolchian, fontend developer, frontend engineer, Web Developer, Javascript Developer, Vue.js Developer, Nuxt.js Developer, React.js Developer',
       },
       { property: 'og:site_name', content: 'Pooya Golchian' },
-      { hid: 'og:type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'Pooya Golchian - Frontend developer and DevOps Engineer',
+      },
 
       {
         hid: 'og:url',

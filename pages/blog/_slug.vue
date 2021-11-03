@@ -72,7 +72,7 @@ export default {
         {
           hid: 'og:title',
           property: 'og:title',
-          content: `Pooya Golchian | ${this.article.title}`,
+          content: this.article.title,
         },
       ],
     };
