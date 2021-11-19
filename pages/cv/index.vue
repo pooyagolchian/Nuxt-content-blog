@@ -6,7 +6,7 @@
           <nuxt-link to="/"> Pooya Golchian </nuxt-link>
         </div>
         <div class="text-muted font-weight-bolder fs-15">
-          Frontend Engineer | DevOps Engineer | Linux server administrator
+          Frontend Engineer | DevOps Engineer
         </div>
         <ul class="row fs-16 pt-15 info-list">
           <li class="col-auto p-0 pr-10">
@@ -53,7 +53,7 @@
         </ul>
       </div>
       <div class="row pt-10 col col-12">
-        <div class="cv-header col-12">About</div>
+        <div class="cv-header col-12 p-0">About</div>
         <p class="pt-20">
           Frontend developer with experience building client-side web apps on
           React.js and Vue.js. Obsessed for impact, I've shipped under 10 robust
@@ -125,6 +125,18 @@
               </div>
             </div>
           </div>
+
+          <div class="col-12 mt-5">
+            <div class="cv-header">OPENSOURCE PROJECT</div>
+            <div v-for="(item, index) in opensource" :key="index" class="pt-10">
+              <div class="fs-15">
+                <a :href="item.link" target="_blank">
+                  {{ item.title }}
+                </a>
+              </div>
+          
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -180,6 +192,39 @@ export default {
         'LPIC1,2',
         'Docker',
         'Kubernetes',
+      ],
+
+      opensource: [
+        {
+          title: 'VUE.js multiple theme color NPM package',
+          link: 'https://www.npmjs.com/package/vue-multiple-themes',
+        },
+        {
+          title: 'VUE.js icon rating NPM package',
+          link: 'https://www.npmjs.com/package/vue-js-star-rating',
+        },
+        {
+          title: 'NUXT.js SSG blog',
+          link: 'https://github.com/pooyagolchian/pooyagolchian.github.io',
+        },
+        {
+          title: 'Meme generator React.js application',
+          link: 'https://github.com/pooyagolchian/memegen',
+        },
+
+        {
+          title: 'Mini UI SCSS helper, Grid, Typography, etc.',
+          link: 'https://www.npmjs.com/package/scss-helper',
+        },
+        {
+          title:
+            'Customize Vuetify.js form builder for Nuxt.js for panel.azkivam.com',
+          link: 'https://www.npmjs.com/package/vuetify-form-base-ssr',
+        },
+        {
+          title: 'Docker, Kubernetes | tutorial and cheatsheet',
+          link: 'https://github.com/pooyagolchian/docker-and-kubernetes-tutorial',
+        },
       ],
 
       education: [
