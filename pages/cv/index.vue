@@ -3,9 +3,7 @@
     <div class="cv-container">
       <div class="row col col-12 flex-column">
         <div class="font-weight-bolder fs-35 text-uppercase">
-           <nuxt-link to="/">
-          Pooya Golchian
-           </nuxt-link>
+          <nuxt-link to="/"> Pooya Golchian </nuxt-link>
         </div>
         <div class="text-muted font-weight-bolder fs-15">
           Frontend Engineer | DevOps Engineer | Linux server administrator
@@ -20,9 +18,7 @@
           <li class="col-auto p-0 pr-10">
             <span class="text-muted"> <fa :icon="['fas', 'globe']" /></span>
 
-          <nuxt-link to="/">
-            pooyagolchian.com
-          </nuxt-link>
+            <nuxt-link to="/"> pooyagolchian.com </nuxt-link>
           </li>
           <li class="col-auto p-0 pr-10">
             <span class="text-muted">
@@ -59,16 +55,12 @@
       <div class="row pt-10 col col-12">
         <div class="cv-header col-12">About</div>
         <p class="pt-20">
-          I am a frontend developer who curious about clean code. I am so
-          enthusiastic about javascript and frontend technology. I have good
-          knowledge of Linux and Operating systems. One of my hubbies is
-          open-source contributing and use them in the application. I love
-          Vue.js and React.js. I worked as a Vue.js developer for 3 years and a
-          React.js developer for 1 year. I learned a React.js new feature like
-          React Hook, etc. I want to work with a team that beliefs in clean code
-          and test. I am a fast learner and curious about high-tech stuff. I've
-          been worked as a web developer since 2012. My first struggle in this
-          field is related to Drupal.
+          Frontend developer with experience building client-side web apps on
+          React.js and Vue.js. Obsessed for impact, I've shipped under 10 robust
+          Vue.js, Nuxt.js, React.js applications for thousands of users
+          worldwide. Backend enthusiast with an intermediate knowledge in API
+          design (2 deployed APIs on NodeJS). Occasional tech blogger with more
+          than 10k reads a month. Passionate for pixel-perfect front-end apps.
         </p>
       </div>
       <div class="row pt-10 justify-content-between">
@@ -139,7 +131,6 @@
   </div>
 </template>
 
-
 <script>
 export default {
   layout: 'resume',
@@ -150,15 +141,15 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Pooya Golchian CV'
+          content: 'Pooya Golchian CV',
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'Pooya Golchian CV'
-        }
+          content: 'Pooya Golchian CV',
+        },
       ],
-    }
+    };
   },
   data() {
     return {
@@ -206,7 +197,7 @@ export default {
         },
       ],
       expItem: [
-         {
+        {
           jobTitle: 'Senior Frontend Developer',
           company: 'azkivam.com',
           date: '5/2021 - NOW',
@@ -216,7 +207,7 @@ export default {
             'Build azkivam.com with Nuxt.js',
             'Build dynamic form builder for Cummunda BPMS',
             'Build reusable components for panel and website',
-            'azkivam.com | panel.azkivam.com'
+            'azkivam.com | panel.azkivam.com',
           ],
         },
         {
@@ -247,7 +238,7 @@ export default {
             'Experience with Typescript',
             'Developed best practice design patterns like Factory and Pub/Sub',
             'Customized Webpack with dotNet core versions 2 and 3',
-            'yiata.com | mobile.get3000.com | get3000.com'
+            'yiata.com | mobile.get3000.com | get3000.com',
           ],
         },
         {
@@ -261,7 +252,7 @@ export default {
             'Developed 2 Admin panel and back-office website with ANT design',
             'Developed and fix in open-source projects like ant-design (Date picker filter in data table)',
             'Developed a website with the Laravel Blade template engine and JQuery. (ES6, Modules, Webpack, LARAVEL Mix)',
-            'azki.com'
+            'azki.com',
           ],
         },
 
@@ -302,7 +293,7 @@ export default {
             'Built automated tasks for printer and server task batch script for print workflow JDF (Job Definition Format)',
             'Experience with pure javascript (OOP, Modules, ES6) and build reusable modules',
             'Developed customer grid system with the Bourbon preprocessor Sass framework',
-            'axprint.com | blog.axprint.com | pamp.com'
+            'axprint.com | blog.axprint.com | pamp.com',
           ],
         },
 
@@ -323,7 +314,7 @@ export default {
             'Worked with theme building',
             'Worked with Jquery and pure javascript',
             'Developed an admin panel with Jquery and Drupal 7',
-            'rayvarz.com | bpms.rayvaz.com'
+            'rayvarz.com | bpms.rayvaz.com',
           ],
         },
       ],
