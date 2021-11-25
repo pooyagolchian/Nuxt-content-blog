@@ -66,11 +66,11 @@
           <div class='cv-header'>EXPERIENCE</div>
           <ul class='exp-list'>
             <li v-for='(item, index) in expItem' :key='index' class='pt-10'>
-              <div class='font-weight-light fs-20'>{{ item.jobTitle }}</div>
-              <div class='text-muted fs-16 font-weight-lighter'>
+              <div class='font-weight-light fs-18'>{{ item.jobTitle }}</div>
+              <div class='text-muted fs-14 font-weight-lighter'>
                 {{ item.company }}
               </div>
-              <div class='row fs-14 text-muted'>
+              <div class='row fs-12 text-muted'>
                 <div class='col-auto'>{{ item.date }}</div>
                 <div class='col-auto'>{{ item.location }}</div>
               </div>
@@ -170,6 +170,7 @@ export default {
         'Typescript',
         'React',
         'Redux',
+        'Webpack',
         'Headless CMS',
         'JAM stack'
       ],
@@ -245,16 +246,8 @@ export default {
             'Developed custom Vue.js component',
             'Developed custom grid system with Flex-Box and CSS-Grid',
             'Developed 10 Admin panel and back-office website with ant-design, Element UI, Vuetify.js',
-            'Experience with Express.js',
-            'Experience with Typescript',
-            'Developed best practice design patterns like Factory and Pub/Sub',
-            'Customized Webpack with dotNet core versions 2 and 3',
             'Built automatic backup with S3, Bash, Linux systemd',
-            'Worked with Arango DB, Mongo DB (Backup, Restore, Maintenance)',
             'Dockerized all applications and configure Github Action and use ECS',
-            'Built private DNS solution with Wireguard, Shadowsocks R',
-            'Configure Ansible for EC2',
-            'Built poor-mans-VPN',
             'yiata.com | mobile.get3000.com | get3000.com',
           ],
         },
@@ -265,9 +258,7 @@ export default {
           location: 'Iran,Tehran',
           jobItem: [
             'Developed custom Vue.js component for Admin panel with ANT design framework',
-            'Developed custom mini UI framework with bootstrap4',
             'Developed 2 Admin panel and back-office website with ANT design',
-            'Developed and fix in open-source projects like ant-design (Date picker filter in data table)',
             'Developed a website with the Laravel Blade template engine and JQuery. (ES6, Modules, Webpack, LARAVEL Mix)',
             'azki.com',
           ],
@@ -279,13 +270,8 @@ export default {
           location: 'Iran,Tehran',
           jobItem: [
             'Developed custom React.js component for local TV application and wrap with Electron.js',
-            'Developed a contact application with react native',
-            'Customized Bootstap4 Sass for projects',
-            'Developed two Admin panel and back-office website with ant-design',
-            'Worked with Twig, Symfony4',
-            'Developed Drupal-based newsroom and portal for some company of Entekhab holding',
-            'Configured Direct Admin, Gitlab CI, Ansible, Rabbitmq, Jenkins ',
-            'Configured Grafana, Zabbix',
+            'Developed an enterprise contact application that all departments have used them',
+            'Developed  Admin panel and back-office website with ant-design and Vue.js',
           ],
         },
 
@@ -300,7 +286,6 @@ export default {
             'Built marketing landing pages A to Z like Referral, etc. Analytics and help to selling team',
             'Built automated tasks for printer and server task batch script for print workflow JDF (Job Definition Format)',
             'Experience with pure javascript (OOP, Modules, ES6) and build reusable modules',
-            'Developed customer grid system with the Bourbon preprocessor Sass framework',
             'axprint.com | blog.axprint.com | pamp.com',
           ],
         },
@@ -312,16 +297,8 @@ export default {
           location: 'Iran,Tehran',
           jobItem: [
             'Built Drupal 7 portal & website for banking and government customer',
-            'Designed pixel-perfect PSD, Logo design, Booklet design with Adobe InDesign',
             'Built Mobile-first and responsive html5 website and landing pages',
-            'Customized Boostrap2 with less',
-            'Developed Drupal theme with bootstrap3',
-            'Developed custom Drupal modules',
             'Built headless with Service modules in drupal 7',
-            'Migrated all projects Drupal 6 to Drupal 7',
-            'Worked with theme building',
-            'Worked with Jquery and pure javascript',
-            'Developed an admin panel with Jquery and Drupal 7',
             'rayvarz.com | bpms.rayvaz.com',
           ],
         },
@@ -415,7 +392,7 @@ a {
   margin: 0;
 
   li {
-    font-size: 14px;
+    font-size: 13px;
     border-bottom: none;
     list-style: square;
   }
