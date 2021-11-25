@@ -1,110 +1,108 @@
 <template>
-  <div class="col-12">
-    <div class="cv-container">
-      <div class="row col col-12 flex-column">
-        <div class="font-weight-bolder fs-35 text-uppercase">
-          <nuxt-link to="/"> Pooya Golchian </nuxt-link>
+  <div class='col-12'>
+    <div class='cv-container'>
+      <div class='row col col-12 flex-column'>
+        <div class='font-weight-light fs-45 text-uppercase'>
+          <nuxt-link to='/'> Pooya Golchian</nuxt-link>
         </div>
-        <div class="text-muted font-weight-bolder fs-15">
-          Frontend Engineer | DevOps Engineer
+        <div class='text-muted font-weight-light fs-20'>
+          Frontend Developer
         </div>
-        <ul class="row fs-16 pt-15 info-list">
-          <li class="col-auto p-0 pr-10">
-            <span class="text-muted">
-              <fa :icon="['fas', 'mobile-alt']"
-            /></span>
+        <ul class='row fs-16 pt-15 info-list'>
+          <li class='col-auto p-0 pr-10'>
+            <span class='text-muted'>
+             <i class='fs-20 lnr lnr-smartphone'></i>
+            </span>
             +989306016111
           </li>
-          <li class="col-auto p-0 pr-10">
-            <span class="text-muted"> <fa :icon="['fas', 'globe']" /></span>
+          <li class='col-auto p-0 pr-10'>
+            <span class='text-muted'>
+              <i class='fs-20 lnr lnr-link'></i>
+            </span>
 
-            <nuxt-link to="/"> pooyagolchian.com </nuxt-link>
+            <nuxt-link to='/'> pooyagolchian.com</nuxt-link>
           </li>
-          <li class="col-auto p-0 pr-10">
-            <span class="text-muted">
-              <fa :icon="['fas', 'map-marker-alt']" />
+          <li class='col-auto p-0 pr-10'>
+            <span class='text-muted'>
+              <i class='fs-20 lnr lnr-map-marker'></i>
             </span>
             Iran,Tehran
           </li>
-          <li class="col-auto p-0 pr-10">
-            <span class="text-muted"><fa :icon="['fas', 'inbox']" /></span>
+          <li class='col-auto p-0 pr-10'>
+            <span class='text-muted'>
+               <i class='fs-20 lnr lnr-envelope'></i>
+
+            </span>
             pooya.golchian@gmail.com
           </li>
-          <li class="col-auto p-0 pr-10">
-            <span class="text-muted"><fa :icon="['fab', 'github']" /></span>
+          <li class='col-auto p-0 pr-10'>
+            <span class='text-muted'>
+              <i class='fs-20 lnr lnr-link'></i>
+            </span>
             <a
-              href="https://github.com/pooyagolchian"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Github</a
+              href='https://github.com/pooyagolchian'
+              target='_blank'
+
+            >Github</a
             >
           </li>
-          <li class="col-auto p-0 pr-10">
-            <span class="text-muted"
-              ><span class="text-muted"><fa :icon="['fab', 'linkedin']" /></span
+          <li class='col-auto p-0 pr-10'>
+            <span class='text-muted'
+            ><span class='text-muted'>
+               <i class='fs-20 lnr lnr-link'></i>
+            </span
             ></span>
             <a
-              href="https://www.linkedin.com/in/pooyagolchian/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Linkedin</a
+              href='https://www.linkedin.com/in/pooyagolchian/'
+              target='_blank'
+
+            >Linkedin</a
             >
           </li>
         </ul>
       </div>
-      <div class="row pt-10 col col-12">
-        <div class="cv-header col-12 p-0">About</div>
-        <p class="pt-20">
-          Frontend developer with experience building client-side web apps on
-          React.js and Vue.js. Obsessed for impact, I've shipped under 10 robust
-          Vue.js, Nuxt.js, React.js applications for thousands of users
-          worldwide. Backend enthusiast with an intermediate knowledge in API
-          design (2 deployed APIs on NodeJS). Occasional tech blogger with more
-          than 10k reads a month. Passionate for pixel-perfect front-end apps.
-        </p>
-      </div>
-      <div class="row pt-10 justify-content-between">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-8 col-print-8">
-          <div class="cv-header">EXPERIENCE</div>
-          <ul class="exp-list">
-            <li v-for="(item, index) in expItem" :key="index" class="pt-10">
-              <div class="font-weight-bolder fs-20">{{ item.jobTitle }}</div>
-              <div class="text-muted fs-16 font-weight-bold">
+      <div class='row pt-10 justify-content-between'>
+        <div class='col col-12 col-sm-12 col-md-12 col-lg-8 col-print-8'>
+          <div class='cv-header'>EXPERIENCE</div>
+          <ul class='exp-list'>
+            <li v-for='(item, index) in expItem' :key='index' class='pt-10'>
+              <div class='font-weight-light fs-20'>{{ item.jobTitle }}</div>
+              <div class='text-muted fs-16 font-weight-lighter'>
                 {{ item.company }}
               </div>
-              <div class="row fs-14 text-muted">
-                <div class="col-auto">{{ item.date }}</div>
-                <div class="col-auto">{{ item.location }}</div>
+              <div class='row fs-14 text-muted'>
+                <div class='col-auto'>{{ item.date }}</div>
+                <div class='col-auto'>{{ item.location }}</div>
               </div>
-              <ul class="company-layout">
-                <li v-for="(achiveItem, index) in item.jobItem" :key="index">
+              <ul class='company-layout'>
+                <li v-for='(achiveItem, index) in item.jobItem' :key='index'>
                   {{ achiveItem }}
                 </li>
               </ul>
             </li>
           </ul>
         </div>
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-4 col-print-4">
-          <div class="col-12">
-            <div class="cv-header">LANGUAGES</div>
-            <ul class="cv-item">
-              <li class="pt-10 fs-15">
-                English <span class="text-muted fs-12">(Intermediate)</span>
+        <div class='col col-12 col-sm-12 col-md-12 col-lg-4 col-print-4'>
+          <div class='col-12'>
+            <div class='cv-header'>LANGUAGES</div>
+            <ul class='cv-item'>
+              <li class='pt-10 fs-15'>
+                English <span class='text-muted fs-12'>(Intermediate)</span>
               </li>
-              <li class="pb-5 fs-15">
-                Persian <span class="text-muted fs-12">(Native)</span>
+              <li class='pb-5 fs-15'>
+                Persian <span class='text-muted fs-12'>(Native)</span>
               </li>
             </ul>
           </div>
 
-          <div class="col-12 pt-10">
-            <div class="cv-header">SKILLS</div>
-            <div class="pt-10 pb-10">
-              <ul class="skills row">
+          <div class='col-12 pt-10'>
+            <div class='cv-header'>SKILLS</div>
+            <div class='pt-10 pb-10'>
+              <ul class='skills row'>
                 <li
-                  class="col-auto"
-                  v-for="(item, index) in skills"
-                  :key="index"
+                  v-for='(item, index) in skills'
+                  :key='index'
+                  class='col-auto'
                 >
                   {{ item }}
                 </li>
@@ -112,29 +110,29 @@
             </div>
           </div>
 
-          <div class="col-12">
-            <div class="cv-header">EDUCATION</div>
-            <div v-for="(item, index) in education" :key="index" class="pt-10">
-              <div class="font-weight-bolder fs-15">{{ item.degree }}</div>
-              <div class="text-muted fs-12 font-weight-bold">
+          <div class='col-12'>
+            <div class='cv-header'>EDUCATION</div>
+            <div v-for='(item, index) in education' :key='index' class='pt-10'>
+              <div class='font-weight-light fs-15'>{{ item.degree }}</div>
+              <div class='text-muted fs-12 font-weight-lighter'>
                 {{ item.university }}
               </div>
-              <div class="row fs-12 text-muted">
-                <div class="col-auto">{{ item.date }}</div>
-                <div class="col-auto">{{ item.location }}</div>
+              <div class='row fs-12 text-muted'>
+                <div class='col-auto'>{{ item.date }}</div>
+                <div class='col-auto'>{{ item.location }}</div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 mt-5">
-            <div class="cv-header">OPENSOURCE PROJECT</div>
-            <div v-for="(item, index) in opensource" :key="index" class="pt-10">
-              <div class="fs-15">
-                <a :href="item.link" target="_blank">
+          <div class='col-12 mt-5'>
+            <div class='cv-header'>OPENSOURCE</div>
+            <div v-for='(item, index) in opensource' :key='index' class='pt-10'>
+              <div class='fs-15'>
+                <a :href='item.link' target='_blank'>
                   {{ item.title }}
                 </a>
               </div>
-          
+
             </div>
           </div>
         </div>
@@ -173,25 +171,7 @@ export default {
         'React',
         'Redux',
         'Headless CMS',
-        'JAM stack',
-        'Git',
-        'Git-flow',
-        'Git-hook',
-        'Linux/windows/macOS',
-        'Shell script',
-        'Heroku',
-        'AWS',
-        'AWS EC2',
-        'AWS ECS',
-        'Github Action',
-        'Express.js',
-        'MongoDB',
-        'ArangoDB',
-        'Wireguard',
-        'TCP/IP',
-        'LPIC1,2',
-        'Docker',
-        'Kubernetes',
+        'JAM stack'
       ],
 
       opensource: [
@@ -244,7 +224,7 @@ export default {
       expItem: [
         {
           jobTitle: 'Senior Frontend Developer',
-          company: 'azkivam.com',
+          company: 'Afra Sarmaye Digital Software Engineering Company',
           date: '5/2021 - NOW',
           location: 'Iran,Tehran',
           jobItem: [
@@ -255,25 +235,11 @@ export default {
             'azkivam.com | panel.azkivam.com',
           ],
         },
-        {
-          jobTitle: 'DevOps Engineer',
-          company: 'haftcin.com',
-          date: '3/2021 - 5/2021',
-          location: 'Iran,Tehran',
-          jobItem: [
-            'Built automatic backup with S3, Bash, Linux systemd',
-            'Worked with Arango DB, Mongo DB (Backup, Restore, Maintenance)',
-            'Dockerized all applications and configure Github Action and use ECS',
-            'Built private DNS solution with Wireguard, Shadowsocks R',
-            'Configure Ansible for EC2',
-            'Built poor-mans-VPN',
-          ],
-        },
 
         {
           jobTitle: 'Senior Frontend Developer',
-          company: 'haftcin.com',
-          date: '11/2019 - 3/2021',
+          company: 'Abr Dade Fanavari Haftsin Software and Telecom Engineering Company',
+          date: '11/2019 - 5/2021',
           location: 'Iran,Tehran',
           jobItem: [
             'Developed custom Vue.js component',
@@ -283,12 +249,18 @@ export default {
             'Experience with Typescript',
             'Developed best practice design patterns like Factory and Pub/Sub',
             'Customized Webpack with dotNet core versions 2 and 3',
+            'Built automatic backup with S3, Bash, Linux systemd',
+            'Worked with Arango DB, Mongo DB (Backup, Restore, Maintenance)',
+            'Dockerized all applications and configure Github Action and use ECS',
+            'Built private DNS solution with Wireguard, Shadowsocks R',
+            'Configure Ansible for EC2',
+            'Built poor-mans-VPN',
             'yiata.com | mobile.get3000.com | get3000.com',
           ],
         },
         {
           jobTitle: 'Senior Frontend Developer',
-          company: 'azki.com',
+          company: 'Iman Sarmaye Noavaran Iranian Software Engineering Company',
           date: '06/2019 - 11/2019',
           location: 'Iran,Tehran',
           jobItem: [
@@ -300,21 +272,10 @@ export default {
             'azki.com',
           ],
         },
-
-        {
-          jobTitle: ' DevOps Engineer',
-          company: 'ENTEKHAB Investment Development Group',
-          date: '09/2018 - 06/2019',
-          location: 'Iran,Tehran',
-          jobItem: [
-            'Configured Direct Admin, Gitlab CI, Ansible, Rabbitmq, Jenkins ',
-            'Configured Grafana, Zabbix',
-          ],
-        },
         {
           jobTitle: 'Frontend Developer',
           company: 'ENTEKHAB Investment Development Group',
-          date: '09/2017 - 09/2018',
+          date: '09/2017 - 06/2019',
           location: 'Iran,Tehran',
           jobItem: [
             'Developed custom React.js component for local TV application and wrap with Electron.js',
@@ -323,12 +284,14 @@ export default {
             'Developed two Admin panel and back-office website with ant-design',
             'Worked with Twig, Symfony4',
             'Developed Drupal-based newsroom and portal for some company of Entekhab holding',
+            'Configured Direct Admin, Gitlab CI, Ansible, Rabbitmq, Jenkins ',
+            'Configured Grafana, Zabbix',
           ],
         },
 
         {
           jobTitle: 'Frontend Developer | Drupal Developer',
-          company: 'axprint.com',
+          company: 'Dadeban Samaneh Software Engineering Company',
           date: '09/2015 - 09/2017',
           location: 'Iran,Tehran',
           jobItem: [
@@ -344,7 +307,7 @@ export default {
 
         {
           jobTitle: 'Drupal Developer',
-          company: 'rayvarz.com',
+          company: 'Rayvarz Software Engineering Company',
           date: '01/2014 - 08/2015',
           location: 'Iran,Tehran',
           jobItem: [
@@ -368,13 +331,14 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang='scss' scoped>
 body {
   overflow: hidden;
 }
 
 a {
   color: black !important;
+
   &:hover {
     text-decoration: none !important;
     color: black !important;
@@ -396,21 +360,24 @@ a {
     padding-bottom: 50px;
   }
 }
+
 .cv-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
+
 .cv-header {
-  border-bottom: 3px solid black;
-  font-weight: bolder;
+  border-bottom: 1px solid black;
+  font-weight: lighter;
   font-size: 25px;
 }
 
 .info-list {
   padding: 0;
   margin: 0;
+
   li {
     margin: 0;
     list-style: none;
@@ -421,6 +388,7 @@ a {
 .cv-item {
   margin: 0;
   padding: 0;
+
   li {
     list-style: none;
     padding-bottom: 3px;
@@ -430,10 +398,12 @@ a {
 .exp-list {
   margin: 0;
   padding: 0;
+
   li {
     list-style: none;
     padding-bottom: 3px;
     border-bottom: 1px #ddd dotted;
+
     &:last-child {
       border-bottom: none;
     }
@@ -443,6 +413,7 @@ a {
 .company-layout {
   padding: 5px 0 5px 15px;
   margin: 0;
+
   li {
     font-size: 14px;
     border-bottom: none;
@@ -456,7 +427,7 @@ a {
 
   li {
     list-style: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px dotted #333;
     padding: 2px 2px 0 2px;
     margin: 0 9px 6px 0px;
     font-size: 14px;
