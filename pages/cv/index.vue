@@ -66,13 +66,18 @@
           <div class='cv-header'>EXPERIENCE</div>
           <ul class='exp-list'>
             <li v-for='(item, index) in expItem' :key='index' class='pt-10'>
-              <div class='font-weight-light fs-18'>{{ item.jobTitle }}</div>
-              <div class='text-muted fs-14 font-weight-lighter'>
-                {{ item.company }}
+
+              <div class='row justify-content-between'>
+                <div class='col col-auto font-weight-light fs-18'>{{ item.jobTitle }}</div>
+                <div class='col-auto fs-12 text-muted font-weight-lighter'>{{ item.location }}</div>
               </div>
-              <div class='row fs-12 text-muted'>
+
+              <div class='row justify-content-between fs-11 text-muted'>
+                <div class='text-muted fs-13 font-weight-lighter col-auto'>
+                  {{ item.company }}
+                </div>
                 <div class='col-auto'>{{ item.date }}</div>
-                <div class='col-auto'>{{ item.location }}</div>
+
               </div>
               <ul class='company-layout'>
                 <li v-for='(achiveItem, index) in item.jobItem' :key='index'>
@@ -124,10 +129,10 @@
             </div>
           </div>
 
-          <div class='col-12 mt-5'>
+          <div class='col-12 mt-10'>
             <div class='cv-header'>OPENSOURCE</div>
-            <div v-for='(item, index) in opensource' :key='index' class='pt-10'>
-              <div class='fs-15'>
+            <div v-for='(item, index) in opensource' :key='index' class='pt-7'>
+              <div class='fs-13 font-weight-light'>
                 <a :href='item.link' target='_blank'>
                   {{ item.title }}
                 </a>
@@ -151,14 +156,14 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Pooya Golchian CV',
+          content: 'Pooya Golchian CV'
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'Pooya Golchian CV',
-        },
-      ],
+          content: 'Pooya Golchian CV'
+        }
+      ]
     };
   },
   data() {
@@ -178,34 +183,34 @@ export default {
       opensource: [
         {
           title: 'VUE.js multiple theme color NPM package',
-          link: 'https://www.npmjs.com/package/vue-multiple-themes',
+          link: 'https://www.npmjs.com/package/vue-multiple-themes'
         },
         {
           title: 'VUE.js icon rating NPM package',
-          link: 'https://www.npmjs.com/package/vue-js-star-rating',
+          link: 'https://www.npmjs.com/package/vue-js-star-rating'
         },
         {
           title: 'NUXT.js SSG blog',
-          link: 'https://github.com/pooyagolchian/pooyagolchian.github.io',
+          link: 'https://github.com/pooyagolchian/pooyagolchian.github.io'
         },
         {
           title: 'Meme generator React.js application',
-          link: 'https://github.com/pooyagolchian/memegen',
+          link: 'https://github.com/pooyagolchian/memegen'
         },
 
         {
           title: 'Mini UI SCSS helper, Grid, Typography, etc.',
-          link: 'https://www.npmjs.com/package/scss-helper',
+          link: 'https://www.npmjs.com/package/scss-helper'
         },
         {
           title:
             'Customize Vuetify.js form builder for Nuxt.js for panel.azkivam.com',
-          link: 'https://www.npmjs.com/package/vuetify-form-base-ssr',
+          link: 'https://www.npmjs.com/package/vuetify-form-base-ssr'
         },
         {
           title: 'Docker, Kubernetes | tutorial and cheatsheet',
-          link: 'https://github.com/pooyagolchian/docker-and-kubernetes-tutorial',
-        },
+          link: 'https://github.com/pooyagolchian/docker-and-kubernetes-tutorial'
+        }
       ],
 
       education: [
@@ -213,14 +218,14 @@ export default {
           degree: 'Mastr of Softwar Engineering (M.SE)',
           university: 'Islamic Azad University, Karaj',
           date: '2014 - 2017',
-          location: 'Iran, Karaj',
+          location: 'Iran, Karaj'
         },
         {
           degree: 'Bachelor of Software Engineering (B.SE)',
           university: 'Islamic Azad University, Karaj',
           date: '2009 - 2013',
-          location: 'Iran, Karaj',
-        },
+          location: 'Iran, Karaj'
+        }
       ],
       expItem: [
         {
@@ -233,8 +238,8 @@ export default {
             'Build azkivam.com with Nuxt.js',
             'Build dynamic form builder for Cummunda BPMS',
             'Build reusable components for panel and website',
-            'azkivam.com | panel.azkivam.com',
-          ],
+            'azkivam.com | panel.azkivam.com'
+          ]
         },
 
         {
@@ -248,8 +253,8 @@ export default {
             'Developed 10 Admin panel and back-office website with ant-design, Element UI, Vuetify.js',
             'Built automatic backup with S3, Bash, Linux systemd',
             'Dockerized all applications and configure Github Action and use ECS',
-            'yiata.com | mobile.get3000.com | get3000.com',
-          ],
+            'yiata.com | mobile.get3000.com | get3000.com'
+          ]
         },
         {
           jobTitle: 'Senior Frontend Developer',
@@ -260,8 +265,8 @@ export default {
             'Developed custom Vue.js component for Admin panel with ANT design framework',
             'Developed 2 Admin panel and back-office website with ANT design',
             'Developed a website with the Laravel Blade template engine and JQuery. (ES6, Modules, Webpack, LARAVEL Mix)',
-            'azki.com',
-          ],
+            'azki.com'
+          ]
         },
         {
           jobTitle: 'Frontend Developer',
@@ -271,8 +276,8 @@ export default {
           jobItem: [
             'Developed custom React.js component for local TV application and wrap with Electron.js',
             'Developed an enterprise contact application that all departments have used them',
-            'Developed  Admin panel and back-office website with ant-design and Vue.js',
-          ],
+            'Developed  Admin panel and back-office website with ant-design and Vue.js'
+          ]
         },
 
         {
@@ -286,8 +291,8 @@ export default {
             'Built marketing landing pages A to Z like Referral, etc. Analytics and help to selling team',
             'Built automated tasks for printer and server task batch script for print workflow JDF (Job Definition Format)',
             'Experience with pure javascript (OOP, Modules, ES6) and build reusable modules',
-            'axprint.com | blog.axprint.com | pamp.com',
-          ],
+            'axprint.com | blog.axprint.com | pamp.com'
+          ]
         },
 
         {
@@ -299,12 +304,12 @@ export default {
             'Built Drupal 7 portal & website for banking and government customer',
             'Built Mobile-first and responsive html5 website and landing pages',
             'Built headless with Service modules in drupal 7',
-            'rayvarz.com | bpms.rayvaz.com',
-          ],
-        },
-      ],
+            'rayvarz.com | bpms.rayvaz.com'
+          ]
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
@@ -407,7 +412,7 @@ a {
     border-bottom: 1px dotted #333;
     padding: 2px 2px 0 2px;
     margin: 0 9px 6px 0px;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 </style>
