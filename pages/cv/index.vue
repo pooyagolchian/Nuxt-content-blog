@@ -1,10 +1,10 @@
 <template>
   <div class='col-12'>
     <div class='cv-container'>
-      <div class='col-12 header-main'>
+      <div class='col-12 header-main p-0'>
         <div class='font-weight-light fs-45'>
           <nuxt-link class='header-main__title' to='/'>
-            <span class='text-white'>
+            <span class='text-black'>
               Pooya
             </span>
             <span class='font-weight-lighter text-muted'>
@@ -18,7 +18,7 @@
         </div>
       </div>
 
-      <div class='row col col-12 flex-column text-center justify-content-center align-items-center'>
+      <div class='row col col-12 flex-column'>
 
         <ul class='row fs-16 pt-20 pb-20 info-list'>
           <li class='col-auto p-0 pr-10'>
@@ -178,7 +178,8 @@ export default {
         'Docker',
         'GIT',
         'Enyzme',
-        'Jest'
+        'Jest',
+        'Figma'
       ],
       opensource: [
         {
@@ -330,9 +331,7 @@ a {
 
 
 .header-main {
-  text-align: center;
-  background-color: #333333;
-  padding: 10px;
+  text-align: left;
 
   &__title {
     text-decoration: none;
