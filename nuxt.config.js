@@ -103,13 +103,6 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    [
-      '@netsells/nuxt-hotjar',
-      {
-        id: '2560666',
-        sv: '6',
-      },
-    ],
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa

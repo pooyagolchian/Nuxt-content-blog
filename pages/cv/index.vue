@@ -2,16 +2,16 @@
   <div class='col-12'>
     <div class='cv-container'>
       <div class='row col col-12 flex-column'>
-        <div class='font-weight-light fs-45 text-uppercase'>
-          <nuxt-link to='/'> Pooya Golchian</nuxt-link>
+        <div class='font-weight-light fs-45'>
+          <nuxt-link to='/'>Pooya Golchian</nuxt-link>
         </div>
         <div class='text-muted font-weight-light fs-20'>
-          Frontend Developer
+          Senior Frontend Developer
         </div>
         <ul class='row fs-16 pt-15 info-list'>
           <li class='col-auto p-0 pr-10'>
             <span class='text-muted'>
-             <i class='fs-20 lnr lnr-smartphone'></i>
+              <i class='fs-20 lnr lnr-smartphone'></i>
             </span>
             +989306016111
           </li>
@@ -26,12 +26,11 @@
             <span class='text-muted'>
               <i class='fs-20 lnr lnr-map-marker'></i>
             </span>
-            Iran,Tehran
+            Iran, Tehran
           </li>
           <li class='col-auto p-0 pr-10'>
             <span class='text-muted'>
-               <i class='fs-20 lnr lnr-envelope'></i>
-
+              <i class='fs-20 lnr lnr-envelope'></i>
             </span>
             pooya.golchian@gmail.com
           </li>
@@ -39,45 +38,40 @@
             <span class='text-muted'>
               <i class='fs-20 lnr lnr-link'></i>
             </span>
-            <a
-              href='https://github.com/pooyagolchian'
-              target='_blank'
-
+            <a href='https://github.com/pooyagolchian' target='_blank'
             >Github</a
             >
           </li>
           <li class='col-auto p-0 pr-10'>
             <span class='text-muted'
             ><span class='text-muted'>
-               <i class='fs-20 lnr lnr-link'></i>
-            </span
+                <i class='fs-20 lnr lnr-link'></i> </span
             ></span>
-            <a
-              href='https://www.linkedin.com/in/pooyagolchian/'
-              target='_blank'
-
+            <a href='https://www.linkedin.com/in/pooyagolchian/' target='_blank'
             >Linkedin</a
             >
           </li>
         </ul>
       </div>
       <div class='row pt-10 justify-content-between'>
-        <div class='col col-12 col-sm-12 col-md-12 col-lg-8 col-print-8'>
+        <div class='col col-12 col-sm-12 col-md-12 col-lg-12 col-print-12'>
           <div class='cv-header'>EXPERIENCE</div>
           <ul class='exp-list'>
             <li v-for='(item, index) in expItem' :key='index' class='pt-10'>
-
               <div class='row justify-content-between'>
-                <div class='col col-auto font-weight-light fs-18'>{{ item.jobTitle }}</div>
-                <div class='col-auto fs-12 text-muted font-weight-lighter'>{{ item.location }}</div>
+                <div class='col col-auto font-weight-light fs-22'>
+                  {{ item.jobTitle }}
+                </div>
+                <div class='col-auto fs-15 text-muted font-weight-lighter'>
+                  {{ item.location }}
+                </div>
               </div>
 
               <div class='row justify-content-between fs-11 text-muted'>
-                <div class='text-muted fs-13 font-weight-lighter col-auto'>
+                <div class='text-muted fs-16 font-weight-lighter col-auto'>
                   {{ item.company }}
                 </div>
-                <div class='col-auto'>{{ item.date }}</div>
-
+                <div class='col-auto fs-14'>{{ item.date }}</div>
               </div>
               <ul class='company-layout'>
                 <li v-for='(achiveItem, index) in item.jobItem' :key='index'>
@@ -87,57 +81,44 @@
             </li>
           </ul>
         </div>
-        <div class='col col-12 col-sm-12 col-md-12 col-lg-4 col-print-4'>
-          <div class='col-12'>
-            <div class='cv-header'>LANGUAGES</div>
-            <ul class='cv-item'>
-              <li class='pt-10 fs-15'>
-                English <span class='text-muted fs-12'>(Fluent)</span>
-              </li>
-              <li class='pb-5 fs-15'>
-                Persian <span class='text-muted fs-12'>(Native)</span>
+        <div class='col col-12 col-sm-12 col-md-12 col-lg-12 col-print-12'>
+          <div class='cv-header'>LANGUAGES</div>
+          <ul class='cv-item'>
+            <li class='pt-10 fs-15'>
+              English <span class='text-muted'>(Fluent)</span>
+            </li>
+            <li class='pb-5 fs-15'>
+              Persian <span class='text-muted'>(Native)</span>
+            </li>
+          </ul>
+
+          <div class='cv-header'>SKILLS</div>
+          <div class='pt-10 pb-10'>
+            <ul class='skills row'>
+              <li v-for='(item, index) in skills' :key='index' class='col-auto'>
+                {{ item }}
               </li>
             </ul>
           </div>
 
-          <div class='col-12 pt-10'>
-            <div class='cv-header'>SKILLS</div>
-            <div class='pt-10 pb-10'>
-              <ul class='skills row'>
-                <li
-                  v-for='(item, index) in skills'
-                  :key='index'
-                  class='col-auto'
-                >
-                  {{ item }}
-                </li>
-              </ul>
+          <div class='cv-header'>EDUCATION</div>
+          <div v-for='(item, index) in education' :key='index' class='pt-10'>
+            <div class='font-weight-light fs-15'>{{ item.degree }}</div>
+            <div class='text-muted font-weight-lighter'>
+              {{ item.university }}
+            </div>
+            <div class='row fs-14 text-muted'>
+              <div class='col-auto'>{{ item.date }}</div>
+              <div class='col-auto'>{{ item.location }}</div>
             </div>
           </div>
 
-          <div class='col-12'>
-            <div class='cv-header'>EDUCATION</div>
-            <div v-for='(item, index) in education' :key='index' class='pt-10'>
-              <div class='font-weight-light fs-15'>{{ item.degree }}</div>
-              <div class='text-muted fs-12 font-weight-lighter'>
-                {{ item.university }}
-              </div>
-              <div class='row fs-12 text-muted'>
-                <div class='col-auto'>{{ item.date }}</div>
-                <div class='col-auto'>{{ item.location }}</div>
-              </div>
-            </div>
-          </div>
-
-          <div class='col-12 mt-10'>
-            <div class='cv-header'>OPENSOURCE</div>
-            <div v-for='(item, index) in opensource' :key='index' class='pt-7'>
-              <div class='fs-13 font-weight-light'>
-                <a :href='item.link' target='_blank'>
-                  {{ item.title }}
-                </a>
-              </div>
-
+          <div class='cv-header pt-10'>OPENSOURCE</div>
+          <div v-for='(item, index) in opensource' :key='index' class='pt-7'>
+            <div class='fs-14 font-weight-light'>
+              <a :href='item.link' target='_blank'>
+                {{ item.title }}
+              </a>
             </div>
           </div>
         </div>
@@ -171,15 +152,21 @@ export default {
       skills: [
         'Vue.js',
         'Nuxt.js',
-        'Javascript',
-        'Typescript',
-        'React',
         'Redux',
+        'React',
+        'Next.js',
+        'Javascript',
+        'JQuery',
+        'Typescript',
         'Webpack',
         'Headless CMS',
-        'JAM stack'
+        'JAM stack',
+        'Scss',
+        'Docker',
+        'GIT',
+        'Enyzme',
+        'Jest'
       ],
-
       opensource: [
         {
           title: 'VUE.js multiple theme color NPM package',
@@ -212,7 +199,6 @@ export default {
           link: 'https://github.com/pooyagolchian/docker-and-kubernetes-tutorial'
         }
       ],
-
       education: [
         {
           degree: 'Mastr of Softwar Engineering (M.SE)',
@@ -232,21 +218,22 @@ export default {
           jobTitle: 'Senior Frontend Developer',
           company: 'Afra Sarmaye Digital Software Engineering Company',
           date: '5/2021 - NOW',
-          location: 'Iran,Tehran',
+          location: 'Iran, Tehran',
           jobItem: [
-            'Build panel.azkivam.com with Nuxt.js',
-            'Build azkivam.com with Nuxt.js',
-            'Build dynamic form builder for Cummunda BPMS',
-            'Build reusable components for panel and website',
+            'Implemented an admin panel for customers and CRM to improve automation of sales and document management.',
+            'Utilized Nuxt.js for SSR rendering. Improved 40% of extra code with purge libraries.',
+            'Developed NPM package for generating forms that provide from BPMN from the database.',
+            'Utilized Nuxt.js for SSR rendering. Improved 40% of extra code with purge libraries.',
             'azkivam.com | panel.azkivam.com'
           ]
         },
 
         {
           jobTitle: 'Senior Frontend Developer',
-          company: 'Abr Dade Fanavari Haftsin Software and Telecom Engineering Company',
+          company:
+            'Abr Dade Fanavari Haftsin Software and Telecom Engineering Company',
           date: '11/2019 - 5/2021',
-          location: 'Iran,Tehran',
+          location: 'Iran, Tehran',
           jobItem: [
             'Developed custom Vue.js component',
             'Developed custom grid system with Flex-Box and CSS-Grid',
@@ -260,7 +247,7 @@ export default {
           jobTitle: 'Senior Frontend Developer',
           company: 'Iman Sarmaye Noavaran Iranian Software Engineering Company',
           date: '06/2019 - 11/2019',
-          location: 'Iran,Tehran',
+          location: 'Iran, Tehran',
           jobItem: [
             'Developed custom Vue.js component for Admin panel with ANT design framework',
             'Developed 2 Admin panel and back-office website with ANT design',
@@ -272,7 +259,7 @@ export default {
           jobTitle: 'Frontend Developer',
           company: 'ENTEKHAB Investment Development Group',
           date: '09/2017 - 06/2019',
-          location: 'Iran,Tehran',
+          location: 'Iran, Tehran',
           jobItem: [
             'Developed custom React.js component for local TV application and wrap with Electron.js',
             'Developed an enterprise contact application that all departments have used them',
@@ -284,7 +271,7 @@ export default {
           jobTitle: 'Frontend Developer | Drupal Developer',
           company: 'Dadeban Samaneh Software Engineering Company',
           date: '09/2015 - 09/2017',
-          location: 'Iran,Tehran',
+          location: 'Iran, Tehran',
           jobItem: [
             'Redesigned & built new Axprint.com, OO SCSS & reduce the size of CSS to 50K, and built a Modular page',
             'Built fully customizable modern blog and website theme for Drupal7',
@@ -299,7 +286,7 @@ export default {
           jobTitle: 'Drupal Developer',
           company: 'Rayvarz Software Engineering Company',
           date: '01/2014 - 08/2015',
-          location: 'Iran,Tehran',
+          location: 'Iran, Tehran',
           jobItem: [
             'Built Drupal 7 portal & website for banking and government customer',
             'Built Mobile-first and responsive html5 website and landing pages',
@@ -333,14 +320,14 @@ a {
     max-width: 1200px;
     margin: 0 auto;
   }
-  @page {
-    margin-top: 20px;
-    margin-bottom: 100px;
-  }
-  body {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+  //@page {
+  //  margin-top: 20px;
+  //  margin-bottom: 100px;
+  //}
+  //body {
+  //  padding-top: 50px;
+  //  padding-bottom: 50px;
+  //}
 }
 
 .cv-container {
@@ -397,9 +384,10 @@ a {
   margin: 0;
 
   li {
-    font-size: 13px;
+    font-size: 15px;
     border-bottom: none;
     list-style: square;
+    margin-left: 16px;
   }
 }
 
@@ -412,7 +400,7 @@ a {
     border-bottom: 1px dotted #333;
     padding: 2px 2px 0 2px;
     margin: 0 9px 6px 0px;
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 </style>

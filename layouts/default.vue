@@ -1,24 +1,11 @@
 <template>
   <div class='body-container-divider'>
     <app-nav></app-nav>
-    <Nuxt />
+    <Nuxt keep-alive />
     <app-footer></app-footer>
   </div>
 </template>
 
-<script>
-import AppNav from './../components/Nav'
-import AppHeader from './../components/Header'
-import AppFooter from './../components/Footer'
-
-export default {
-  components: {
-    'app-nav': AppNav,
-    'app-header': AppHeader,
-    'app-footer': AppFooter,
-  },
-}
-</script>
 
 <style lang="scss">
 body {
