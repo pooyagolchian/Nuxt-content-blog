@@ -1,14 +1,26 @@
 <template>
   <div class='col-12'>
     <div class='cv-container'>
-      <div class='row col col-12 flex-column'>
+      <div class='col-12 header-main'>
         <div class='font-weight-light fs-45'>
-          <nuxt-link to='/'>Pooya Golchian</nuxt-link>
+          <nuxt-link class='header-main__title' to='/'>
+            <span class='text-white'>
+              Pooya
+            </span>
+            <span class='font-weight-lighter text-muted'>
+              Golchian
+            </span>
+
+          </nuxt-link>
         </div>
         <div class='text-muted font-weight-light fs-20'>
           Senior Frontend Developer
         </div>
-        <ul class='row fs-16 pt-15 info-list'>
+      </div>
+
+      <div class='row col col-12 flex-column text-center justify-content-center align-items-center'>
+
+        <ul class='row fs-16 pt-20 pb-20 info-list'>
           <li class='col-auto p-0 pr-10'>
             <span class='text-muted'>
               <i class='fs-20 lnr lnr-smartphone'></i>
@@ -54,7 +66,7 @@
         </ul>
       </div>
       <div class='row pt-10 justify-content-between'>
-        <div class='col col-12 col-sm-12 col-md-12 col-lg-12 col-print-12'>
+        <div class='col col-12 col-sm-12 col-md-8 col-print-8'>
           <div class='cv-header'>EXPERIENCE</div>
           <ul class='exp-list'>
             <li v-for='(item, index) in expItem' :key='index' class='pt-10'>
@@ -81,7 +93,8 @@
             </li>
           </ul>
         </div>
-        <div class='col col-12 col-sm-12 col-md-12 col-lg-12 col-print-12'>
+
+        <div class='col col-12 col-sm-12 col-md-4 col-print-4'>
           <div class='cv-header'>LANGUAGES</div>
           <ul class='cv-item'>
             <li class='pt-10 fs-15'>
@@ -223,7 +236,7 @@ export default {
             'Implemented an admin panel for customers and CRM to improve automation of sales and document management.',
             'Utilized Nuxt.js for SSR rendering. Improved 40% of extra code with purge libraries.',
             'Developed NPM package for generating forms that provide from BPMN from the database.',
-            'Utilized Nuxt.js for SSR rendering. Improved 40% of extra code with purge libraries.',
+            'Dockerized all application that we developed with Nuxt.js',
             'azkivam.com | panel.azkivam.com'
           ]
         },
@@ -235,8 +248,8 @@ export default {
           date: '11/2019 - 5/2021',
           location: 'Iran, Tehran',
           jobItem: [
-            'Developed custom Vue.js component',
-            'Developed custom grid system with Flex-Box and CSS-Grid',
+            'Designed and implemented flight and hotel booking front-end structure for reservation system.',
+            'Developed reusable components for Vue.js and make private package repositories for components that they used in different projects.',
             'Developed 10 Admin panel and back-office website with ant-design, Element UI, Vuetify.js',
             'Built automatic backup with S3, Bash, Linux systemd',
             'Dockerized all applications and configure Github Action and use ECS',
@@ -314,6 +327,22 @@ a {
   }
 }
 
+
+
+.header-main {
+  text-align: center;
+  background-color: #333333;
+  padding: 10px;
+
+  &__title {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+}
+
 @media print {
   .cv-container {
     width: 100%;
@@ -334,12 +363,11 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .cv-header {
   border-bottom: 1px solid black;
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 25px;
 }
 
