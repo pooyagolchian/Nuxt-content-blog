@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <Nuxt />
+    <Nuxt keep-alive />
   </div>
 </template>
 
