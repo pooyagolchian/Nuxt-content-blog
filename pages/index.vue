@@ -50,8 +50,7 @@
           <ul
             class='col-12 p-0 fs-16  app-subtitle font-weight-light'
           >
-            <li>Frontend Engineer (Vue.js/React.js)</li>
-            <li>DevOps Engineer and Linux Server Engineer</li>
+            <li>Senior Frontend Developer (Vue.js/React.js)</li>
             <li>Code, Coffee, Crypto</li>
           </ul>
           <p class='fs-14 app-title pt-10 m-0'>

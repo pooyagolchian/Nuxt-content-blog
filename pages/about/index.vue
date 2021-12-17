@@ -15,8 +15,7 @@
             I'm Pooya Golchian
           </h1>
           <ul class="pb-20 app-subtitle">
-            <li>Frontend Engineer (Vue.js/React.js)</li>
-            <li>DevOps Engineer and Linux Server Engineer</li>
+            <li>Senior Frontend Developer (Vue.js/React.js)</li>
             <li>Code, Coffee, Crypto</li>
           </ul>
           <p class="fs-14 app-title">
