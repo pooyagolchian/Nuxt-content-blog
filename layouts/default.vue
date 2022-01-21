@@ -6,6 +6,21 @@
   </div>
 </template>
 
+<script>
+export default {
+   head() {
+    return {
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://pooyagolchian.com' + this.$route.path
+        }
+      ]
+    }
+  }
+}
+</script>
+
 
 <style lang="scss">
 body {
