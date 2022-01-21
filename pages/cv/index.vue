@@ -1,92 +1,86 @@
 <template>
-  <div class='col-12'>
-    <div class='cv-container'>
-      <div class='col-12 header-main p-0'>
-        <div class='font-weight-light fs-45'>
-          <nuxt-link class='header-main__title' to='/'>
-            <span class='text-black'>
-              Pooya
-            </span>
-            <span class='font-weight-lighter text-muted'>
-              Golchian
-            </span>
-
+  <div class="col-12">
+    <div class="cv-container">
+      <div class="col-12 header-main p-0">
+        <div class="font-weight-light fs-45">
+          <nuxt-link class="header-main__title" to="/">
+            <span class="text-black"> Pooya </span>
+            <span class="font-weight-lighter text-muted"> Golchian </span>
           </nuxt-link>
         </div>
-        <div class='text-muted font-weight-light fs-20'>
+        <div class="text-muted font-weight-light fs-20">
           Senior Frontend Developer
         </div>
       </div>
 
-      <div class='row col col-12 flex-column'>
-
-        <ul class='row fs-16 pt-20 pb-20 info-list'>
-          <li class='col-auto p-0 pr-10'>
-            <span class='text-muted'>
-              <i class='fs-20 lnr lnr-smartphone'></i>
+      <div class="row col col-12 flex-column">
+        <ul class="row fs-16 pt-20 pb-20 info-list">
+          <li class="col-auto p-0 pr-10">
+            <span class="text-muted">
+              <i class="fs-20 lnr lnr-smartphone"></i>
             </span>
             +989306016111
           </li>
-          <li class='col-auto p-0 pr-10'>
-            <span class='text-muted'>
-              <i class='fs-20 lnr lnr-link'></i>
+          <li class="col-auto p-0 pr-10">
+            <span class="text-muted">
+              <i class="fs-20 lnr lnr-link"></i>
             </span>
 
-            <nuxt-link to='/'> pooyagolchian.com</nuxt-link>
+            <nuxt-link to="/"> pooyagolchian.com</nuxt-link>
           </li>
-          <li class='col-auto p-0 pr-10'>
-            <span class='text-muted'>
-              <i class='fs-20 lnr lnr-map-marker'></i>
+          <li class="col-auto p-0 pr-10">
+            <span class="text-muted">
+              <i class="fs-20 lnr lnr-map-marker"></i>
             </span>
             Iran, Tehran
           </li>
-          <li class='col-auto p-0 pr-10'>
-            <span class='text-muted'>
-              <i class='fs-20 lnr lnr-envelope'></i>
+          <li class="col-auto p-0 pr-10">
+            <span class="text-muted">
+              <i class="fs-20 lnr lnr-envelope"></i>
             </span>
             pooya.golchian@gmail.com
           </li>
-          <li class='col-auto p-0 pr-10'>
-            <span class='text-muted'>
-              <i class='fs-20 lnr lnr-link'></i>
+          <li class="col-auto p-0 pr-10">
+            <span class="text-muted">
+              <i class="fs-20 lnr lnr-link"></i>
             </span>
-            <a href='https://github.com/pooyagolchian' target='_blank'
-            >Github</a
+            <a href="https://github.com/pooyagolchian" target="_blank"
+              >Github</a
             >
           </li>
-          <li class='col-auto p-0 pr-10'>
-            <span class='text-muted'
-            ><span class='text-muted'>
-                <i class='fs-20 lnr lnr-link'></i> </span
+          <li class="col-auto p-0 pr-10">
+            <span class="text-muted"
+              ><span class="text-muted">
+                <i class="fs-20 lnr lnr-link"></i> </span
             ></span>
-            <a href='https://www.linkedin.com/in/pooyagolchian/' target='_blank'
-            >Linkedin</a
+            <a href="https://www.linkedin.com/in/pooyagolchian/" target="_blank"
+              >Linkedin</a
             >
           </li>
         </ul>
       </div>
-      <div class='row pt-10 justify-content-between'>
-        <div class='col col-12 col-sm-12 col-md-8 col-print-8'>
-          <div class='cv-header'>EXPERIENCE</div>
-          <ul class='exp-list'>
-            <li v-for='(item, index) in expItem' :key='index' class='pt-10'>
-              <div class='row justify-content-between'>
-                <div class='col col-auto font-weight-light fs-22'>
+      <div class="row pt-10 justify-content-between">
+        <div class="col col-12 col-sm-12 col-md-8 col-print-8">
+          <div class="cv-header">EXPERIENCE</div>
+          <ul class="exp-list">
+            <li v-for="(item, index) in expItem" :key="index" class="pt-10">
+              <div class="row justify-content-between">
+                <div class="col col-auto font-weight-light fs-22">
                   {{ item.jobTitle }}
                 </div>
-                <div class='col-auto fs-15 text-muted font-weight-lighter'>
+                <div class="col-auto fs-15 text-muted font-weight-lighter">
                   {{ item.location }}
                 </div>
               </div>
 
-              <div class='row justify-content-between fs-11 text-muted'>
-                <div class='text-muted fs-16 font-weight-lighter col-auto'>
+              <div class="row justify-content-between fs-11 text-muted">
+                <div class="text-muted fs-16 font-weight-lighter col-auto">
                   {{ item.company }}
                 </div>
-                <div class='col-auto fs-14'>{{ item.date }}</div>
+                <div class="col-auto fs-14">{{ item.date }}</div>
               </div>
-              <ul class='company-layout'>
-                <li v-for='(achiveItem, index) in item.jobItem' :key='index'>
+              <ul class="company-layout">
+                <li v-for="(achiveItem, index) in item.jobItem" :key="index">
                   {{ achiveItem }}
                 </li>
               </ul>
@@ -94,42 +88,42 @@
           </ul>
         </div>
 
-        <div class='col col-12 col-sm-12 col-md-4 col-print-4'>
-          <div class='cv-header'>LANGUAGES</div>
-          <ul class='cv-item'>
-            <li class='pt-10 fs-15'>
-              English <span class='text-muted'>(Fluent)</span>
+        <div class="col col-12 col-sm-12 col-md-4 col-print-4">
+          <div class="cv-header">LANGUAGES</div>
+          <ul class="cv-item">
+            <li class="pt-10 fs-15">
+              English <span class="text-muted">(Fluent)</span>
             </li>
-            <li class='pb-5 fs-15'>
-              Persian <span class='text-muted'>(Native)</span>
+            <li class="pb-5 fs-15">
+              Persian <span class="text-muted">(Native)</span>
             </li>
           </ul>
 
-          <div class='cv-header'>SKILLS</div>
-          <div class='pt-10 pb-10'>
-            <ul class='skills row'>
-              <li v-for='(item, index) in skills' :key='index' class='col-auto'>
+          <div class="cv-header">SKILLS</div>
+          <div class="pt-10 pb-10">
+            <ul class="skills row">
+              <li v-for="(item, index) in skills" :key="index" class="col-auto">
                 {{ item }}
               </li>
             </ul>
           </div>
 
-          <div class='cv-header'>EDUCATION</div>
-          <div v-for='(item, index) in education' :key='index' class='pt-10'>
-            <div class='font-weight-light fs-15'>{{ item.degree }}</div>
-            <div class='text-muted font-weight-lighter'>
+          <div class="cv-header">EDUCATION</div>
+          <div v-for="(item, index) in education" :key="index" class="pt-10">
+            <div class="font-weight-light fs-15">{{ item.degree }}</div>
+            <div class="text-muted font-weight-lighter">
               {{ item.university }}
             </div>
-            <div class='row fs-14 text-muted'>
-              <div class='col-auto'>{{ item.date }}</div>
-              <div class='col-auto'>{{ item.location }}</div>
+            <div class="row fs-14 text-muted">
+              <div class="col-auto">{{ item.date }}</div>
+              <div class="col-auto">{{ item.location }}</div>
             </div>
           </div>
 
-          <div class='cv-header pt-10'>OPENSOURCE</div>
-          <div v-for='(item, index) in opensource' :key='index' class='pt-7'>
-            <div class='fs-14 font-weight-light'>
-              <a :href='item.link' target='_blank'>
+          <div class="cv-header pt-10">OPENSOURCE</div>
+          <div v-for="(item, index) in opensource" :key="index" class="pt-7">
+            <div class="fs-14 font-weight-light">
+              <a :href="item.link" target="_blank">
                 {{ item.title }}
               </a>
             </div>
@@ -150,14 +144,14 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Pooya Golchian CV'
+          content: 'Pooya Golchian CV',
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: 'Pooya Golchian CV'
-        }
-      ]
+          content: 'Pooya Golchian CV',
+        },
+      ],
     };
   },
   data() {
@@ -167,6 +161,10 @@ export default {
         'Nuxt.js',
         'Redux',
         'React',
+        'React Query',
+        'React Hook',
+        'GraphQL',
+        'Gatsby',
         'Next.js',
         'Javascript',
         'JQuery',
@@ -176,56 +174,56 @@ export default {
         'JAM stack',
         'Scss',
         'Docker',
-        'GIT',
-        'Enyzme',
+        'Git',
         'Jest',
-        'Figma'
+        'Enyzme',
+        'Figma',
       ],
       opensource: [
         {
           title: 'VUE.js multiple theme color NPM package',
-          link: 'https://www.npmjs.com/package/vue-multiple-themes'
+          link: 'https://www.npmjs.com/package/vue-multiple-themes',
         },
         {
           title: 'VUE.js icon rating NPM package',
-          link: 'https://www.npmjs.com/package/vue-js-star-rating'
+          link: 'https://www.npmjs.com/package/vue-js-star-rating',
         },
         {
           title: 'NUXT.js SSG blog',
-          link: 'https://github.com/pooyagolchian/pooyagolchian.github.io'
+          link: 'https://github.com/pooyagolchian/pooyagolchian.github.io',
         },
         {
           title: 'Meme generator React.js application',
-          link: 'https://github.com/pooyagolchian/memegen'
+          link: 'https://github.com/pooyagolchian/memegen',
         },
 
         {
           title: 'Mini UI SCSS helper, Grid, Typography, etc.',
-          link: 'https://www.npmjs.com/package/scss-helper'
+          link: 'https://www.npmjs.com/package/scss-helper',
         },
         {
           title:
             'Customize Vuetify.js form builder for Nuxt.js for panel.azkivam.com',
-          link: 'https://www.npmjs.com/package/vuetify-form-base-ssr'
+          link: 'https://www.npmjs.com/package/vuetify-form-base-ssr',
         },
         {
           title: 'Docker, Kubernetes | tutorial and cheatsheet',
-          link: 'https://github.com/pooyagolchian/docker-and-kubernetes-tutorial'
-        }
+          link: 'https://github.com/pooyagolchian/docker-and-kubernetes-tutorial',
+        },
       ],
       education: [
         {
           degree: 'Mastr of Softwar Engineering (M.SE)',
           university: 'Islamic Azad University, Karaj',
           date: '2014 - 2017',
-          location: 'Iran, Karaj'
+          location: 'Iran, Karaj',
         },
         {
           degree: 'Bachelor of Software Engineering (B.SE)',
           university: 'Islamic Azad University, Karaj',
           date: '2009 - 2013',
-          location: 'Iran, Karaj'
-        }
+          location: 'Iran, Karaj',
+        },
       ],
       expItem: [
         {
@@ -238,8 +236,8 @@ export default {
             'Utilized Nuxt.js for SSR rendering. Improved 40% of extra code with purge libraries.',
             'Developed NPM package for generating forms that provide from BPMN from the database.',
             'Dockerized all application that we developed with Nuxt.js',
-            'azkivam.com | panel.azkivam.com'
-          ]
+            'azkivam.com | panel.azkivam.com',
+          ],
         },
 
         {
@@ -254,8 +252,8 @@ export default {
             'Developed 10 Admin panel and back-office website with ant-design, Element UI, Vuetify.js',
             'Built automatic backup with S3, Bash, Linux systemd',
             'Dockerized all applications and configure Github Action and use ECS',
-            'yiata.com | mobile.get3000.com | get3000.com'
-          ]
+            'yiata.com | mobile.get3000.com | get3000.com',
+          ],
         },
         {
           jobTitle: 'Senior Frontend Developer',
@@ -266,8 +264,8 @@ export default {
             'Developed custom Vue.js component for Admin panel with ANT design framework',
             'Developed 2 Admin panel and back-office website with ANT design',
             'Developed a website with the Laravel Blade template engine and JQuery. (ES6, Modules, Webpack, LARAVEL Mix)',
-            'azki.com'
-          ]
+            'azki.com',
+          ],
         },
         {
           jobTitle: 'Frontend Developer',
@@ -277,8 +275,8 @@ export default {
           jobItem: [
             'Developed custom React.js component for local TV application and wrap with Electron.js',
             'Developed an enterprise contact application that all departments have used them',
-            'Developed  Admin panel and back-office website with ant-design and Vue.js'
-          ]
+            'Developed  Admin panel and back-office website with ant-design and Vue.js',
+          ],
         },
 
         {
@@ -292,8 +290,8 @@ export default {
             'Built marketing landing pages A to Z like Referral, etc. Analytics and help to selling team',
             'Built automated tasks for printer and server task batch script for print workflow JDF (Job Definition Format)',
             'Experience with pure javascript (OOP, Modules, ES6) and build reusable modules',
-            'axprint.com | blog.axprint.com | pamp.com'
-          ]
+            'axprint.com | blog.axprint.com | pamp.com',
+          ],
         },
 
         {
@@ -305,16 +303,16 @@ export default {
             'Built Drupal 7 portal & website for banking and government customer',
             'Built Mobile-first and responsive html5 website and landing pages',
             'Built headless with Service modules in drupal 7',
-            'rayvarz.com | bpms.rayvaz.com'
-          ]
-        }
-      ]
+            'rayvarz.com | bpms.rayvaz.com',
+          ],
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 body {
   overflow: hidden;
 }
@@ -328,8 +326,6 @@ a {
   }
 }
 
-
-
 .header-main {
   text-align: left;
 
@@ -339,7 +335,6 @@ a {
       text-decoration: none;
     }
   }
-
 }
 
 @media print {
