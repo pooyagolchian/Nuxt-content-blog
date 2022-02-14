@@ -1,5 +1,5 @@
 <template>
-  <div class='body-container-divider'>
+  <div class='container'>
     <app-nav></app-nav>
     <Nuxt keep-alive />
     <app-footer></app-footer>

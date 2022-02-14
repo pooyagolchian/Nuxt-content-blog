@@ -6,8 +6,8 @@ description: 'When you have a server and you want to have a VPN on the server. Y
 
 author:
   name: 'Pooya Golchian'
-  bio: 'Frontend developer and DevOps engineer.'
-  img: '/img/avatar/pooya-golchian.jpg'
+  bio: 'Frontend Developer'
+  img: '/img/avatar/pooya-golchian.png'
 ---
 
 When you have a server and you want to have a VPN on the server. You can use this method. The following concepts are required to install.

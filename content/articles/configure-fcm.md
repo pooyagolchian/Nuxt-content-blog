@@ -6,8 +6,8 @@ description: 'Configuration firebase push notification with CDN'
 
 author:
   name: 'Pooya Golchian'
-  bio: 'Frontend developer and DevOps engineer.'
-  img: '/img/avatar/pooya-golchian.jpg'
+  bio: 'Frontend Developer'
+  img: '/img/avatar/pooya-golchian.png'
 ---
 
 ### Configuration firebase push notification with CDN

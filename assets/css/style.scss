@@ -211,22 +211,11 @@ h6,
   border-bottom: 1px solid var(--app-title-color);
 }
 
-.blog {
-  position: relative;
-  @include media-breakpoint-down(sm) {
-    border: none;
-  }
-}
-
 .body-container-divider {
   display: flex;
   flex-direction: column;
   max-width: 960px;
   margin: 0 auto;
-  @include media-breakpoint-up(md) {
-    border-left: 1px solid var(--app-title-color);
-    border-right: 1px solid var(--app-title-color);
-  }
 }
 
 .app-nav-link {
@@ -280,12 +269,6 @@ h6,
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.info {
-  @include media-breakpoint-down(sm) {
-    border: none;
-  }
 }
 
 .blog-list {
@@ -381,6 +364,7 @@ h6,
   border-top: 1px solid var(--app-title-color);
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .prev-next {
@@ -404,7 +388,7 @@ h6,
   height: 60px;
 }
 
-.app-nav-link-right{
+.app-nav-link-right {
   .nuxt-link-active {
     border: 1px solid var(--app-title-color);
   }

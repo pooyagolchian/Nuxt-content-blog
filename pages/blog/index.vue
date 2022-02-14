@@ -3,11 +3,11 @@
     <div class='col-12 p-0'>
       <app-search-input class='pt-10' />
     </div>
-    <div class='row pt-10 pb-40'>
+    <div class='row'>
       <div
         v-for='article of articles'
         :key='article.slug'
-        class='col-12 col-sm-12 col-md-12 pt-5 pb-5'
+        class='col-12 col-sm-12 col-md-6 col-lg-4 pt-5 pb-5'
       >
         <NuxtLink
           :to="{ name: 'blog-slug', params: { slug: article.slug } }"

@@ -5,8 +5,8 @@ slug: 'aws-ecr-pull-and-extract'
 description: 'Useful tips for AWS to pull docker image and, access all content in it.'
 author:
   name: 'Pooya Golchian'
-  bio: 'Frontend developer and DevOps engineer.'
-  img: '/img/avatar/pooya-golchian.jpg'
+  bio: 'Frontend Developer'
+  img: '/img/avatar/pooya-golchian.png'
 ---
 
 ## Intro

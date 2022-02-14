@@ -6,8 +6,8 @@ description: 'In this article, you learn about how to deploy the Jekyll theme on
 
 author:
   name: 'Pooya Golchian'
-  bio: 'Frontend developer and DevOps engineer.'
-  img: '/img/avatar/pooya-golchian.jpg'
+  bio: 'Frontend Developer'
+  img: '/img/avatar/pooya-golchian.png'
 ---
 
 ## How to deploy jekyll theme on custom domain

@@ -6,8 +6,8 @@ description: 'I use Shell script for all steps to automate Arangodb backup and u
 
 author:
   name: 'Pooya Golchian'
-  bio: 'Frontend developer and DevOps engineer.'
-  img: '/img/avatar/pooya-golchian.jpg'
+  bio: 'Frontend Developer'
+  img: '/img/avatar/pooya-golchian.png'
 ---
 
 ### Intro
