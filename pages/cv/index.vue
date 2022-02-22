@@ -157,13 +157,15 @@ export default {
   data() {
     return {
       skills: [
-        'Vue.js',
-        'Nuxt.js',
+        'React.js',
         'Redux',
-        'React',
         'React Query',
         'React Hook',
+        'Vue.js',
+        'Nuxt.js',
         'GraphQL',
+        'AXIOS',
+        'Rest API',
         'Gatsby',
         'Next.js',
         'Javascript',
@@ -175,6 +177,7 @@ export default {
         'Scss',
         'Docker',
         'Git',
+        'Cypress',
         'Jest',
         'Enyzme',
         'Figma',
@@ -227,11 +230,13 @@ export default {
       ],
       expItem: [
         {
-          jobTitle: 'Senior Frontend Developer',
+          jobTitle: 'Senior Frontend Developer | React.js/Vue.js/Nuxt.js',
           company: 'Afra Sarmaye Digital Software Engineering Company',
           date: '5/2021 - NOW',
           location: 'Iran, Tehran',
           jobItem: [
+            'Developed three admin panels with React.js and Redux and use best practice development workflow with functional programming.',
+            'Implemented E2E test with Cypress. Developed Unit test and Integration test in edge cases for business flow.', 
             'Implemented an admin panel for customers and CRM to improve automation of sales and document management.',
             'Utilized Nuxt.js for SSR rendering. Improved 40% of extra code with purge libraries.',
             'Developed NPM package for generating forms that provide from BPMN from the database.',
@@ -241,41 +246,43 @@ export default {
         },
 
         {
-          jobTitle: 'Senior Frontend Developer',
+          jobTitle: 'Senior Frontend Developer | React.js/Vue.js',
           company:
             'Abr Dade Fanavari Haftsin Software and Telecom Engineering Company',
           date: '11/2019 - 5/2021',
           location: 'Iran, Tehran',
           jobItem: [
             'Designed and implemented flight and hotel booking front-end structure for reservation system.',
+            'Developed React.js application with Electron.js for some business issues and maintained React.js application.',
             'Developed reusable components for Vue.js and make private package repositories for components that they used in different projects.',
-            'Developed 10 Admin panel and back-office website with ant-design, Element UI, Vuetify.js',
+            'Developed 10 Admin panel and back-office website with ant-design, Element UI, Vuetify.js, MUI',
             'Built automatic backup with S3, Bash, Linux systemd',
             'Dockerized all applications and configure Github Action and use ECS',
             'yiata.com | mobile.get3000.com | get3000.com',
           ],
         },
         {
-          jobTitle: 'Senior Frontend Developer',
+          jobTitle: 'Senior Frontend Developer | React.js/Next.js',
           company: 'Iman Sarmaye Noavaran Iranian Software Engineering Company',
           date: '06/2019 - 11/2019',
           location: 'Iran, Tehran',
           jobItem: [
-            'Developed custom Vue.js component for Admin panel with ANT design framework',
+            'Developed React.js application with one million active users in insurance technology.',
+            'Developed custom React.js component for Admin panel with ANT design framework',
             'Developed 2 Admin panel and back-office website with ANT design',
-            'Developed a website with the Laravel Blade template engine and JQuery. (ES6, Modules, Webpack, LARAVEL Mix)',
+            'Developed a website with React.js and Next.js for SSR redering',
             'azki.com',
           ],
         },
         {
-          jobTitle: 'Frontend Developer',
+          jobTitle: 'Frontend Developer | React.js',
           company: 'ENTEKHAB Investment Development Group',
           date: '09/2017 - 06/2019',
           location: 'Iran, Tehran',
           jobItem: [
             'Developed custom React.js component for local TV application and wrap with Electron.js',
             'Developed an enterprise contact application that all departments have used them',
-            'Developed  Admin panel and back-office website with ant-design and Vue.js',
+            'Developed  Admin panel and back-office website with ant-design and React.js',
           ],
         },
 
