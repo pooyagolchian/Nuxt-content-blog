@@ -1,5 +1,13 @@
 <template>
   <div class="row pb-15 m-0">
+    <div class='col-12 pt-5'>
+      <blockquote class='d-flex app-title pt-5 font-weight-light fs-20 font-italic'>
+        Invent yourself and then reinvent yourself and stay out of the clutches of mediocrity.
+      </blockquote>
+      <div class='d-flex justify-content-end app-subtitle font-weight-lighter fs-13'> ― Charles Bukowski, The Pleasures of the Damned.</div>
+    </div>
+
+    <div class="divider"></div>
     <div class="col-12 col-sm-12 col-md-12 blog">
       <div class="col-12 p-0">
         <app-search-input class="pt-20" />
