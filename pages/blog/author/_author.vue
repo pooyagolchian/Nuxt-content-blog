@@ -1,5 +1,5 @@
 <template>
-  <div class="col col-12 pt-10 pb-10 blog-list">
+  <div class="col col-12 pt-10 pb-10 blog-list pa-0">
     <div class="container">
       <div class="row">
         <app-search-input class="pt-10" />

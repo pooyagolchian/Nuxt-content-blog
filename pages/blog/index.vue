@@ -1,5 +1,5 @@
 <template>
-  <div class='col col-12 pt-10 pb-10 blog-list'>
+  <div class='col col-12 pt-10 pb-10 blog-list p-0'>
     <div class='col-12 p-0'>
       <app-search-input class='pt-10' />
     </div>

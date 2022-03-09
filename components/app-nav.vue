@@ -1,6 +1,6 @@
 <template>
   <div class="app-nav col col-12 justify-content-center">
-    <div class="row justify-content-between align-items-center pt-10 pb-10">
+    <div class="row justify-content-between align-items-center p-0 pt-10 pb-10">
       <div
         class="
           col-auto
@@ -8,6 +8,7 @@
           align-items-center
           flex-row
           d-flex
+          p-0
         "
       >
         <nuxt-link class="cp text-center app-nav-link-left" tag="div" to="/">
@@ -34,9 +35,10 @@
           justify-content-center
           align-items-center
           d-none d-sm-none d-md-none d-lg-flex
+          p-0
         "
       >
-        <ul class="app-nav-link app-nav-link-right fs-14">
+        <ul class="app-nav-link app-nav-link-right fs-14 p-0">
           <li class="d-flex justify-content-center align-items-center">
             <nuxt-link to="/blog">Blog</nuxt-link>
           </li>

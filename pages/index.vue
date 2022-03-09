@@ -1,6 +1,6 @@
 <template>
   <div class="row pb-15 m-0">
-    <div class='col-12 pt-5'>
+    <div class='col-12 p-0 pt-5'>
       <blockquote class='d-flex app-title pt-5 font-weight-light fs-20 font-italic'>
         Invent yourself and then reinvent yourself and stay out of the clutches of mediocrity.
       </blockquote>
@@ -8,9 +8,9 @@
     </div>
 
     <div class="divider"></div>
-    <div class="col-12 col-sm-12 col-md-12 blog">
+    <div class="col-12 col-sm-12 col-md-12 blog p-0">
       <div class="col-12 p-0">
-        <app-search-input class="pt-20" />
+        <app-search-input class='pt-5' />
       </div>
       <div class="row pb-10">
         <div
@@ -43,7 +43,7 @@
 
       <div class="divider"></div>
 
-    <div class="col-12 col-sm-12 col-md-12 info">
+    <div class="col-12 col-sm-12 col-md-12 info p-0">
       <div class="row pb-10">
         <nuxt-link class="col-12 col-sm-12 col-md-12 cp" tag="div" to="/about">
           <h1 class="fs-18 pt-20 app-title text-left">I'm Pooya Golchian</h1>

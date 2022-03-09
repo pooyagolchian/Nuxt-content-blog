@@ -32,7 +32,7 @@
             <span class='text-muted'>
               <i class='fs-20 lnr lnr-map-marker'></i>
             </span>
-            United Arab Emirates / Dubai
+            United Arab Emirates | Dubai
           </li>
           <li class='col-auto p-0 pr-10'>
             <span class='text-muted'>

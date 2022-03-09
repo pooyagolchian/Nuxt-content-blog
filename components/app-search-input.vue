@@ -6,7 +6,7 @@
       placeholder="Search Articles"
       class="search w-100"
     />
-    <ul class="search__container pt-10" v-if="articles.length">
+    <ul class="search__container" v-if="articles.length">
       <li v-for="article of articles" :key="article.slug" class="mt-10 mb-10">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
           <div class="row">

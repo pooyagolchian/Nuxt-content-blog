@@ -1,5 +1,5 @@
 <template>
-  <div class="col-12 about">
+  <div class="col-12 p-0 about">
     <div class="container">
       <div class="row pb-30">
         <div
@@ -9,12 +9,13 @@
             text-left
             d-flex
             flex-column
+            p-0
           "
         >
-          <h1 class="fs-18 pt-20 app-title text-left font-weight-bold pt-50">
+          <h1 class="fs-18 app-title text-left font-weight-bold pt-10">
             I'm Pooya Golchian
           </h1>
-          <ul class="pb-20 app-subtitle">
+          <ul class="pb-10 app-subtitle">
             <li>Senior Frontend Developer (Vue.js/React.js)</li>
             <li>Code, Coffee, Crypto</li>
           </ul>
