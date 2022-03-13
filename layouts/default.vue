@@ -1,6 +1,7 @@
 <template>
   <div class='container'>
     <app-nav></app-nav>
+    <custome-cursor></custome-cursor>
     <Nuxt keep-alive />
     <app-footer></app-footer>
   </div>
