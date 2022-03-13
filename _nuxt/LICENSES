@@ -1,7 +1,40 @@
 /*!
+  * vue-router v3.5.3
+  * (c) 2021 Evan You
+  * @license MIT
+  */
+
+/*!
+ * Vue.js v2.6.14
+ * (c) 2014-2021 Evan You
+ * Released under the MIT License.
+ */
+
+
+/*!
+ * CSSPlugin 3.9.1
+ * https://greensock.com
+ *
+ * Copyright 2008-2021, GreenSock. All rights reserved.
+ * Subject to the terms at https://greensock.com/standard-license or for
+ * Club GreenSock members, the agreement issued with that membership.
+ * @author: Jack Doyle, jack@greensock.com
+*/
+
+/*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
+
+/*!
+ * GSAP 3.9.1
+ * https://greensock.com
+ *
+ * @license Copyright 2008-2021, GreenSock. All rights reserved.
+ * Subject to the terms at https://greensock.com/standard-license or for
+ * Club GreenSock members, the agreement issued with that membership.
+ * @author: Jack Doyle, jack@greensock.com
+*/
 
 /*!
  * vue-client-only v0.0.0-semantic-release
@@ -12,18 +45,5 @@
 /*!
  * vue-no-ssr v1.1.1
  * (c) 2018-present egoist <0x142857@gmail.com>
- * Released under the MIT License.
- */
-
-
-/*!
-  * vue-router v3.5.3
-  * (c) 2021 Evan You
-  * @license MIT
-  */
-
-/*!
- * Vue.js v2.6.14
- * (c) 2014-2021 Evan You
  * Released under the MIT License.
  */
