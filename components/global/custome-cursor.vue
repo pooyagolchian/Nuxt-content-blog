@@ -26,12 +26,12 @@
       document.addEventListener("mousedown", onMouseHover);
       document.addEventListener("mouseup", onMouseHoverOut);
       document.addEventListener("mouseenter", () => {
-        cursorBig.style.opacity = 1;
-        cursorSmall.style.opacity = 1;
+        cursorBig.style.opacity = '1';
+        cursorSmall.style.opacity = '1';
       });
       document.addEventListener("mouseleave", () => {
-        cursorBig.style.opacity = 0;
-        cursorSmall.style.opacity = 0;
+        cursorBig.style.opacity = '0';
+        cursorSmall.style.opacity = '0';
       });
       withHover.forEach((element) => {
         element.addEventListener("mouseover", onMouseHover);
@@ -39,7 +39,7 @@
       })
 
       function onMouseMove(e) {
-        cursorSmall.style.opacity = 1;
+        cursorSmall.style.opacity = '1';
         gsap.to(cursorBig, 0.4, {
           x: e.clientX - 18,
           y: e.clientY - 18
