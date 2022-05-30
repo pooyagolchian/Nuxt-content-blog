@@ -77,6 +77,22 @@
         Open-Source project
       </div>
       <ul class="project-list">
+         <li>
+          <a
+            class="app-title d-flex flex-row pt-2 pb-2 fs-14"
+            href="https://github.com/pooyagolchian/react-weather-app"
+            target="_blank"
+            >Weather application with React.js/Typescript</a
+          >
+        </li>
+        <li>
+          <a
+            class="app-title d-flex flex-row pt-2 pb-2 fs-14"
+            href="https://github.com/pooyagolchian/dogstagram"
+            target="_blank"
+            >Dogstagram(Dogs Instagram) - React.js/redux-tool-kit/Typescript</a
+          >
+        </li>
         <li>
           <a
             class="app-title d-flex flex-row pt-2 pb-2 fs-14"

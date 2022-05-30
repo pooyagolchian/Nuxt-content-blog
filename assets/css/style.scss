@@ -403,10 +403,12 @@ h6,
 
   li {
     a {
+      text-decoration: none;
       &:hover {
         border-radius: 5px;
         background-color: var(--app-title-color) !important;
         color: var(--app-background-color) !important;
+        text-decoration: none;
       }
     }
   }
