@@ -9,6 +9,7 @@
           flex-row
           d-flex
           p-0
+           nav-animate-left
         "
       >
         <nuxt-link class="cp text-center app-nav-link-left" tag="div" to="/">
@@ -36,6 +37,7 @@
           align-items-center
           d-none d-sm-none d-md-none d-lg-flex
           p-0
+          nav-animate-right
         "
       >
         <ul class="app-nav-link app-nav-link-right fs-14 p-0">
@@ -86,6 +88,7 @@
 </template>
 
 <script>
+import {gsap} from "gsap"
 export default {
   data() {
     return {
@@ -97,6 +100,22 @@ export default {
     handleMenu() {
       this.isShow = !this.isShow;
     },
+  },
+
+   mounted() {
+    gsap.from('.nav-animate-left', {
+      duration: 1,
+      opacity: 0,
+      y: -50,
+      ease: gsap.easeInOut,
+    });
+    gsap.from('.nav-animate-right', {
+      duration: 1,
+      opacity: 0,
+      y: -50,
+      ease: gsap.easeInOut,
+    });
+    
   },
 };
 </script>

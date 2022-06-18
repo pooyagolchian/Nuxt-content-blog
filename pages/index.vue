@@ -1,6 +1,6 @@
 <template>
   <div class="row pb-15 m-0">
-    <div class='col-12 p-0 pt-5'>
+    <div class='col-12 p-0 pt-5 qoute-animate'>
       <blockquote class='d-flex app-title pt-5 font-weight-light fs-20 font-italic'>
         Invent yourself and then reinvent yourself and stay out of the clutches of mediocrity.
       </blockquote>
@@ -16,7 +16,7 @@
         <div
           v-for="article of articles"
           :key="article.slug"
-          class="col-12 col-sm-12 col-md-6 col-lg-4 pt-5 pb-5"
+          class="col-12 col-sm-12 col-md-6 col-lg-4 pt-5 pb-5 articles-animate"
         >
           <NuxtLink
             :to="{ name: 'blog-slug', params: { slug: article.slug } }"
@@ -158,6 +158,7 @@
 </template>
 
 <script>
+import {gsap} from 'gsap'
 export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
@@ -174,6 +175,21 @@ export default {
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
       return new Date(date).toLocaleDateString('en', options);
     },
+  },
+  
+   mounted() {
+    gsap.from('.articles-animate', {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      ease: gsap.easeInOut,
+    });
+    gsap.from('.qoute-animate', {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      ease: gsap.ease,
+    });
   },
 };
 </script>
