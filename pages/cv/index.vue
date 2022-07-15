@@ -19,7 +19,7 @@
             <span class='text-muted'>
               <i class='fs-20 lnr lnr-smartphone'></i>
             </span>
-            +989306016111
+            +971 52 225 2948
           </li>
           <li class='col-auto p-0 pr-10'>
             <span class='text-muted'>
@@ -32,7 +32,7 @@
             <span class='text-muted'>
               <i class='fs-20 lnr lnr-map-marker'></i>
             </span>
-            Dubai,United Arab Emirates | Iran,Tehran
+            Dubai,United Arab Emirates
           </li>
           <li class='col-auto p-0 pr-10'>
             <span class='text-muted'>
