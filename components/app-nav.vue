@@ -44,12 +44,6 @@
           <li class="d-flex justify-content-center align-items-center">
             <nuxt-link to="/blog">Blog</nuxt-link>
           </li>
-          <li class="d-flex justify-content-center align-items-center">
-            <nuxt-link to="/about">About</nuxt-link>
-          </li>
-          <li class="d-flex justify-content-center align-items-center">
-            <nuxt-link to="/cv">CV</nuxt-link>
-          </li>
         </ul>
       </div>
 
@@ -69,14 +63,6 @@
       <ul class="text-center">
         <li>
           <nuxt-link to="/blog" @click.native="isShow = false">Blog</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/cv">CV</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/About" @click.native="isShow = false"
-            >About
-          </nuxt-link>
         </li>
         <li class="app-title cp" @click="isShow = false">
           <span class="lnr lnr-arrow-left"></span>

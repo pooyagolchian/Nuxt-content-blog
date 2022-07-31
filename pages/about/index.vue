@@ -25,13 +25,12 @@
             Ubuntu and Fedora when I was 16 years old. Now, I have a master's
             degree in computer engineering. I have 10 years' experience in web
             development. I have been using Javascript for web development. I
-            have 4 years of experience in Vue.js and, Nuxt.js. I worked with
+            have five years of experience in Vue.js and, Nuxt.js. I worked with
             React.js too. I have developed lots of web applications with
             high-tech frameworks. I have experience with PHP, WordPress, Drupal,
-            headless CMS, and JAM STACK architecture. For more information about
-            my professional full-time work, please see my
-            <nuxt-link to="/cv">CV</nuxt-link>
-            .
+            headless CMS, and JAMSTACK architecture. For more information about
+            my professional full-time work.
+           
           </p>
         </div>
       </div>

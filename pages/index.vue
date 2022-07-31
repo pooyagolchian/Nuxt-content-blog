@@ -1,16 +1,23 @@
 <template>
   <div class="row pb-15 m-0">
-    <div class='col-12 p-0 pt-5 qoute-animate'>
-      <blockquote class='d-flex app-title pt-5 font-weight-light fs-20 font-italic'>
-        Invent yourself and then reinvent yourself and stay out of the clutches of mediocrity.
+    <div class="col-12 p-0 pt-5 qoute-animate">
+      <blockquote
+        class="d-flex app-title pt-5 font-weight-light fs-20 font-italic"
+      >
+        Invent yourself and then reinvent yourself and stay out of the clutches
+        of mediocrity.
       </blockquote>
-      <div class='d-flex justify-content-end app-subtitle font-weight-lighter fs-13'> ― Charles Bukowski, The Pleasures of the Damned.</div>
+      <div
+        class="d-flex justify-content-end app-subtitle font-weight-lighter fs-13"
+      >
+        ― Charles Bukowski, The Pleasures of the Damned.
+      </div>
     </div>
 
     <div class="divider"></div>
     <div class="col-12 col-sm-12 col-md-12 blog p-0">
       <div class="col-12 p-0">
-        <app-search-input class='pt-5' />
+        <app-search-input class="pt-5" />
       </div>
       <div class="row pb-10">
         <div
@@ -40,36 +47,30 @@
       </div>
     </div>
 
-
-      <div class="divider"></div>
+    <div class="divider"></div>
 
     <div class="col-12 col-sm-12 col-md-12 info p-0">
       <div class="row pb-10">
-        <nuxt-link class="col-12 col-sm-12 col-md-12 cp" tag="div" to="/about">
-          <h1 class="fs-18 pt-20 app-title text-left">I'm Pooya Golchian</h1>
-          <ul class="col-12 p-0 fs-16 app-subtitle font-weight-light">
-            <li>Senior Frontend Developer (Vue.js/React.js)</li>
-            <li>Code, Coffee, Crypto</li>
-          </ul>
-          <p class="fs-14 app-title pt-10 m-0">
-            I was born in Tehran in 1990. When my father bought a computer for
-            our home, I fell in love with it. I start to learned Linux with
-            Ubuntu and Fedora when I was 16 years old. Now, I have a master's
-            degree in computer engineering. I have 10 years' experience in web
-            development. I have been using Javascript for web development. I
-            have 4 years of experience in Vue.js and, Nuxt.js. I worked with
-            React.js too. I have developed lots of web applications with
-            high-tech frameworks. I have experience with PHP, WordPress, Drupal,
-            headless CMS, and JAM STACK architecture. For more information about
-            my professional full-time work, please see my
-            <nuxt-link to="/cv">CV</nuxt-link>
-            .
-          </p>
-        </nuxt-link>
-
-        <div class="col col-12">
-          <nuxt-link class="blog-more-btn" to="/cv"> Visit My CV </nuxt-link>
-        </div>
+        <h1 class="fs-18 pt-20 app-title text-left">I'm Pooya Golchian</h1>
+        <ul class="col-12 p-0 fs-16 app-subtitle font-weight-light">
+          <li>Senior Frontend Developer (React.js/Vue.js)</li>
+          <li class="fs-14">Code, Coffee, Crypto</li>
+        </ul>
+        <p class="fs-14 app-title pt-10 m-0">
+          I have worked as a front-end developer since 2012. I like to transfer
+          the design to code. Web application architecture, UX, and front-end
+          are my favorite things that I enjoyed in my work career. Moreover,
+          problem-solving, communication, and leadership that other skills I
+          have been developing in five recent years. I have worked with
+          different startup and organization software engineering companies in
+          Iran. Close communication with the product team and working with scrum
+          methodology during these years made me agile and flexible for the
+          different circumstances that every application would be in it. In
+          addition, I have worked with DevOps tools. I'm an engineer at my
+          heart. On top of that, I'd love javascript to the bone. I like to be
+          in an international career to improve my work environment and expand
+          my knowledge horizon.
+        </p>
       </div>
 
       <div class="divider"></div>
@@ -77,7 +78,7 @@
         Open-Source project
       </div>
       <ul class="project-list">
-         <li>
+        <li>
           <a
             class="app-title d-flex flex-row pt-2 pb-2 fs-14"
             href="https://github.com/pooyagolchian/react-weather-app"
@@ -158,7 +159,7 @@
 </template>
 
 <script>
-import {gsap} from 'gsap'
+import { gsap } from 'gsap';
 export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
@@ -176,8 +177,8 @@ export default {
       return new Date(date).toLocaleDateString('en', options);
     },
   },
-  
-   mounted() {
+
+  mounted() {
     gsap.from('.articles-animate', {
       duration: 1,
       opacity: 0,
