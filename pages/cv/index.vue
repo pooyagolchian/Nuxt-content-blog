@@ -9,7 +9,7 @@
           </nuxt-link>
         </div>
         <div class="text-muted font-weight-light fs-20">
-          Senior Frontend Developer
+          Frontend Engineer (React.js | Vue.js)
         </div>
       </div>
 
@@ -32,7 +32,7 @@
             <span class="text-muted">
               <i class="fs-20 lnr lnr-map-marker"></i>
             </span>
-            Tehran, Iran
+            Tehran,Iran
           </li>
           <li class="col-auto p-0 pr-10">
             <span class="text-muted">
@@ -232,7 +232,7 @@ export default {
         {
           jobTitle: 'Senior Frontend Developer | React.js/Vue.js/Nuxt.js',
           company: 'Afra Sarmaye Digital Software Engineering Company',
-          date: '5/2021 - 5/2022',
+          date: '5/2021 - NOW',
           location: 'Iran, Tehran',
           jobItem: [
             'Developed three admin panels with React.js and Redux and use best practice development workflow with functional programming.',

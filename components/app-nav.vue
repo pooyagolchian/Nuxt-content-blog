@@ -2,15 +2,7 @@
   <div class="app-nav col col-12 justify-content-center">
     <div class="row justify-content-between align-items-center p-0 pt-10 pb-10">
       <div
-        class="
-          col-auto
-          justify-content-center
-          align-items-center
-          flex-row
-          d-flex
-          p-0
-           nav-animate-left
-        "
+        class="col-auto justify-content-center align-items-center flex-row d-flex p-0 nav-animate-left"
       >
         <nuxt-link class="cp text-center app-nav-link-left" tag="div" to="/">
           <span class="lnr lnr-home app-title fs-20 pr-5 pl-5"></span>
@@ -20,29 +12,21 @@
           :changeThemeOff="true"
           :defaultTheme="'light'"
           :themeColorList="['light', 'dark']"
-          class="
-            font-weight-light
-            pl-15
-            pr-5
-            d-flex
-            justify-content-center
-            align-items-center
-          "
+          class="font-weight-light pl-15 pr-5 d-flex justify-content-center align-items-center"
         ></change-theme>
       </div>
       <div
-        class="
-          col-auto
-          justify-content-center
-          align-items-center
-          d-none d-sm-none d-md-none d-lg-flex
-          p-0
-          nav-animate-right
-        "
+        class="col-auto justify-content-center align-items-center d-none d-sm-none d-md-none d-lg-flex p-0 nav-animate-right"
       >
         <ul class="app-nav-link app-nav-link-right fs-14 p-0">
           <li class="d-flex justify-content-center align-items-center">
             <nuxt-link to="/blog">Blog</nuxt-link>
+          </li>
+          <li class="d-flex justify-content-center align-items-center">
+            <nuxt-link to="/about">About</nuxt-link>
+          </li>
+          <li class="d-flex justify-content-center align-items-center">
+            <nuxt-link to="/cv">CV</nuxt-link>
           </li>
         </ul>
       </div>
@@ -64,6 +48,14 @@
         <li>
           <nuxt-link to="/blog" @click.native="isShow = false">Blog</nuxt-link>
         </li>
+        <li>
+          <nuxt-link to="/cv">CV</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/About" @click.native="isShow = false"
+            >About
+          </nuxt-link>
+        </li>
         <li class="app-title cp" @click="isShow = false">
           <span class="lnr lnr-arrow-left"></span>
           BACK TO WEBSITE
@@ -74,7 +66,7 @@
 </template>
 
 <script>
-import {gsap} from "gsap"
+import { gsap } from 'gsap';
 export default {
   data() {
     return {
@@ -88,7 +80,7 @@ export default {
     },
   },
 
-   mounted() {
+  mounted() {
     gsap.from('.nav-animate-left', {
       duration: 1,
       opacity: 0,
@@ -101,7 +93,6 @@ export default {
       y: -50,
       ease: gsap.easeInOut,
     });
-    
   },
 };
 </script>
