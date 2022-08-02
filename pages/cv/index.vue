@@ -15,46 +15,66 @@
 
       <div class="row col col-12 flex-column">
         <ul class="row fs-16 pt-20 pb-20 info-list">
-          <li class="col-auto p-0 pr-10">
+          <li class="col-auto pl-0 pr-10">
             <span class="text-muted">
               <i class="fs-20 lnr lnr-smartphone"></i>
             </span>
             +989306016111
           </li>
-          <li class="col-auto p-0 pr-10">
+          <li class="col-auto pl-0 pr-10">
             <span class="text-muted">
               <i class="fs-20 lnr lnr-link"></i>
             </span>
 
             <nuxt-link to="/"> pooyagolchian.com</nuxt-link>
           </li>
-          <li class="col-auto p-0 pr-10">
+          <li class="col-auto pl-0 pr-10">
             <span class="text-muted">
               <i class="fs-20 lnr lnr-map-marker"></i>
             </span>
             Tehran,Iran
           </li>
-          <li class="col-auto p-0 pr-10">
+          <li class="col-auto pl-0 pr-10">
             <span class="text-muted">
               <i class="fs-20 lnr lnr-envelope"></i>
             </span>
             pooya.golchian@gmail.com
           </li>
-          <li class="col-auto p-0 pr-10">
+          <li class="col-auto pl-0 pr-10">
             <span class="text-muted">
               <i class="fs-20 lnr lnr-link"></i>
             </span>
             <a href="https://github.com/pooyagolchian" target="_blank"
-              >Github</a
+              >Github/pooyagolchian</a
             >
           </li>
-          <li class="col-auto p-0 pr-10">
+          <li class="col-auto pl-0 pr-10">
             <span class="text-muted"
               ><span class="text-muted">
                 <i class="fs-20 lnr lnr-link"></i> </span
             ></span>
             <a href="https://www.linkedin.com/in/pooyagolchian/" target="_blank"
-              >Linkedin</a
+              >Linkedin/pooyagolchian</a
+            >
+          </li>
+          <li class="col-auto pl-0 pr-10">
+            <span class="text-muted"
+              ><span class="text-muted">
+                <i class="fs-20 lnr lnr-link"></i> </span
+            ></span>
+            <a
+              href="https://stackoverflow.com/users/2257357/pooya-golchian"
+              target="_blank"
+              >Stackoverflow/pooya-golchian</a
+            >
+          </li>
+          <li class="col-auto pl-0 pr-10">
+            <span class="text-muted"
+              ><span class="text-muted">
+                <i class="fs-20 lnr lnr-link"></i> </span
+            ></span>
+            <a href="https://dev.to/pooyagolchian" target="_blank"
+              >Dev.to/pooyagolchian</a
             >
           </li>
         </ul>
@@ -230,86 +250,91 @@ export default {
       ],
       expItem: [
         {
-          jobTitle: 'Senior Frontend Developer | React.js/Vue.js/Nuxt.js',
-          company: 'Afra Sarmaye Digital Software Engineering Company',
-          date: '5/2021 - NOW',
+          jobTitle: 'Senior Frontend Developer',
+          company: 'Azkivam',
+          date: '5/2021 - 7/2022',
           location: 'Iran, Tehran',
           jobItem: [
-            'Developed three admin panels with React.js and Redux and use best practice development workflow with functional programming.',
-            'Implemented E2E test with Cypress. Developed Unit test and Integration test in edge cases for business flow.',
-            'Implemented an admin panel for customers and CRM to improve automation of sales and document management.',
-            'Utilized Nuxt.js for SSR rendering. Improved 40% of extra code with purge libraries.',
-            'Developed NPM package for generating forms that provide from BPMN from the database.',
-            'Dockerized all applications that we developed with Nuxt.js',
+            'Solved dynamic form generator based on BPMN workflow on the front-end side',
+            'Performed testing on web pages, analyze user feedback and coordinate with cross-functional teams to identify opportunities to enhance web page responsiveness.',
+            'Led the development of web applications and the implementation of Agile and Scrum throughout the organization to enhance project delivery by 20%.',
+            'Managed a team of 3+ front-end developers and graphic designers throughout the project lifecycle provided coaching, and mentorship and, established a collaborative work culture centered on creativity and empowerment.',
+            'Deployed SSR web application on GitLab and Dockerise front-end project.',
             'azkivam.com | panel.azkivam.com',
           ],
         },
 
         {
-          jobTitle: 'Senior Frontend Developer | React.js/Vue.js',
-          company:
-            'Abr Dade Fanavari Haftsin Software and Telecom Engineering Company',
+          jobTitle: 'Senior Frontend Developer',
+          company: 'Haftcin',
           date: '11/2019 - 5/2021',
           location: 'Iran, Tehran',
           jobItem: [
-            'Designed and implemented flight and hotel booking front-end structure for reservation system.',
-            'Developed React.js application with Electron.js for some business issues and maintained React.js application.',
-            'Developed reusable components for Vue.js and make private package repositories for components that they used in different projects.',
+            'Implemented a new feature to improve website functionality across browsers and mobile devices, which eliminated recurring bugs and improved customer survey scores by 30%',
+            'Served as the point of contact for client stakeholders throughout all phases of the development lifecycle, fielded quality concerns, identified solutions, and aligned deliverables with customer business specifications',
+            'Conducted debugging and end-to-end testing from conception to completion for the delivery of application development projects for clients in the e-commerce space',
             'Developed 10 Admin panel and back-office website with ant-design, Element UI, Vuetify.js, MUI',
-            'Built automatic backup with S3, Bash, Linux systemd',
+            'Built automatic backup with S3, Bash, Linux',
             'Dockerized all applications and configure Github Action and use ECS',
+            'Partnered with cross-functional teams to refine the user experience and led all front-end development efforts to ensure alignment with quality standards',
             'yiata.com | mobile.get3000.com | get3000.com',
           ],
         },
         {
-          jobTitle: 'Senior Frontend Developer | React.js/Next.js',
-          company: 'Iman Sarmaye Noavaran Iranian Software Engineering Company',
+          jobTitle: 'Senior Frontend Developer',
+          company: 'Azki',
           date: '06/2019 - 11/2019',
           location: 'Iran, Tehran',
           jobItem: [
-            'Developed React.js application with one million active users in insurance technology.',
+            'Constructed React.js application with one million active users in insurance technology.',
             'Developed custom React.js component for Admin panel with an ANT design framework',
-            'Developed 2 Admin panel and back-office website with an ANT design',
+            'Built 2 Admin panels and a back-office website',
             'Developed a website with React.js and Next.js for SSR rendering',
+            'Collaborated with the marketing team to implement analytics',
+            'Simplified development workflow to developer component based on SOLID design pattern',
+            'Increased website visitors and reported weekly from Google lighthouse to improve SEO',
             'azki.com',
           ],
         },
         {
-          jobTitle: 'Frontend Developer | React.js',
-          company: 'ENTEKHAB Investment Development Group',
+          jobTitle: 'Frontend Developer',
+          company: 'ENTEKHAB',
           date: '09/2017 - 06/2019',
           location: 'Iran, Tehran',
           jobItem: [
             'Developed custom React.js component for local TV application and wrap with Electron.js',
-            'Developed an enterprise contact application that all departments have used them',
-            'Developed  Admin panel and back-office website with ant-design and React.js',
+            'Performed an enterprise contact application that all departments have used them',
+            'Built Admin panel and back-office website with ant-design and React.js',
+            'Illustrated marketing web application and roadmap for technical team',
+            'Redesigned old fashion web application and website',
+            'Collaborated with PR, marketing, and sales team to increase 30% visitors',
           ],
         },
 
         {
           jobTitle: 'Frontend Developer | Drupal Developer',
-          company: 'Dadeban Samaneh Software Engineering Company',
+          company: 'Axprint',
           date: '09/2015 - 09/2017',
           location: 'Iran, Tehran',
           jobItem: [
-            'Redesigned & built new Axprint.com, OO SCSS & reduce the size of CSS to 50K, and built a Modular page',
-            'Built fully customizable modern blog and website theme for Drupal7',
-            'Built marketing landing pages A to Z like Referral, etc. Analytics and help to selling team',
+            'Redesigned & built new Axprint.com, OO SCSS & reduced the size of CSS to 50K, and modified a Modular page',
+            'Developed a fully customizable and modern blog and website theme for Drupal7',
+            'Created custom front-end frameworks for marketing, advertising, and e-commerce websites, platforms, and applications, which included managing all aspects of prototyping, wireframing, debugging, and coding activities',
             'Built automated tasks for printer and server task batch script for print workflow JDF (Job Definition Format)',
-            'Experience with pure javascript (OOP, Modules, ES6) and build reusable modules',
             'axprint.com | blog.axprint.com | pamp.com',
           ],
         },
 
         {
           jobTitle: 'Drupal Developer',
-          company: 'Rayvarz Software Engineering Company',
+          company: 'Rayvarz',
           date: '01/2014 - 08/2015',
           location: 'Iran, Tehran',
           jobItem: [
             'Built Drupal 7 portal & website for banking and government customer',
-            'Built Mobile-first and responsive html5 website and landing pages',
-            'Built headless with Service modules in drupal 7',
+            'Redesigned old website and web application with Drupal7, Jquery, Angularjs',
+            'Developed Mobile-first and responsive html5 website and landing pages',
+            'Modeled headless CMS with Service modules in drupal 7',
             'rayvarz.com | bpms.rayvaz.com',
           ],
         },
