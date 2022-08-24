@@ -28,6 +28,15 @@
           <li class="d-flex justify-content-center align-items-center">
             <nuxt-link to="/cv">CV</nuxt-link>
           </li>
+
+          <li>
+            <a
+              class="libutton"
+              href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=pooyagolchian"
+              target="_blank"
+              >Follow on LinkedIn</a
+            >
+          </li>
         </ul>
       </div>
 
@@ -56,6 +65,16 @@
             >About
           </nuxt-link>
         </li>
+
+        <li>
+          <a
+            class="libutton"
+            href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=pooyagolchian"
+            target="_blank"
+            >Follow on LinkedIn</a
+          >
+        </li>
+
         <li class="app-title cp" @click="isShow = false">
           <span class="lnr lnr-arrow-left"></span>
           BACK TO WEBSITE
@@ -138,6 +157,24 @@ export default {
       padding-top: 10px;
       padding-bottom: 10px;
     }
+  }
+}
+.libutton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7px;
+  text-align: center;
+  outline: none;
+  text-decoration: none !important;
+  color: #ffffff !important;
+  width: 200px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #0a66c2;
+  font-family: 'SF Pro Text', Helvetica, sans-serif;
+  &:hover {
+    color: white !important;
   }
 }
 </style>
