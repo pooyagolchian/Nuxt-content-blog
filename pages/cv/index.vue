@@ -252,7 +252,7 @@ export default {
         {
           jobTitle: 'Senior Frontend Developer',
           company: 'Cashew payments',
-          date: '9/2022 - Now',
+          date: '8/2022 - Now',
           location: 'United Arab Emirates, Dubai',
           jobItem: [
             'Redesign website with Next.js, React.js, and Typescript',
