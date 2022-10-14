@@ -255,10 +255,10 @@ export default {
           date: '9/2022 - Now',
           location: 'United Arab Emirates, Dubai',
           jobItem: [
-            'Redesign website with Next.js, React.js and Typescript',
+            'Redesign website with Next.js, React.js, and Typescript',
             'Maintenance merchant and portal admin panel',
-            'Built reuseable component for web base platform',
-            'Develop and contribute in Bit.dev cloud component package registry',
+            'Built reusable components for web base platform',
+            'Develop and contribute to Bit.dev cloud component package registry',
             'cashewpayments.com',
           ],
         },
