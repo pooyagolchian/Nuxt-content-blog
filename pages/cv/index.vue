@@ -19,7 +19,7 @@
             <span class="text-muted">
               <i class="fs-20 lnr lnr-smartphone"></i>
             </span>
-            +989306016111
+            +971522252948
           </li>
           <li class="col-auto pl-0 pr-10">
             <span class="text-muted">
@@ -32,7 +32,7 @@
             <span class="text-muted">
               <i class="fs-20 lnr lnr-map-marker"></i>
             </span>
-            Tehran,Iran
+            Dubai, United Arab Emirates
           </li>
           <li class="col-auto pl-0 pr-10">
             <span class="text-muted">
@@ -249,6 +249,20 @@ export default {
         },
       ],
       expItem: [
+        {
+          jobTitle: 'Senior Frontend Developer',
+          company: 'Cashew payments',
+          date: '9/2022 - Now',
+          location: 'United Arab Emirates, Dubai',
+          jobItem: [
+            'Redesign website with Next.js, React.js and Typescript',
+            'Maintenance merchant and portal admin panel',
+            'Built reuseable component for web base platform',
+            'Develop and contribute in Bit.dev cloud component package registry',
+            'cashewpayments.com',
+          ],
+        },
+
         {
           jobTitle: 'Senior Frontend Developer',
           company: 'Azkivam',
