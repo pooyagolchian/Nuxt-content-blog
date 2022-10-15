@@ -52,7 +52,7 @@
     <div class="col-12 col-sm-12 col-md-12 info">
       <div class="row pb-10">
         <h1 class="fs-18 pt-20 app-title text-left">I'm Pooya Golchian</h1>
-        <ul class="col-12 fs-16 app-subtitle font-weight-light">
+        <ul class="col-12 fs-16 app-subtitle font-weight-light p-0 m-0">
           <li>Senior Frontend Developer (React.js/Vue.js)</li>
           <li class="fs-14">Code, Coffee, Crypto</li>
         </ul>
