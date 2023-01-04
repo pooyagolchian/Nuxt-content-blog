@@ -15,12 +15,12 @@
 
       <div class="row col col-12 flex-column">
         <ul class="row fs-16 pt-20 pb-20 info-list">
-          <li class="col-auto pl-0 pr-10">
+          <!-- <li class="col-auto pl-0 pr-10">
             <span class="text-muted">
               <i class="fs-20 lnr lnr-smartphone"></i>
             </span>
             +971522252948
-          </li>
+          </li> -->
           <li class="col-auto pl-0 pr-10">
             <span class="text-muted">
               <i class="fs-20 lnr lnr-link"></i>
