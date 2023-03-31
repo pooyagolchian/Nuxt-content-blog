@@ -53,7 +53,7 @@
       <div class="clos-btn app-title" @click="isShow = false">
         <span class="lnr lnr-cross fs-30"></span>
       </div>
-      <ul class="text-center">
+      <ul class="mobile-menu-animation text-center">
         <li>
           <nuxt-link to="/blog" @click.native="isShow = false">Blog</nuxt-link>
         </li>
@@ -85,7 +85,8 @@
 </template>
 
 <script>
-import { gsap } from 'gsap';
+import { gsap } from "gsap";
+
 export default {
   data() {
     return {
@@ -96,16 +97,34 @@ export default {
   methods: {
     handleMenu() {
       this.isShow = !this.isShow;
+      setTimeout(() => {
+        gsap.from('.mobile-menu-animation li ', {
+          duration: 1,
+          opacity: 0,
+          y: -50,
+          stagger: 0.2
+        });
+      }, 100)
     },
   },
 
   mounted() {
-    gsap.from('.nav-animate-left', {
+    gsap.from('.nav-animate-right li', {
       duration: 1,
       opacity: 0,
       y: -50,
-      ease: gsap.easeInOut,
+      stagger: 0.2
     });
+
+
+
+    gsap.from('.nav-animate-left li', {
+      duration: 1,
+      opacity: 0,
+      y: -50,
+      stagger: 0.3
+    });
+
     gsap.from('.nav-animate-right', {
       duration: 1,
       opacity: 0,
@@ -124,12 +143,10 @@ export default {
 }
 
 .nav-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0 !important;
-  margin: 0 !important;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 
   li {
     list-style: none;
@@ -156,9 +173,15 @@ export default {
     li {
       padding-top: 10px;
       padding-bottom: 10px;
+      a {
+        text-transform: uppercase;
+        font-size: 16px;
+        text-decoration: none;
+      }
     }
   }
 }
+
 .libutton {
   display: flex;
   flex-direction: column;

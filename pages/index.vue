@@ -161,7 +161,8 @@
 </template>
 
 <script>
-import { gsap } from 'gsap';
+import { gsap } from "gsap";
+
 export default {
   async asyncData({ $content, params }) {
     const articles = await $content('articles', params.slug)
@@ -185,7 +186,14 @@ export default {
       duration: 1,
       opacity: 0,
       y: 50,
-      ease: gsap.easeInOut,
+      stagger: 0.4
+    });
+
+    gsap.from('.project-list li', {
+      duration: 1,
+      opacity: 0,
+      y: 50,
+      stagger: 0.5
     });
     gsap.from('.qoute-animate', {
       duration: 1,
@@ -194,5 +202,6 @@ export default {
       ease: gsap.ease,
     });
   },
+
 };
 </script>

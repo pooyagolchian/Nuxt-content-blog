@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import { gsap } from 'gsap';
+import { gsap } from "gsap";
 
 export default {
   head() {
@@ -69,12 +69,14 @@ export default {
     },
   },
   mounted() {
+    
     gsap.from('.articles-animate', {
       duration: 1,
       opacity: 0,
       y: 50,
-      ease: gsap.easeInOut,
+      stagger: 0.2
     });
+
   },
 };
 </script>
